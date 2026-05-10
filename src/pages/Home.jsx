@@ -191,16 +191,16 @@ export default function Home() {
               ))}
             </ul>
 
-            <div className="flex flex-col min-[390px]:flex-row gap-3 mt-8">
+            <div className="flex flex-col lg:flex-row gap-3 mt-8">
               <Link
                 to={`/encontros/${encontroAtual.numero}`}
-                className="w-full min-[390px]:w-auto px-6 py-3.5 bg-[var(--color-primary)] text-white rounded-full font-medium hover:bg-[var(--color-primary-dark)] transition-colors text-center shadow-md hover:shadow-lg"
+                className="w-full lg:w-auto px-6 py-3.5 bg-[var(--color-primary)] text-white rounded-full font-medium hover:bg-[var(--color-primary-dark)] transition-colors text-center shadow-md hover:shadow-lg whitespace-nowrap"
               >
                 Iniciar formação →
               </Link>
               <Link
                 to={`/encontros/${encontroAtual.numero}/quiz`}
-                className="w-full min-[390px]:w-auto px-6 py-3.5 border-2 border-[var(--color-primary)] text-[var(--color-primary)] rounded-full font-medium hover:bg-[var(--color-primary)] hover:text-white transition-colors text-center"
+                className="w-full lg:w-auto px-6 py-3.5 border-2 border-[var(--color-primary)] text-[var(--color-primary)] rounded-full font-medium hover:bg-[var(--color-primary)] hover:text-white transition-colors text-center whitespace-nowrap"
               >
                 Fazer o quiz
               </Link>
