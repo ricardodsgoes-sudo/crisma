@@ -3,6 +3,7 @@ import { Link, useParams, Navigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
 import { DoveIcon } from '../components/Logo'
+import ShareButton from '../components/ShareButton'
 import { getEncontroById } from '../data/encontros'
 
 const TABS = [
@@ -51,12 +52,19 @@ export default function EncontroDetalhe() {
           <DoveIcon className="w-full h-full" />
         </div>
         <div className="relative max-w-5xl mx-auto px-4 md:px-8 py-10 sm:py-12 md:py-20">
-          <Link
-            to="/encontros"
-            className="inline-flex items-center gap-2 text-sm text-white font-medium hover:text-[var(--color-gold-light)] transition-colors mb-5 sm:mb-6"
-          >
-            ← Todos os encontros
-          </Link>
+          <div className="flex items-center justify-between gap-4 mb-5 sm:mb-6">
+            <Link
+              to="/encontros"
+              className="inline-flex items-center gap-2 text-sm text-white font-medium hover:text-[var(--color-gold-light)] transition-colors"
+            >
+              ← Todos os encontros
+            </Link>
+            <ShareButton
+              titulo={`Encontro ${encontro.numero}: ${encontro.titulo}`}
+              texto={`Encontro ${encontro.numero} — ${encontro.titulo} (${encontro.subtitulo})\n\n"${encontro.versiculoDestaque}" — ${encontro.versiculoRef}`}
+              className="text-white hover:text-[var(--color-gold-light)]"
+            />
+          </div>
 
           <p className="text-xs md:text-sm uppercase tracking-[0.24em] sm:tracking-[0.3em] text-[var(--color-gold-light)] font-medium mb-3">
             Encontro {encontro.numero}
@@ -83,7 +91,7 @@ export default function EncontroDetalhe() {
         </div>
       </section>
 
-      <div className="sticky top-[91px] sm:top-[57px] md:top-[65px] z-40 bg-[var(--color-surface)]/95 backdrop-blur border-b border-[var(--color-border)] shadow-sm">
+      <div className="sticky top-[104px] sm:top-[72px] md:top-[80px] z-40 bg-[var(--color-surface)]/95 backdrop-blur border-b border-[var(--color-border)] shadow-sm">
         <div className="max-w-5xl mx-auto px-3 sm:px-4 md:px-8 py-2 sm:py-0">
           <nav className="encounter-tabs-nav">
             {TABS.map((t) => (

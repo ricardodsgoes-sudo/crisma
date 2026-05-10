@@ -329,23 +329,15 @@ function CarrosselProximos({ cards, encontroAtualNumero }) {
 }
 
 function CardProximo({ p, isAtual, temConteudo }) {
-  const bg = p.passado
-    ? 'bg-[var(--color-surface-warm)]'
-    : 'bg-white'
+  // Cards já realizados ficam em vermelho (mesma cor da página Encontros),
+  // mantendo consistência visual entre as duas listagens.
+  const bg = p.passado ? 'red-paper-bg' : 'bg-white'
 
   const borda = isAtual
     ? 'border-[var(--color-primary)] ring-2 ring-[var(--color-primary)]/20 shadow-lg'
     : p.passado
-    ? 'border-[var(--color-border-strong)]'
+    ? 'border-[var(--color-primary)]'
     : 'border-[var(--color-border)]'
-
-  const numColor = p.passado
-    ? 'text-[var(--color-text-muted)]'
-    : 'text-[var(--color-primary)]'
-
-  const tituloColor = p.passado
-    ? 'text-[var(--color-text-muted)]'
-    : 'text-[var(--color-text)]'
 
   return (
     <div
@@ -355,32 +347,36 @@ function CardProximo({ p, isAtual, temConteudo }) {
     >
       <div className="flex items-start justify-between mb-3">
         <p className={`text-xs uppercase tracking-[0.2em] font-medium ${
-          p.passado ? 'text-[var(--color-text-muted)]' : 'text-[var(--color-gold-dark)]'
+          p.passado ? 'text-[var(--color-gold-light)]' : 'text-[var(--color-gold-dark)]'
         }`}>
           Encontro {String(p.numero).padStart(2, '0')}
         </p>
         {isAtual && (
-          <span className="text-xs px-2 py-0.5 bg-[var(--color-primary)] text-white rounded-full font-semibold uppercase tracking-wide">
+          <span className="text-xs px-2 py-0.5 bg-white text-[var(--color-primary)] rounded-full font-semibold uppercase tracking-wide">
             Atual
           </span>
         )}
         {p.passado && !isAtual && (
-          <span className="text-xs px-2 py-0.5 text-[var(--color-text-muted)] border border-[var(--color-border-strong)] rounded-full">
+          <span className="text-xs px-2 py-0.5 bg-white/20 text-white border border-white/30 rounded-full">
             ✓
           </span>
         )}
       </div>
 
       <p
-        className={`text-xl leading-snug mb-2 flex-1 ${tituloColor}`}
-        style={{ fontFamily: "'Playfair Display', serif", fontWeight: p.passado ? 500 : 600 }}
+        className={`text-xl leading-snug mb-2 flex-1 ${p.passado ? 'text-[var(--color-gold-light)]' : 'text-[var(--color-text)]'}`}
+        style={{
+          fontFamily: "'Playfair Display', serif",
+          fontWeight: p.passado ? 600 : 600,
+          textShadow: p.passado ? '0 1px 6px rgba(0,0,0,0.16)' : 'none',
+        }}
       >
         {p.conteudoDisponivel?.titulo || 'Em breve'}
       </p>
 
       {p.conteudoDisponivel?.subtitulo && (
         <p
-          className="text-xs italic text-[var(--color-text-muted)] mb-3"
+          className={`text-xs italic mb-3 ${p.passado ? 'text-white/90' : 'text-[var(--color-text-muted)]'}`}
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           {p.conteudoDisponivel.subtitulo}
@@ -388,7 +384,7 @@ function CardProximo({ p, isAtual, temConteudo }) {
       )}
 
       <p className={`text-xs capitalize mt-auto pt-3 border-t ${
-        p.passado ? 'text-[var(--color-text-muted)]/70 border-[var(--color-border)]' : 'text-[var(--color-text-muted)] border-[var(--color-border)]'
+        p.passado ? 'text-white/70 border-white/20' : 'text-[var(--color-text-muted)] border-[var(--color-border)]'
       }`}>
         {p.dataObj.toLocaleDateString('pt-BR', {
           weekday: 'long',

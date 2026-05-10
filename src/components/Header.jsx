@@ -22,7 +22,9 @@ export default function Header() {
           className="flex items-center justify-center sm:justify-start gap-3 group min-w-0"
           aria-label="Página inicial"
         >
-          <ParishCrest className="h-9 sm:h-12 w-auto flex-shrink-0 drop-shadow-sm group-hover:drop-shadow-md transition-all" />
+          <span className="brasao-shine flex-shrink-0">
+            <ParishCrest className="h-12 sm:h-16 w-auto drop-shadow-sm group-hover:drop-shadow-md transition-all" />
+          </span>
           <div className="hidden sm:flex flex-col leading-tight min-w-0">
             <span className="text-[10px] tracking-[0.2em] uppercase text-[var(--color-text-muted)] font-medium truncate">
               Paróquia Maria Mãe de Deus

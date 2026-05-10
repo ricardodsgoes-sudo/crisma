@@ -11,6 +11,7 @@
   --color-surface: #FAFAF8;
   --color-surface-card: #FFFFFF;
   --color-surface-warm: #FFF8F0;
+  /* No dark mode estes tokens são redefinidos via @media abaixo */
   --color-text: #2D2416;
   --color-text-muted: #7A6A55;
   --color-border: #E8D9C5;
@@ -26,6 +27,37 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  color-scheme: light dark;
+}
+
+/* Modo escuro automático (segue prefer-color-scheme do sistema).
+   Redefine os tokens semânticos; cores de marca (vermelho, dourado)
+   permanecem iguais para preservar a identidade visual da paróquia. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-surface: #1a1612;
+    --color-surface-warm: #25201a;
+    --color-surface-card: #1f1b15;
+    --color-text: #f0e8d8;
+    --color-text-muted: #b0a690;
+    --color-border: #3a342a;
+    --color-border-strong: #4a4234;
+    /* Dourado um pouco mais claro para legibilidade sobre fundo escuro */
+    --color-gold-dark: #d4a948;
+  }
+
+  /* bg-white usado em cards grandes vira surface escuro.
+     Badges com bg-white/X (opacity) mantêm o behavior original. */
+  .bg-white {
+    background-color: var(--color-surface-card);
+  }
+
+  /* Sombras mais sutis no escuro */
+  .shadow-lg,
+  .shadow-xl,
+  .shadow-2xl {
+    --tw-shadow-color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 body {
@@ -92,6 +124,53 @@ button:focus-visible, a:focus-visible {
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+/* Reflexo dourado periódico passando sobre o brasão.
+   Usa máscara recortada pela própria imagem para o brilho seguir
+   o contorno do brasão e não a caixa retangular. */
+.brasao-shine {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+}
+.brasao-shine::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    rgba(255, 215, 130, 0.55) 50%,
+    transparent 65%
+  );
+  -webkit-mask-image: url('/brasao-logo.webp');
+  mask-image: url('/brasao-logo.webp');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  pointer-events: none;
+  transform: translateX(-110%);
+  animation: brasao-shine 9s ease-in-out infinite;
+}
+@keyframes brasao-shine {
+  0%, 70% {
+    transform: translateX(-110%);
+  }
+  85% {
+    transform: translateX(110%);
+  }
+  100% {
+    transform: translateX(110%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .brasao-shine::before {
+    animation: none;
+  }
 }
 
 .red-paper-texture {
