@@ -109,7 +109,7 @@ export default function Home() {
       </section>
 
       <section
-        className="text-white py-20 sm:py-16 md:py-20 relative overflow-hidden"
+        className="text-white py-14 sm:py-16 md:py-20 relative overflow-hidden"
         style={{
           backgroundColor: '#C41230',
           backgroundImage: 'url("./background-paper-red.webp?v=1")',
@@ -218,7 +218,7 @@ function CarrosselProximos({ cards, encontroAtualNumero }) {
   const trilhaRef = useRef(null)
   const [podePrev, setPodePrev] = useState(false)
   const [podeNext, setPodeNext] = useState(true)
-  const CARD_W = 300
+  const CARD_W = 270
 
   // Rola até o encontro atual no primeiro render — APENAS o carrossel
   // horizontalmente. NÃO usar scrollIntoView, que rola a página inteira
@@ -310,7 +310,7 @@ function CarrosselProximos({ cards, encontroAtualNumero }) {
               style={{
                 scrollSnapAlign: 'center',
               }}
-              className="w-[82vw] min-[420px]:w-[350px] sm:w-64 flex-shrink-0"
+              className="w-[68vw] min-[420px]:w-[260px] sm:w-64 flex-shrink-0"
               data-card-numero={p.numero}
             >
               <CardProximo p={p} isAtual={isAtual} temConteudo={temConteudo} />
