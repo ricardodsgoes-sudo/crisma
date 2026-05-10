@@ -23,6 +23,11 @@ dist-ssr
 # Claude Code local config
 .claude/
 
+# Screenshots / debug images dropped at root
+screencapture-*.png
+debug-*.png
+audit-*.png
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
