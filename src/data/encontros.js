@@ -1,10 +1,10 @@
 export const encontros = [
   {
-    id: 1,
-    numero: 1,
+    id: 2,
+    numero: 2,
     titulo: 'Deus Pai',
     subtitulo: 'Criador e Fonte da Vida',
-    data: '2026-05-09',
+    data: '2026-05-16',
     versiculoDestaque: 'No princípio, Deus criou o céu e a terra.',
     versiculoRef: 'Gênesis 1,1',
     leituras: [
@@ -121,118 +121,6 @@ export const encontros = [
         correta: 2,
         explicacao:
           'Por ser imagem de Deus, o indivíduo humano tem a dignidade de "pessoa": não é apenas alguma coisa, mas alguém.',
-      },
-    ],
-  },
-  {
-    id: 2,
-    numero: 2,
-    titulo: 'Jesus Cristo',
-    subtitulo: 'O Verbo que se fez carne',
-    data: '2026-05-16',
-    versiculoDestaque: 'E o Verbo se fez carne e habitou entre nós.',
-    versiculoRef: 'João 1,14',
-    leituras: [
-      { ref: 'João 1, 1-18', titulo: 'O prólogo do Evangelho de João' },
-      { ref: 'Filipenses 2, 6-11', titulo: 'Hino a Cristo humilhado e exaltado' },
-    ],
-    formacao: [
-      {
-        titulo: 'Lorem ipsum — O mistério da Encarnação',
-        conteudo:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.',
-      },
-      {
-        titulo: 'Lorem ipsum — Verdadeiro Deus e verdadeiro homem',
-        conteudo:
-          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident. Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.\n\nNam libero tempore cum soluta nobis eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis rerum necessitatibus saepe eveniet.',
-      },
-      {
-        titulo: 'Lorem ipsum — A missão do Filho',
-        conteudo:
-          'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Ut labore et dolore magnam aliquam quaerat voluptatem.\n\nNeque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
-      },
-    ],
-    reflexao: [
-      'O que significa para mim que Deus escolheu se tornar humano?',
-      'Como a vida de Jesus me inspira a viver minha fé no dia a dia?',
-      'De que forma posso testemunhar Cristo na minha família e no meu trabalho?',
-    ],
-    compromisso:
-      'Ler um trecho do Evangelho de João durante a semana e anotar o que mais tocou seu coração.',
-    recursos: [
-      { tipo: 'Música', titulo: 'Jesus, Nome Acima de Todo Nome', autor: 'Comunidade Shalom' },
-      { tipo: 'Bíblia', titulo: 'Evangelho de João, capítulo 1; Filipenses 2' },
-      {
-        tipo: 'Catecismo',
-        titulo: 'Catecismo da Igreja Católica — Segunda Seção, Capítulo II',
-      },
-      {
-        tipo: 'Livro',
-        titulo: 'Síntese da Fé Católica — Tema 5: Jesus Cristo, p. 57-70',
-        autor: 'JIMÉNEZ, Gerard; YÁNIZ, Javier (org.)',
-      },
-    ],
-    quiz: [
-      {
-        pergunta: 'Segundo o prólogo de João, o Verbo "se fez carne" significa que:',
-        opcoes: [
-          'Deus criou o mundo do nada',
-          'O Filho de Deus assumiu a natureza humana',
-          'Jesus era apenas um profeta',
-          'A Bíblia foi escrita pelos apóstolos',
-        ],
-        correta: 1,
-        explicacao:
-          '"O Verbo se fez carne" significa que o Filho de Deus assumiu verdadeiramente a natureza humana, permanecendo ao mesmo tempo plenamente Deus.',
-      },
-      {
-        pergunta: 'O hino de Filipenses 2 descreve Jesus como alguém que:',
-        opcoes: [
-          'Reivindicou poder e glória para si',
-          'Se esvaziou a si mesmo, assumindo a condição de servo',
-          'Recusou a cruz por ser Filho de Deus',
-          'Viveu apenas entre os ricos e poderosos',
-        ],
-        correta: 1,
-        explicacao:
-          'O hino descreve a kenosis (esvaziamento): Jesus, sendo Deus, assumiu a condição de servo e se humilhou até a morte na cruz.',
-      },
-      {
-        pergunta: 'Afirmar que Jesus é "verdadeiro Deus e verdadeiro homem" significa que:',
-        opcoes: [
-          'Ele tinha duas personalidades diferentes',
-          'Era Deus por dentro e homem por fora',
-          'Possui duas naturezas completas em uma única Pessoa',
-          'Alternava entre ser divino e ser humano',
-        ],
-        correta: 2,
-        explicacao:
-          'O Concílio de Calcedônia (451) definiu que Jesus possui duas naturezas — divina e humana — unidas em uma única Pessoa, sem confusão nem separação.',
-      },
-      {
-        pergunta: 'Qual é o objetivo principal da Encarnação, segundo a formação?',
-        opcoes: [
-          'Mostrar que Deus pode tomar qualquer forma',
-          'Salvar o ser humano e revelar o amor de Deus',
-          'Estabelecer uma religião organizada',
-          'Cumprir apenas as profecias do Antigo Testamento',
-        ],
-        correta: 1,
-        explicacao:
-          'A Encarnação tem como objetivo central a salvação do ser humano e a revelação plena do amor de Deus, que se aproxima de nós em nossa própria condição.',
-      },
-      {
-        pergunta: 'O nome "Jesus" significa:',
-        opcoes: [
-          'Filho de Deus',
-          'Rei dos reis',
-          'Deus salva',
-          'Luz do mundo',
-        ],
-        correta: 2,
-        explicacao:
-          'O nome Jesus (do hebraico Yeshua) significa "Deus salva" — já revelando em si mesmo a missão redentora de Cristo.',
       },
     ],
   },

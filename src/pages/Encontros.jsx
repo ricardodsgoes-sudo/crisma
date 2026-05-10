@@ -36,7 +36,7 @@ export default function Encontros() {
           </h1>
           <div className="w-20 h-px bg-[var(--color-gold)] mx-auto mb-6" />
           <p className="max-w-2xl mx-auto text-[var(--color-text-muted)] text-base sm:text-lg">
-            Uma jornada de fé, encontro e descoberta a cada sábado às 15h.
+            Uma jornada de fé, encontro e descoberta a cada sábado, das 17h às 18h.
           </p>
         </motion.div>
 

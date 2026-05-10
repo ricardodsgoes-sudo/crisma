@@ -262,7 +262,7 @@ function CarrosselProximos({ cards, encontroAtualNumero }) {
           <div>
             <h3 className="text-2xl md:text-3xl mb-1">Calendário de encontros</h3>
             <p className="text-[var(--color-text-muted)] text-sm">
-              Todo sábado às 15h · arraste para navegar
+              Todo sábado, 17h às 18h · arraste para navegar
             </p>
           </div>
           <div className="flex gap-2 flex-shrink-0">

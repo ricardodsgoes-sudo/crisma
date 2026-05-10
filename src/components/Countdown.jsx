@@ -34,7 +34,7 @@ export default function Countdown() {
 
   function calcularTempo() {
     const proximoSabado = getProximoSabado(getHoje())
-    proximoSabado.setHours(15, 0, 0, 0)
+    proximoSabado.setHours(17, 0, 0, 0)
     const diff = proximoSabado.getTime() - Date.now()
     const ms = Math.max(0, diff)
     return {
@@ -66,7 +66,7 @@ export default function Countdown() {
         className="text-lg sm:text-xl md:text-2xl text-white mb-6 sm:mb-8 capitalize"
         style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', textShadow: '0 1px 4px rgba(0,0,0,0.2)' }}
       >
-        {dataFormatada} · 15h
+        {dataFormatada} · 17h às 18h
       </p>
 
       <div className="grid grid-cols-4 gap-2 sm:gap-3 md:gap-6 w-full max-w-[18rem] sm:max-w-md md:max-w-xl mx-auto">
