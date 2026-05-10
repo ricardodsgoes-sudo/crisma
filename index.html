@@ -9,6 +9,22 @@
     <title>Crisma de Adultos 2026 · Paróquia Maria Mãe de Deus</title>
     <!-- Preload do hero LCP para reduzir Largest Contentful Paint -->
     <link rel="preload" as="image" href="./crisma-capa.webp" imagesrcset="./crisma-capa.webp 1x, ./crisma-capa@2x.webp 2x" fetchpriority="high" />
+
+    <!-- Google Fonts com preconnect + async (não bloqueia render) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+      />
+    </noscript>
   </head>
   <body>
     <div id="root"></div>
