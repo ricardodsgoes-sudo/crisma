@@ -24,7 +24,7 @@ export default function Header() {
             className="flex items-center justify-center sm:justify-start gap-3 group min-w-0"
             aria-label="Página inicial"
           >
-            <span className="brasao-shine flex-shrink-0">
+            <span className="flex-shrink-0">
               <ParishCrest className="h-12 sm:h-16 w-auto drop-shadow-sm group-hover:drop-shadow-md transition-all" />
             </span>
             <div className="hidden sm:flex flex-col leading-tight min-w-0">

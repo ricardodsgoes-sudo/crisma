@@ -126,53 +126,6 @@ button:focus-visible, a:focus-visible {
   display: none;
 }
 
-/* Reflexo dourado periódico passando sobre o brasão.
-   Usa máscara recortada pela própria imagem para o brilho seguir
-   o contorno do brasão e não a caixa retangular. */
-.brasao-shine {
-  position: relative;
-  display: inline-block;
-  overflow: visible;
-}
-.brasao-shine::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    115deg,
-    transparent 35%,
-    rgba(255, 215, 130, 0.55) 50%,
-    transparent 65%
-  );
-  -webkit-mask-image: url('/brasao-logo.webp');
-  mask-image: url('/brasao-logo.webp');
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  pointer-events: none;
-  transform: translateX(-110%);
-  animation: brasao-shine 9s ease-in-out infinite;
-}
-@keyframes brasao-shine {
-  0%, 70% {
-    transform: translateX(-110%);
-  }
-  85% {
-    transform: translateX(110%);
-  }
-  100% {
-    transform: translateX(110%);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .brasao-shine::before {
-    animation: none;
-  }
-}
-
 .red-paper-texture {
   background-color: #c41230;
   background-image:
