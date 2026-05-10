@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
 import Countdown from '../components/Countdown'
+import InstallAppButton from '../components/InstallAppButton'
 import { CrismaCapa, DoveIcon } from '../components/Logo'
 import { encontros, gerarCalendarioEncontros } from '../data/encontros'
 import { getHoje, SIMULANDO } from '../data/dataSimulada'
@@ -86,6 +87,10 @@ export default function Home() {
                 >
                   Ver todos
                 </Link>
+              </div>
+
+              <div className="mt-4 flex justify-center md:justify-start">
+                <InstallAppButton />
               </div>
             </motion.div>
 
