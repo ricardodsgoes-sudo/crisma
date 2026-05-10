@@ -7,7 +7,7 @@ export default function Header() {
   const links = [
     { to: '/', label: 'Início', short: 'Início' },
     { to: '/encontros', label: 'Encontros', short: 'Encontros' },
-    { to: '/progresso', label: 'Meu Progresso', short: 'Progresso' },
+    { to: '/progresso', label: 'Meu Progresso', short: 'Meu progresso' },
   ]
 
   return (
@@ -43,7 +43,7 @@ export default function Header() {
         </div>
 
         <div className="flex w-full sm:w-auto sm:flex-1 items-center gap-2 min-w-0">
-          <nav className="grid grid-cols-[2.25rem_minmax(0,0.55fr)_minmax(0,0.85fr)_minmax(0,1.35fr)] w-[86vw] max-w-[86vw] mx-auto sm:w-auto sm:max-w-none sm:flex sm:flex-1 sm:items-center sm:justify-end gap-1 md:gap-2 min-w-0">
+          <nav className="grid grid-cols-[2.25rem_minmax(0,0.55fr)_minmax(0,0.85fr)_minmax(0,1.55fr)] w-[90vw] max-w-[90vw] mx-auto sm:w-auto sm:max-w-none sm:flex sm:flex-1 sm:items-center sm:justify-end gap-1 md:gap-2 min-w-0">
             <div className="flex items-center justify-center">
               <ThemeToggle />
             </div>
@@ -53,7 +53,7 @@ export default function Header() {
                 to={link.to}
                 end={link.to === '/'}
                 className={({ isActive }) =>
-                  `relative min-w-0 px-1 sm:px-2 md:px-3 py-3 sm:py-2 text-[10px] min-[380px]:text-[10.5px] sm:text-sm md:text-base text-center font-medium transition-colors ${
+                  `relative min-w-0 px-0.5 sm:px-2 md:px-3 py-3 sm:py-2 text-[9.5px] min-[380px]:text-[10px] sm:text-sm md:text-base text-center font-medium transition-colors ${
                     isActive
                       ? 'text-[var(--color-primary)]'
                       : 'text-[var(--color-text)] hover:text-[var(--color-primary)]'
