@@ -14,7 +14,9 @@ function jaEstaInstalado() {
 
 function detectarIOS() {
   if (typeof navigator === 'undefined') return false
-  return /iphone|ipad|ipod/i.test(navigator.userAgent)
+  const ua = navigator.userAgent || ''
+  // iPadOS 13+ pode se apresentar como "Macintosh" no Safari.
+  return /iphone|ipad|ipod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
 }
 
 export default function InstallAppButton({ className = '' }) {
@@ -72,7 +74,7 @@ export default function InstallAppButton({ className = '' }) {
 
       {mostrarAjuda && (
         <div
-          className="fixed inset-0 z-[80] flex items-end sm:items-center justify-center bg-black/45 px-4 py-6"
+          className="fixed inset-0 z-[80] flex items-end sm:items-center justify-center bg-black/45 px-4 py-6 safe-modal"
           role="dialog"
           aria-modal="true"
           aria-labelledby="install-app-title"
