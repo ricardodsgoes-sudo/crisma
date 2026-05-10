@@ -88,10 +88,6 @@ export default function Home() {
                   Ver todos
                 </Link>
               </div>
-
-              <div className="mt-4 flex justify-center md:justify-start">
-                <InstallAppButton />
-              </div>
             </motion.div>
 
             <motion.div
