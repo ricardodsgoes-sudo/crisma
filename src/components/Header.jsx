@@ -7,7 +7,7 @@ export default function Header() {
   const links = [
     { to: '/', label: 'Início', short: 'Início' },
     { to: '/encontros', label: 'Encontros', short: 'Encontros' },
-    { to: '/progresso', label: 'Meu Progresso', short: 'Meu progresso' },
+    { to: '/progresso', label: 'Meu Progresso', short: <>Meu<br />progresso</> },
   ]
 
   return (
@@ -17,17 +17,17 @@ export default function Header() {
       transition={{ duration: 0.4, ease: 'easeOut' }}
       className="sticky top-0 z-50 bg-[var(--color-surface)]/90 backdrop-blur-md border-b border-[var(--color-border)] relative"
     >
-      <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-8 py-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4">
-        <div className="relative w-full sm:w-auto flex items-center justify-center sm:justify-start">
+      <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-8 py-2 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4">
+        <div className="relative w-full md:w-auto flex items-center justify-center md:justify-start">
           <Link
             to="/"
-            className="flex items-center justify-center sm:justify-start gap-3 group min-w-0"
+            className="flex items-center justify-center md:justify-start gap-3 group min-w-0"
             aria-label="Página inicial"
           >
             <span className="flex-shrink-0">
-              <ParishCrest className="h-12 sm:h-16 w-auto drop-shadow-sm group-hover:drop-shadow-md transition-all" />
+              <ParishCrest className="h-12 md:h-16 w-auto drop-shadow-sm group-hover:drop-shadow-md transition-all" />
             </span>
-            <div className="hidden sm:flex flex-col leading-tight min-w-0">
+            <div className="hidden md:flex flex-col leading-tight min-w-0">
               <span className="text-[10px] tracking-[0.2em] uppercase text-[var(--color-text-muted)] font-medium truncate">
                 Paróquia Maria Mãe de Deus
               </span>
@@ -40,23 +40,24 @@ export default function Header() {
             </div>
           </Link>
 
+          <div className="absolute right-0 md:hidden">
+            <ThemeToggle />
+          </div>
         </div>
 
-        <div className="relative flex w-full sm:w-auto sm:flex-1 items-center justify-center sm:justify-end gap-2 min-w-0">
-          <div className="absolute left-0 sm:static sm:flex-shrink-0">
-            <div className="flex items-center justify-center">
-              <ThemeToggle />
-            </div>
+        <div className="flex w-full md:w-auto md:flex-1 items-center justify-center md:justify-end gap-2 min-w-0">
+          <div className="hidden md:block md:flex-shrink-0">
+            <ThemeToggle />
           </div>
 
-          <nav className="grid grid-cols-3 w-[74vw] max-w-[19.5rem] mx-auto sm:w-auto sm:max-w-none sm:flex sm:flex-1 sm:items-center sm:justify-end gap-2 md:gap-2 min-w-0">
+          <nav className="grid grid-cols-3 w-full md:w-[28rem] gap-1 md:gap-2 min-w-0">
             {links.map((link) => (
               <NavLink
                 key={link.to}
                 to={link.to}
                 end={link.to === '/'}
                 className={({ isActive }) =>
-                  `relative min-w-0 px-1 sm:px-2 md:px-3 py-3 sm:py-2 text-[10px] min-[380px]:text-[10.5px] sm:text-sm md:text-base text-center font-medium transition-colors ${
+                  `relative min-w-0 px-0.5 md:px-3 py-3.5 md:py-2 text-[12px] md:text-base text-center font-semibold md:font-medium transition-colors ${
                     isActive
                       ? 'text-[var(--color-primary)]'
                       : 'text-[var(--color-text)] hover:text-[var(--color-primary)]'
@@ -65,8 +66,8 @@ export default function Header() {
               >
                 {({ isActive }) => (
                   <>
-                    <span className="block sm:hidden truncate">{link.short}</span>
-                    <span className="hidden sm:inline">{link.label}</span>
+                    <span className="block md:hidden leading-tight">{link.short}</span>
+                    <span className="hidden md:inline">{link.label}</span>
                     {isActive && (
                       <motion.span
                         layoutId="nav-underline"
