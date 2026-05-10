@@ -7,7 +7,7 @@ export default function Footer() {
         <ParishCrest className="w-20 h-24" />
         <div>
           <p
-            className="text-sm tracking-[0.2em] uppercase font-medium text-[var(--color-text-muted)]"
+            className="text-xs sm:text-sm tracking-[0.12em] sm:tracking-[0.2em] uppercase font-medium text-[var(--color-text-muted)]"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Paróquia Maria Mãe de Deus

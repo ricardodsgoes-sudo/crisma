@@ -131,8 +131,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-4 md:px-8 py-12 sm:py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-8 sm:mb-12"
         >
@@ -145,8 +144,7 @@ export default function Home() {
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="bg-white rounded-2xl sm:rounded-3xl shadow-xl border border-[var(--color-border)] overflow-hidden grid md:grid-cols-2"
         >

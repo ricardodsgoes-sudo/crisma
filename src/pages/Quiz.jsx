@@ -168,7 +168,7 @@ export default function Quiz() {
             animate={{ opacity: 1, x: shake ? [-8, 8, -6, 6, 0] : 0 }}
             exit={{ opacity: 0, x: -30 }}
             transition={shake ? { duration: 0.4 } : { duration: 0.3 }}
-            className="bg-white rounded-2xl sm:rounded-3xl border border-[var(--color-border)] shadow-lg p-5 sm:p-6 md:p-10"
+            className="bg-white rounded-2xl sm:rounded-3xl border border-[var(--color-border)] shadow-lg p-4 sm:p-6 md:p-10"
           >
             <h2
               className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 leading-snug"

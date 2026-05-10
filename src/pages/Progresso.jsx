@@ -103,54 +103,63 @@ export default function Progresso() {
 
         <div className="bg-white rounded-2xl border border-[var(--color-border)] p-5 sm:p-6 md:p-8">
           <h2 className="text-2xl mb-6">Por encontro</h2>
-          <div className="space-y-3">
-            {lista.map((item, i) => (
-              <motion.div
-                key={item.numero}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: i * 0.03 }}
-                className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 p-4 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-gold)] transition-colors"
-              >
-                <div
-                  className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold ${
-                    item.visitado
-                      ? 'bg-[var(--color-primary)] text-white'
-                      : 'bg-[var(--color-surface-warm)] text-[var(--color-text-muted)] border border-[var(--color-border)]'
+          <div className="space-y-2 sm:space-y-3">
+            {lista.map((item, i) => {
+              const conteudo = (
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.03 }}
+                  className={`flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl border border-[var(--color-border)] transition-colors ${
+                    item.disponivel
+                      ? 'hover:border-[var(--color-gold)] active:bg-[var(--color-surface-warm)]'
+                      : 'opacity-70'
                   }`}
-                  style={{ fontFamily: "'Playfair Display', serif" }}
                 >
-                  {item.numero}
-                </div>
-
-                <div className="flex-1 min-w-0">
-                  <p className="font-medium truncate">{item.titulo}</p>
-                  <div className="flex flex-wrap gap-2 mt-1">
-                    {item.visitado && (
-                      <Badge cor="primary">📖 Lido</Badge>
-                    )}
-                    {item.compromisso && (
-                      <Badge cor="gold">✓ Compromisso</Badge>
-                    )}
-                    {item.quizConcluido && (
-                      <Badge cor="green">🎯 Quiz {item.quizScore}%</Badge>
-                    )}
-                    {!item.visitado && item.disponivel && (
-                      <Badge cor="muted">Não iniciado</Badge>
-                    )}
-                  </div>
-                </div>
-
-                {item.disponivel && (
-                  <Link
-                    to={`/encontros/${item.numero}`}
-                    className="text-sm text-[var(--color-primary)] hover:underline whitespace-nowrap self-start sm:self-auto"
+                  <div
+                    className={`flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center font-bold text-sm sm:text-base ${
+                      item.visitado
+                        ? 'bg-[var(--color-primary)] text-white'
+                        : 'bg-[var(--color-surface-warm)] text-[var(--color-text-muted)] border border-[var(--color-border)]'
+                    }`}
+                    style={{ fontFamily: "'Playfair Display', serif" }}
                   >
-                    Abrir →
-                  </Link>
-                )}
-              </motion.div>
-            ))}
+                    {item.numero}
+                  </div>
+
+                  <div className="flex-1 min-w-0">
+                    <p className="font-medium truncate text-sm sm:text-base">{item.titulo}</p>
+                    <div className="flex flex-wrap gap-1.5 mt-1">
+                      {item.visitado && <Badge cor="primary">Lido</Badge>}
+                      {item.compromisso && <Badge cor="gold">Compromisso</Badge>}
+                      {item.quizConcluido && <Badge cor="green">Quiz {item.quizScore}%</Badge>}
+                      {!item.visitado && item.disponivel && <Badge cor="muted">Não iniciado</Badge>}
+                    </div>
+                  </div>
+
+                  {item.disponivel && (
+                    <span
+                      aria-hidden="true"
+                      className="flex-shrink-0 text-[var(--color-text-muted)] text-xl leading-none"
+                    >
+                      ›
+                    </span>
+                  )}
+                </motion.div>
+              )
+
+              return item.disponivel ? (
+                <Link
+                  key={item.numero}
+                  to={`/encontros/${item.numero}`}
+                  className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] rounded-xl"
+                >
+                  {conteudo}
+                </Link>
+              ) : (
+                <div key={item.numero}>{conteudo}</div>
+              )
+            })}
           </div>
         </div>
 
@@ -223,7 +232,7 @@ function Badge({ children, cor }) {
     muted: 'bg-[var(--color-surface-warm)] text-[var(--color-text-muted)]',
   }
   return (
-    <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${cores[cor]}`}>
+    <span className={`text-[10px] sm:text-xs px-2 py-0.5 rounded-full font-medium ${cores[cor]}`}>
       {children}
     </span>
   )

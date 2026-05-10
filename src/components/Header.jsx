@@ -6,7 +6,7 @@ export default function Header() {
   const links = [
     { to: '/', label: 'Início', short: 'Início' },
     { to: '/encontros', label: 'Encontros', short: 'Encontros' },
-    { to: '/progresso', label: 'Meu Progresso', short: 'Meu Progresso' },
+    { to: '/progresso', label: 'Meu Progresso', short: 'Progresso' },
   ]
 
   return (

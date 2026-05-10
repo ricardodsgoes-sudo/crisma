@@ -126,8 +126,7 @@ export default function EncontroDetalhe() {
                 <motion.article
                   key={secao.titulo}
                   initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-50px' }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.05 }}
                 >
                   <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 text-[var(--color-primary)]">
@@ -176,8 +175,7 @@ export default function EncontroDetalhe() {
                 <motion.div
                   key={l.ref}
                   initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.1 }}
                   className="bg-[var(--color-surface-warm)] border border-[var(--color-border)] rounded-2xl p-5 sm:p-6"
                 >
@@ -226,8 +224,7 @@ export default function EncontroDetalhe() {
                   <motion.li
                     key={i}
                     initial={{ opacity: 0, y: 15 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.1 }}
                     className="bg-white rounded-2xl border border-[var(--color-border)] p-5 sm:p-6 flex gap-3 sm:gap-4"
                   >
@@ -294,8 +291,7 @@ export default function EncontroDetalhe() {
                   <motion.div
                     key={i}
                     initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.08 }}
                     className="bg-white rounded-xl border border-[var(--color-border)] p-5 hover:border-[var(--color-gold)] transition-colors"
                   >
