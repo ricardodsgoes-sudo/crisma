@@ -213,6 +213,18 @@ export default function Home() {
       </section>
 
       <CarrosselProximos cards={todosCarrossel} encontroAtualNumero={encontroAtual.numero} />
+
+      <section className="max-w-6xl mx-auto px-4 md:px-8 pb-14 sm:pb-18">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface-warm)] px-5 py-5 text-center shadow-sm">
+          <p
+            className="text-lg text-[var(--color-text)]"
+            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
+          >
+            Se preferir, baixe o app
+          </p>
+          <InstallAppButton />
+        </div>
+      </section>
     </PageTransition>
   )
 }
