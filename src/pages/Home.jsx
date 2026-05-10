@@ -220,7 +220,9 @@ function CarrosselProximos({ cards, encontroAtualNumero }) {
   const [podeNext, setPodeNext] = useState(true)
   const CARD_W = 300
 
-  // Rola até o encontro atual no primeiro render
+  // Rola até o encontro atual no primeiro render — APENAS o carrossel
+  // horizontalmente. NÃO usar scrollIntoView, que rola a página inteira
+  // verticalmente até o carrossel.
   const inicializado = useRef(false)
   function refTrilha(el) {
     trilhaRef.current = el
@@ -230,7 +232,10 @@ function CarrosselProximos({ cards, encontroAtualNumero }) {
       requestAnimationFrame(() => {
         const alvo = el.querySelector(`[data-card-numero="${encontroAtualNumero}"]`)
         if (alvo) {
-          alvo.scrollIntoView({ inline: 'center', block: 'nearest' })
+          // Centraliza o alvo dentro do carrossel sem mexer no scroll da página
+          const alvoLeft = alvo.offsetLeft
+          const alvoWidth = alvo.offsetWidth
+          el.scrollLeft = Math.max(0, alvoLeft - (el.clientWidth - alvoWidth) / 2)
         } else {
           el.scrollLeft = Math.max(0, idx) * CARD_W
         }
