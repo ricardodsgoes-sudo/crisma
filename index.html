@@ -9,6 +9,19 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Crisma 2026" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Aplica o tema salvo ANTES do React renderizar, evitando flash. -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('crisma:theme') || 'light';
+          var isDark =
+            saved === 'dark' ||
+            (saved === 'auto' &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
     <meta name="description" content="Crisma de Adultos 2026 — Paróquia Maria Mãe de Deus. Acompanhe os encontros semanais, faça quizzes e cresça na fé." />
     <title>Crisma de Adultos 2026 · Paróquia Maria Mãe de Deus</title>
     <!-- Preload do hero LCP para reduzir Largest Contentful Paint -->

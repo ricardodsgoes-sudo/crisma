@@ -27,37 +27,37 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  color-scheme: light dark;
+  color-scheme: light;
 }
 
-/* Modo escuro automático (segue prefer-color-scheme do sistema).
-   Redefine os tokens semânticos; cores de marca (vermelho, dourado)
-   permanecem iguais para preservar a identidade visual da paróquia. */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-surface: #1a1612;
-    --color-surface-warm: #25201a;
-    --color-surface-card: #1f1b15;
-    --color-text: #f0e8d8;
-    --color-text-muted: #b0a690;
-    --color-border: #3a342a;
-    --color-border-strong: #4a4234;
-    /* Dourado um pouco mais claro para legibilidade sobre fundo escuro */
-    --color-gold-dark: #d4a948;
-  }
+/* Modo escuro: ativado por classe .dark no <html> (controlada via
+   ThemeToggle no header — opções Claro / Escuro / Auto).
+   Default é claro. Cores de marca (vermelho, dourado) permanecem
+   iguais para preservar a identidade visual da paróquia. */
+html.dark {
+  color-scheme: dark;
+  --color-surface: #1a1612;
+  --color-surface-warm: #25201a;
+  --color-surface-card: #1f1b15;
+  --color-text: #f0e8d8;
+  --color-text-muted: #b0a690;
+  --color-border: #3a342a;
+  --color-border-strong: #4a4234;
+  /* Dourado um pouco mais claro para legibilidade sobre fundo escuro */
+  --color-gold-dark: #d4a948;
+}
 
-  /* bg-white usado em cards grandes vira surface escuro.
-     Badges com bg-white/X (opacity) mantêm o behavior original. */
-  .bg-white {
-    background-color: var(--color-surface-card);
-  }
+/* bg-white usado em cards grandes vira surface escuro quando dark.
+   Badges com bg-white/X (opacity) mantêm o behavior original. */
+html.dark .bg-white {
+  background-color: var(--color-surface-card);
+}
 
-  /* Sombras mais sutis no escuro */
-  .shadow-lg,
-  .shadow-xl,
-  .shadow-2xl {
-    --tw-shadow-color: rgba(0, 0, 0, 0.5);
-  }
+/* Sombras mais sutis no escuro */
+html.dark .shadow-lg,
+html.dark .shadow-xl,
+html.dark .shadow-2xl {
+  --tw-shadow-color: rgba(0, 0, 0, 0.5);
 }
 
 body {
