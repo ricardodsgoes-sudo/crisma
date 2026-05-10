@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const fs=require\\('fs'\\); const css=fs.readFileSync\\('/tmp/site.css','utf8'\\); const m=css.match\\(/\\\\.bg-\\\\\\\\\\\\\\\\\\\\\\\\[var\\\\\\\\\\(--color-primary\\\\\\\\\\\\\\\\\\\\\\\\\\)\\\\\\\\\\\\\\\\\\\\\\\\]\\\\\\\\{[^}]+\\\\\\\\}/\\); console.log\\(m ? m[0] : 'NOT FOUND'\\);\")",
+      "Bash(node -e \"const fs=require\\('fs'\\); const css=fs.readFileSync\\('/tmp/site.css','utf8'\\); const idx=css.indexOf\\('.bg-\\\\\\\\\\\\\\\\[var\\(--color-primary\\)\\\\\\\\\\\\\\\\]'\\); console.log\\('idx:', idx\\); if\\(idx>=0\\) console.log\\(css.substring\\(idx, idx+200\\)\\);\")",
+      "Bash(node -e \"const fs=require\\('fs'\\); const css=fs.readFileSync\\('site.css','utf8'\\); ['bg-[var','bg-\\\\\\\\\\\\\\\\[var','--color-primary\\)\\\\\\\\\\\\\\\\]{','--color-primary\\)]{'].forEach\\(n => console.log\\(JSON.stringify\\(n\\), '->', css.indexOf\\(n\\)\\)\\);\")",
+      "Bash(node -e \"const fs=require\\('fs'\\); const css=fs.readFileSync\\('d:/crisma/dist/assets/index-6gYVpMPh.css','utf8'\\); const m = [...css.matchAll\\(/\\\\\\\\.bg-[^{]*color-primary[^{]*\\\\\\\\{[^}]+\\\\\\\\}/g\\)]; m.forEach\\(x => console.log\\(x[0]\\)\\);\")",
+      "Bash(where chromium *)",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application/**)",
+      "Bash(\"C:/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --no-sandbox --window-size=1280,900 --screenshot=d:/crisma/debug-home.png --virtual-time-budget=4000 https://crismadeadultos.netlify.app/)",
+      "Bash(\"C:/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --no-sandbox --window-size=1280,1400 --screenshot=d:/crisma/debug-home.png --virtual-time-budget=15000 --hide-scrollbars https://crismadeadultos.netlify.app/)",
+      "Bash(node -e \"const fs=require\\('fs'\\); const css=fs.readFileSync\\('site.css','utf8'\\); const m = [...css.matchAll\\(/:root[^}]*\\\\\\\\}/g\\)]; m.forEach\\(\\(x,i\\) => console.log\\('---ROOT', i, '---'\\); console.log\\(x[0].substring\\(0,500\\)\\)\\);\")",
+      "Bash(node -e \"const fs=require\\('fs'\\); const css=fs.readFileSync\\('site.css','utf8'\\); const m = [...css.matchAll\\(/:root[^}]*\\\\\\\\}/g\\)]; console.log\\('count:', m.length\\); m.forEach\\(\\(x,i\\) => { console.log\\('---', i\\); console.log\\(x[0].substring\\(0,800\\)\\); }\\);\")",
+      "Bash(node -e \"const fs=require\\('fs'\\); const css=fs.readFileSync\\('site.css','utf8'\\); const m = [...css.matchAll\\(/:root[^}]*\\\\\\\\}/g\\)]; const root = m[0][0]; console.log\\('has --color-primary:', root.includes\\('--color-primary'\\)\\); console.log\\('has --color-text:', root.includes\\('--color-text'\\)\\); console.log\\('has --color-gold:', root.includes\\('--color-gold'\\)\\); console.log\\('---last 500---'\\); console.log\\(root.substring\\(root.length - 500\\)\\);\")"
+    ]
+  }
+}
