@@ -1,24 +1,12 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
-import { encontros, gerarCalendarioEncontros, getEncontroAtual } from '../data/encontros'
+import { getCalendarioComStatus } from '../data/encontros'
 import { getHoje } from '../data/dataSimulada'
 
 export default function Encontros() {
-  const calendario = gerarCalendarioEncontros()
   const hoje = getHoje()
-  const encontroAtual = getEncontroAtual(hoje)
-
-  const lista = calendario.map((c) => {
-    const dataObj = new Date(c.data + 'T00:00:00')
-    const conteudo = encontros.find((e) => e.numero === c.numero)
-    let status = 'futuro'
-    if (dataObj < hoje) status = 'realizado'
-    else if (conteudo && c.numero === encontroAtual.numero) status = 'atual'
-    else if (conteudo && dataObj <= hoje) status = 'disponivel'
-
-    return { ...c, dataObj, conteudo, status }
-  })
+  const lista = getCalendarioComStatus(hoje)
 
   return (
     <PageTransition>

@@ -111,9 +111,9 @@ body {
     transition-duration: 0.01ms !important;
   }
 
-  .bible-ticker-track {
+  .header-note span {
     animation: none !important;
-    transform: translateX(0);
+    transform: translateX(0) !important;
   }
 }
 
@@ -133,31 +133,36 @@ a {
   touch-action: manipulation;
 }
 
-.bible-ticker {
-  overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, #000 16%, #000 84%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, #000 16%, #000 84%, transparent);
-}
-
-.bible-ticker-track {
+.header-note {
   display: flex;
-  width: 100%;
-  animation: bible-ticker-move 8s ease-in-out infinite;
+  align-items: center;
+  justify-content: flex-start;
+  width: 9.6rem;
+  max-width: 42vw;
+  overflow: hidden;
+  color: var(--color-gold-dark);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1;
+  text-transform: uppercase;
+  mask-image: linear-gradient(to right, transparent, #000 18%, #000 82%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 18%, #000 82%, transparent);
 }
 
-@keyframes bible-ticker-move {
-  0% {
-    opacity: 0;
-    transform: translateX(22%);
+.header-note span {
+  display: inline-block;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  animation: header-note-marquee 5.6s linear infinite;
+}
+
+@keyframes header-note-marquee {
+  from {
+    transform: translateX(90%);
   }
-  18%,
-  82% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-22%);
+  to {
+    transform: translateX(-110%);
   }
 }
 

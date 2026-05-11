@@ -147,6 +147,31 @@ export function getEncontroAtual(referencia = new Date()) {
     : encontros[0]
 }
 
+export function getCalendarioComStatus(referencia = new Date()) {
+  const hoje = new Date(referencia)
+  hoje.setHours(0, 0, 0, 0)
+  const encontroAtual = getEncontroAtual(hoje)
+
+  return gerarCalendarioEncontros().map((c) => {
+    const dataObj = new Date(c.data + 'T00:00:00')
+    const conteudo = encontros.find((e) => e.numero === c.numero)
+    let status = 'futuro'
+
+    if (dataObj < hoje) status = 'realizado'
+    else if (conteudo && c.numero === encontroAtual.numero) status = 'atual'
+    else if (conteudo && dataObj <= hoje) status = 'disponivel'
+
+    return {
+      ...c,
+      dataObj,
+      conteudo,
+      conteudoDisponivel: conteudo,
+      status,
+      passado: status === 'realizado',
+    }
+  })
+}
+
 export function getProximoSabado(referencia = new Date()) {
   const data = new Date(referencia)
   data.setHours(0, 0, 0, 0)

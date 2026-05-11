@@ -91,7 +91,7 @@ export default function EncontroDetalhe() {
         </div>
       </section>
 
-      <div className="sticky top-[148px] sm:top-[148px] md:top-[108px] z-40 bg-[var(--color-surface)]/95 backdrop-blur border-b border-[var(--color-border)] shadow-sm">
+      <div className="sticky top-[124px] sm:top-[124px] md:top-[100px] z-40 bg-[var(--color-surface)]/95 backdrop-blur border-b border-[var(--color-border)] shadow-sm">
         <div className="max-w-5xl mx-auto px-3 sm:px-4 md:px-8 py-2 sm:py-0">
           <nav className="encounter-tabs-nav">
             {TABS.map((t) => (

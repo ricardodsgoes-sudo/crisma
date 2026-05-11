@@ -5,20 +5,12 @@ import PageTransition from '../components/PageTransition'
 import Countdown from '../components/Countdown'
 import { InstallAppCallout } from '../components/InstallAppButton'
 import { CrismaCapa, DoveIcon } from '../components/Logo'
-import { encontros, gerarCalendarioEncontros, getEncontroAtual } from '../data/encontros'
+import { getCalendarioComStatus, getEncontroAtual } from '../data/encontros'
 import { getHoje, SIMULANDO } from '../data/dataSimulada'
 
 export default function Home() {
-  const calendario = gerarCalendarioEncontros()
   const hoje = getHoje()
-
-  const todosCarrossel = calendario.map((c) => ({
-    ...c,
-    dataObj: new Date(c.data + 'T00:00:00'),
-    conteudoDisponivel: encontros.find((e) => e.numero === c.numero),
-    passado: new Date(c.data + 'T00:00:00') < hoje,
-  }))
-
+  const todosCarrossel = getCalendarioComStatus(hoje)
   const encontroAtual = getEncontroAtual(hoje)
 
   return (
@@ -285,7 +277,7 @@ function CarrosselProximos({ cards, encontroAtualNumero }) {
         <div className="flex-shrink-0 w-[9vw] sm:w-[max(0px,calc((100vw-72rem)/2))]" />
 
         {cards.map((p, i) => {
-          const isAtual = p.numero === encontroAtualNumero
+          const isAtual = p.status === 'atual'
           const temConteudo = !!p.conteudoDisponivel
 
           const card = (
@@ -341,16 +333,7 @@ function CardProximo({ p, isAtual, temConteudo }) {
         }`}>
           Encontro {String(p.numero).padStart(2, '0')}
         </p>
-        {isAtual && (
-          <span className="text-xs px-2 py-0.5 bg-white text-[var(--color-primary)] rounded-full font-semibold uppercase tracking-wide">
-            Atual
-          </span>
-        )}
-        {p.passado && !isAtual && (
-          <span className="text-xs px-2 py-0.5 bg-white/20 text-white border border-white/30 rounded-full">
-            ✓
-          </span>
-        )}
+        <MiniStatusBadge status={p.status} />
       </div>
 
       <p
@@ -379,10 +362,26 @@ function CardProximo({ p, isAtual, temConteudo }) {
         {p.dataObj.toLocaleDateString('pt-BR', {
           weekday: 'long',
           day: '2-digit',
-          month: 'long',
+          month: 'short',
         })}
       </p>
     </div>
+  )
+}
+
+function MiniStatusBadge({ status }) {
+  const config = {
+    atual: { label: 'Atual', cls: 'bg-[var(--color-primary)] text-white' },
+    disponivel: { label: 'Ok', cls: 'bg-[var(--color-gold-light)] text-[var(--color-gold-dark)]' },
+    realizado: { label: '✓', cls: 'bg-white/20 text-white border border-white/30' },
+    futuro: { label: 'Breve', cls: 'bg-[var(--color-surface-warm)] text-[var(--color-text-muted)] border border-[var(--color-border)]' },
+  }
+  const item = config[status] || config.futuro
+
+  return (
+    <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold uppercase tracking-wide whitespace-nowrap ${item.cls}`}>
+      {item.label}
+    </span>
   )
 }
 
