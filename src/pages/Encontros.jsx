@@ -13,8 +13,8 @@ export default function Encontros() {
     const dataObj = new Date(c.data + 'T00:00:00')
     const conteudo = encontros.find((e) => e.numero === c.numero)
     let status = 'futuro'
-    if (conteudo && c.numero === encontroAtual.numero) status = 'atual'
-    else if (conteudo && dataObj < hoje) status = 'realizado'
+    if (dataObj < hoje) status = 'realizado'
+    else if (conteudo && c.numero === encontroAtual.numero) status = 'atual'
     else if (conteudo && dataObj <= hoje) status = 'disponivel'
 
     return { ...c, dataObj, conteudo, status }

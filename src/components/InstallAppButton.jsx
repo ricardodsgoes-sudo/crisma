@@ -26,11 +26,8 @@ function detectarIOS() {
   return /iphone|ipad|ipod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
 }
 
-export default function InstallAppButton({ className = '' }) {
-  const [prompt, setPrompt] = useState(null)
-  const [instalado, setInstalado] = useState(false)
-  const [mostrarAjuda, setMostrarAjuda] = useState(false)
-  const isIOS = useMemo(() => detectarIOS(), [])
+export function useAppInstalado() {
+  const [instalado, setInstalado] = useState(() => jaEstaInstalado())
 
   useEffect(() => {
     function atualizarEstadoInstalado() {
@@ -39,19 +36,7 @@ export default function InstallAppButton({ className = '' }) {
 
     atualizarEstadoInstalado()
 
-    function onBeforeInstallPrompt(event) {
-      if (jaEstaInstalado()) return
-      event.preventDefault()
-      setPrompt(event)
-    }
-
-    function onAppInstalled() {
-      setInstalado(true)
-      setPrompt(null)
-    }
-
-    window.addEventListener('beforeinstallprompt', onBeforeInstallPrompt)
-    window.addEventListener('appinstalled', onAppInstalled)
+    window.addEventListener('appinstalled', atualizarEstadoInstalado)
     window.addEventListener('focus', atualizarEstadoInstalado)
 
     const modosApp = ['standalone', 'fullscreen', 'minimal-ui', 'window-controls-overlay']
@@ -62,10 +47,60 @@ export default function InstallAppButton({ className = '' }) {
     mediaQueries.forEach((mq) => mq.addEventListener?.('change', atualizarEstadoInstalado))
 
     return () => {
-      window.removeEventListener('beforeinstallprompt', onBeforeInstallPrompt)
-      window.removeEventListener('appinstalled', onAppInstalled)
+      window.removeEventListener('appinstalled', atualizarEstadoInstalado)
       window.removeEventListener('focus', atualizarEstadoInstalado)
       mediaQueries.forEach((mq) => mq.removeEventListener?.('change', atualizarEstadoInstalado))
+    }
+  }, [])
+
+  return instalado
+}
+
+export function InstallAppCallout() {
+  const instalado = useAppInstalado()
+
+  if (instalado) return null
+
+  return (
+    <section className="max-w-6xl mx-auto px-4 md:px-8 pb-14 sm:pb-18">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface-warm)] px-5 py-5 text-center shadow-sm">
+        <p
+          className="text-lg text-[var(--color-text)]"
+          style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
+        >
+          Se preferir, baixe o app
+        </p>
+        <InstallAppButton />
+      </div>
+    </section>
+  )
+}
+
+export default function InstallAppButton({ className = '' }) {
+  const [prompt, setPrompt] = useState(null)
+  const [instaladoAposPrompt, setInstaladoAposPrompt] = useState(false)
+  const [mostrarAjuda, setMostrarAjuda] = useState(false)
+  const isIOS = useMemo(() => detectarIOS(), [])
+  const instalado = useAppInstalado() || instaladoAposPrompt
+
+  useEffect(() => {
+    function onBeforeInstallPrompt(event) {
+      if (jaEstaInstalado()) return
+      event.preventDefault()
+      setPrompt(event)
+    }
+
+    function onAppInstalled() {
+      setInstaladoAposPrompt(true)
+      setPrompt(null)
+    }
+
+    window.addEventListener('beforeinstallprompt', onBeforeInstallPrompt)
+    window.addEventListener('appinstalled', onAppInstalled)
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', onBeforeInstallPrompt)
+      window.removeEventListener('appinstalled', onAppInstalled)
     }
   }, [])
 
@@ -75,7 +110,7 @@ export default function InstallAppButton({ className = '' }) {
     if (prompt) {
       prompt.prompt()
       const escolha = await prompt.userChoice
-      if (escolha.outcome === 'accepted') setInstalado(true)
+      if (escolha.outcome === 'accepted') setInstaladoAposPrompt(true)
       setPrompt(null)
       return
     }
