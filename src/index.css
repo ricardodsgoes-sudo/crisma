@@ -128,6 +128,19 @@ a {
   touch-action: manipulation;
 }
 
+.crisma-primary-action,
+.crisma-primary-action:visited {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: #fff !important;
+}
+
+.crisma-primary-action:hover {
+  background-color: var(--color-primary-dark) !important;
+  border-color: var(--color-primary-dark) !important;
+  color: #fff !important;
+}
+
 .safe-modal {
   padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
   padding-left: max(1rem, env(safe-area-inset-left));

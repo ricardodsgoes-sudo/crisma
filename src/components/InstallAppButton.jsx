@@ -6,9 +6,16 @@ import { useEffect, useMemo, useState } from 'react'
 
 function jaEstaInstalado() {
   if (typeof window === 'undefined') return false
+
+  const modosApp = ['standalone', 'fullscreen', 'minimal-ui', 'window-controls-overlay']
+  const rodandoComoApp = modosApp.some((modo) =>
+    window.matchMedia?.(`(display-mode: ${modo})`).matches
+  )
+
   return (
-    window.matchMedia?.('(display-mode: standalone)').matches ||
-    window.navigator.standalone === true
+    rodandoComoApp ||
+    window.navigator.standalone === true ||
+    document.referrer.startsWith('android-app://')
   )
 }
 
@@ -26,9 +33,14 @@ export default function InstallAppButton({ className = '' }) {
   const isIOS = useMemo(() => detectarIOS(), [])
 
   useEffect(() => {
-    setInstalado(jaEstaInstalado())
+    function atualizarEstadoInstalado() {
+      setInstalado(jaEstaInstalado())
+    }
+
+    atualizarEstadoInstalado()
 
     function onBeforeInstallPrompt(event) {
+      if (jaEstaInstalado()) return
       event.preventDefault()
       setPrompt(event)
     }
@@ -40,10 +52,20 @@ export default function InstallAppButton({ className = '' }) {
 
     window.addEventListener('beforeinstallprompt', onBeforeInstallPrompt)
     window.addEventListener('appinstalled', onAppInstalled)
+    window.addEventListener('focus', atualizarEstadoInstalado)
+
+    const modosApp = ['standalone', 'fullscreen', 'minimal-ui', 'window-controls-overlay']
+    const mediaQueries = modosApp
+      .map((modo) => window.matchMedia?.(`(display-mode: ${modo})`))
+      .filter(Boolean)
+
+    mediaQueries.forEach((mq) => mq.addEventListener?.('change', atualizarEstadoInstalado))
 
     return () => {
       window.removeEventListener('beforeinstallprompt', onBeforeInstallPrompt)
       window.removeEventListener('appinstalled', onAppInstalled)
+      window.removeEventListener('focus', atualizarEstadoInstalado)
+      mediaQueries.forEach((mq) => mq.removeEventListener?.('change', atualizarEstadoInstalado))
     }
   }, [])
 

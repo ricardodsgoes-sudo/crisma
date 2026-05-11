@@ -64,7 +64,7 @@ export default function Home() {
               <div className="flex flex-col min-[390px]:flex-row gap-3 justify-center md:justify-start">
                 <Link
                   to={`/encontros/${encontroAtual.numero}`}
-                  className="w-full min-[390px]:w-auto px-6 sm:px-7 py-3.5 bg-[var(--color-primary)] text-white rounded-full font-medium hover:bg-[var(--color-primary-dark)] transition-all text-center shadow-lg hover:shadow-xl"
+                  className="crisma-primary-action w-full min-[390px]:w-auto px-6 sm:px-7 py-3.5 rounded-full font-medium transition-all text-center shadow-lg hover:shadow-xl"
                 >
                   Encontro {encontroAtual.numero} →
                 </Link>
@@ -180,7 +180,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row gap-3 mt-8">
               <Link
                 to={`/encontros/${encontroAtual.numero}`}
-                className="w-full lg:w-auto px-6 py-3.5 bg-[var(--color-primary)] text-white rounded-full font-medium hover:bg-[var(--color-primary-dark)] transition-colors text-center shadow-md hover:shadow-lg whitespace-nowrap"
+                className="crisma-primary-action w-full lg:w-auto px-6 py-3.5 rounded-full font-medium transition-colors text-center shadow-md hover:shadow-lg whitespace-nowrap"
               >
                 Iniciar formação →
               </Link>
