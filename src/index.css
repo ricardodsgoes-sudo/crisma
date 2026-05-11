@@ -110,6 +110,11 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+
+  .bible-ticker-track {
+    animation: none !important;
+    transform: translateX(0);
+  }
 }
 
 ::selection {
@@ -126,6 +131,34 @@ button:focus-visible, a:focus-visible {
 button,
 a {
   touch-action: manipulation;
+}
+
+.bible-ticker {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 16%, #000 84%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 16%, #000 84%, transparent);
+}
+
+.bible-ticker-track {
+  display: flex;
+  width: 100%;
+  animation: bible-ticker-move 8s ease-in-out infinite;
+}
+
+@keyframes bible-ticker-move {
+  0% {
+    opacity: 0;
+    transform: translateX(22%);
+  }
+  18%,
+  82% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-22%);
+  }
 }
 
 .crisma-primary-action,

@@ -17,6 +17,17 @@ export default function Header() {
       transition={{ duration: 0.4, ease: 'easeOut' }}
       className="sticky top-0 z-50 bg-[var(--color-surface)]/90 backdrop-blur-md border-b border-[var(--color-border)] relative"
     >
+      <div
+        className="bible-ticker h-7 border-b border-[var(--color-border)]/70 bg-[var(--color-surface-warm)]/75"
+        aria-label="Comunicado: leve sua Bíblia"
+      >
+        <div className="bible-ticker-track h-full items-center justify-center">
+          <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-gold-dark)]">
+            Leve sua Bíblia
+          </span>
+        </div>
+      </div>
+
       <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-8 py-2 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4">
         <div className="relative w-full md:w-auto flex items-center justify-center md:justify-start">
           <Link
@@ -25,7 +36,7 @@ export default function Header() {
             aria-label="Página inicial"
           >
             <span className="flex-shrink-0">
-              <ParishCrest className="h-12 md:h-16 w-auto drop-shadow-sm group-hover:drop-shadow-md transition-all" />
+              <ParishCrest className="h-16 md:h-20 w-auto drop-shadow-sm group-hover:drop-shadow-md transition-all" />
             </span>
             <div className="hidden md:flex flex-col leading-tight min-w-0">
               <span className="text-[10px] tracking-[0.2em] uppercase text-[var(--color-text-muted)] font-medium truncate">
