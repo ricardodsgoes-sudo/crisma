@@ -1,20 +1,21 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
-import { encontros, gerarCalendarioEncontros } from '../data/encontros'
+import { encontros, gerarCalendarioEncontros, getEncontroAtual } from '../data/encontros'
 import { getHoje } from '../data/dataSimulada'
 
 export default function Encontros() {
   const calendario = gerarCalendarioEncontros()
   const hoje = getHoje()
+  const encontroAtual = getEncontroAtual(hoje)
 
   const lista = calendario.map((c) => {
     const dataObj = new Date(c.data + 'T00:00:00')
     const conteudo = encontros.find((e) => e.numero === c.numero)
     let status = 'futuro'
-    if (dataObj <= hoje) status = conteudo ? 'disponivel' : 'futuro'
-    if (dataObj < hoje) status = 'realizado'
-    if (dataObj.toDateString() === hoje.toDateString()) status = 'hoje'
+    if (conteudo && c.numero === encontroAtual.numero) status = 'atual'
+    else if (conteudo && dataObj < hoje) status = 'realizado'
+    else if (conteudo && dataObj <= hoje) status = 'disponivel'
 
     return { ...c, dataObj, conteudo, status }
   })
@@ -46,13 +47,13 @@ export default function Encontros() {
             const isRealizado = item.status === 'realizado'
 
             const cardBg = {
-              hoje: 'bg-white',
+              atual: 'bg-white',
               disponivel: 'bg-white',
               realizado: 'red-paper-bg',
               futuro: 'bg-white',
             }
             const cardBorder = {
-              hoje: 'ring-2 ring-[var(--color-primary)] shadow-xl',
+              atual: 'ring-2 ring-[var(--color-primary)] shadow-xl',
               disponivel: 'border-[var(--color-border)]',
               realizado: 'border-[var(--color-primary)]',
               futuro: 'border-[var(--color-border)]',
@@ -144,7 +145,7 @@ export default function Encontros() {
 
 function StatusBadge({ status }) {
   const config = {
-    hoje: { label: 'Hoje', short: 'Hoje', cls: 'bg-[var(--color-primary)] text-white' },
+    atual: { label: 'Atual', short: 'Atual', cls: 'bg-[var(--color-primary)] text-white' },
     disponivel: { label: 'Disponível', short: 'Ok', cls: 'bg-[var(--color-gold-light)] text-[var(--color-gold-dark)]' },
     realizado: { label: '✓ Realizado', short: '✓', cls: 'bg-white/20 text-white border border-white/30' },
     futuro: { label: 'Em breve', short: 'Breve', cls: 'bg-[var(--color-surface-warm)] text-[var(--color-text-muted)] border border-[var(--color-border)]' },

@@ -130,6 +130,23 @@ export function getEncontroById(id) {
   return encontros.find((e) => e.numero === Number(id))
 }
 
+export function getEncontroAtual(referencia = new Date()) {
+  const hoje = new Date(referencia)
+  hoje.setHours(0, 0, 0, 0)
+
+  const passadosComConteudo = gerarCalendarioEncontros()
+    .map((c) => ({
+      ...c,
+      dataObj: new Date(c.data + 'T00:00:00'),
+      conteudo: encontros.find((e) => e.numero === c.numero),
+    }))
+    .filter((c) => c.dataObj <= hoje && c.conteudo)
+
+  return passadosComConteudo.length > 0
+    ? passadosComConteudo[passadosComConteudo.length - 1].conteudo
+    : encontros[0]
+}
+
 export function getProximoSabado(referencia = new Date()) {
   const data = new Date(referencia)
   data.setHours(0, 0, 0, 0)

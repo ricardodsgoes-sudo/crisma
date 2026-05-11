@@ -50,14 +50,14 @@ export default function Header() {
             <ThemeToggle />
           </div>
 
-          <nav className="grid grid-cols-3 w-full md:w-[28rem] gap-1 md:gap-2 min-w-0">
+          <nav className="grid grid-cols-3 w-full md:w-[31rem] gap-1.5 md:gap-3 min-w-0">
             {links.map((link) => (
               <NavLink
                 key={link.to}
                 to={link.to}
                 end={link.to === '/'}
                 className={({ isActive }) =>
-                  `relative min-w-0 px-0.5 md:px-3 py-3.5 md:py-2 text-[12px] md:text-base text-center font-semibold md:font-medium transition-colors ${
+                  `relative min-w-0 px-0.5 md:px-3 py-3.5 md:py-2 text-[13px] md:text-[17px] text-center font-semibold md:font-medium transition-colors ${
                     isActive
                       ? 'text-[var(--color-primary)]'
                       : 'text-[var(--color-text)] hover:text-[var(--color-primary)]'
@@ -66,7 +66,7 @@ export default function Header() {
               >
                 {({ isActive }) => (
                   <>
-                    <span className="block md:hidden leading-tight">{link.short}</span>
+                    <span className="block md:hidden leading-snug">{link.short}</span>
                     <span className="hidden md:inline">{link.label}</span>
                     {isActive && (
                       <motion.span

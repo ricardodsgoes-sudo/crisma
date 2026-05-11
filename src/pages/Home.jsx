@@ -5,7 +5,7 @@ import PageTransition from '../components/PageTransition'
 import Countdown from '../components/Countdown'
 import InstallAppButton from '../components/InstallAppButton'
 import { CrismaCapa, DoveIcon } from '../components/Logo'
-import { encontros, gerarCalendarioEncontros } from '../data/encontros'
+import { encontros, gerarCalendarioEncontros, getEncontroAtual } from '../data/encontros'
 import { getHoje, SIMULANDO } from '../data/dataSimulada'
 
 export default function Home() {
@@ -19,20 +19,7 @@ export default function Home() {
     passado: new Date(c.data + 'T00:00:00') < hoje,
   }))
 
-  // Mostra o encontro do sábado mais recente que já aconteceu.
-  // Se ainda não houve nenhum, cai no primeiro disponível.
-  const passados = calendario
-    .map((c) => ({
-      ...c,
-      dataObj: new Date(c.data + 'T00:00:00'),
-      conteudo: encontros.find((e) => e.numero === c.numero),
-    }))
-    .filter((c) => c.dataObj <= hoje && c.conteudo)
-
-  const encontroAtual =
-    passados.length > 0
-      ? passados[passados.length - 1].conteudo
-      : encontros[0]
+  const encontroAtual = getEncontroAtual(hoje)
 
   return (
     <PageTransition>
