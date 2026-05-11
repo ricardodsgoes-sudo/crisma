@@ -6,7 +6,7 @@ Site interativo para os encontros semanais da Crisma de Adultos da **Paróquia M
 
 ## ✨ Funcionalidades
 
-- 🏠 **Página inicial** — apresentação, contagem regressiva ao vivo até o próximo sábado às 15h
+- 🏠 **Página inicial** — apresentação, contagem regressiva ao vivo até o próximo sábado, das 17h às 18h
 - 📅 **Lista de encontros** — todos os 17 sábados com status (hoje / disponível / realizado / em breve)
 - 📖 **Página do encontro** — formação completa em abas:
   - **Formação** — texto catequético dividido em tópicos
@@ -136,7 +136,7 @@ Edite o arquivo `src/data/encontros.js` e adicione um novo objeto na lista `enco
   numero: 2,
   titulo: 'Jesus Cristo',
   subtitulo: 'O Filho de Deus',
-  data: '2026-05-16',
+  data: '2026-05-09',
   versiculoDestaque: '...',
   versiculoRef: 'João 1,14',
   leituras: [

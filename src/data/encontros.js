@@ -4,7 +4,7 @@ export const encontros = [
     numero: 2,
     titulo: 'Deus Pai',
     subtitulo: 'Criador e Fonte da Vida',
-    data: '2026-05-16',
+    data: '2026-05-09',
     versiculoDestaque: 'No princípio, Deus criou o céu e a terra.',
     versiculoRef: 'Gênesis 1,1',
     leituras: [
@@ -156,7 +156,7 @@ export function getProximoSabado(referencia = new Date()) {
   return data
 }
 
-export function gerarCalendarioEncontros(inicio = '2026-05-09', total = 17) {
+export function gerarCalendarioEncontros(inicio = '2026-05-02', total = 17) {
   const lista = []
   const dataInicio = new Date(inicio + 'T00:00:00')
   for (let i = 0; i < total; i++) {
