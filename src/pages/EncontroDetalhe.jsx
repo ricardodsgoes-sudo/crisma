@@ -48,9 +48,21 @@ export default function EncontroDetalhe() {
   return (
     <PageTransition>
       <section className="red-paper-bg text-white relative overflow-hidden">
-        <div className="pointer-events-none absolute right-[-120px] sm:right-[-80px] md:right-[5vw] top-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[440px] md:h-[440px] opacity-[0.16] sm:opacity-[0.22] mix-blend-screen">
-          <DoveIcon className="w-full h-full" />
-        </div>
+        {!encontro.imagem && (
+          <div className="pointer-events-none absolute right-[-120px] sm:right-[-80px] md:right-[5vw] top-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[440px] md:h-[440px] opacity-[0.16] sm:opacity-[0.22] mix-blend-screen">
+            <DoveIcon className="w-full h-full" />
+          </div>
+        )}
+        {encontro.imagem && (
+          <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-[45%] hidden md:block">
+            <img
+              src={encontro.imagem}
+              alt={encontro.titulo}
+              className="w-full h-full object-cover object-center opacity-30"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#C41230] via-[#C41230]/60 to-transparent" />
+          </div>
+        )}
         <div className="relative max-w-5xl mx-auto px-4 md:px-8 py-10 sm:py-12 md:py-20">
           <div className="flex items-center justify-between gap-4 mb-5 sm:mb-6">
             <Link
@@ -91,6 +103,7 @@ export default function EncontroDetalhe() {
         </div>
       </section>
 
+      {(encontro.leituras?.length > 0 || encontro.reflexao?.length > 0 || encontro.recursos?.length > 0) && (
       <div className="sticky top-[124px] sm:top-[124px] md:top-[100px] z-40 bg-[var(--color-surface)]/95 backdrop-blur border-b border-[var(--color-border)] shadow-sm">
         <div className="max-w-5xl mx-auto px-3 sm:px-4 md:px-8 py-2 sm:py-0">
           <nav className="encounter-tabs-nav">
@@ -118,6 +131,7 @@ export default function EncontroDetalhe() {
           </nav>
         </div>
       </div>
+      )}
 
       <div className="w-full max-w-3xl mx-auto px-4 md:px-8 py-10 sm:py-12 md:py-16">
         <AnimatePresence mode="wait">
@@ -151,15 +165,17 @@ export default function EncontroDetalhe() {
                 </motion.article>
               ))}
 
-              <div className="border-t border-[var(--color-border)] pt-8 mt-12">
-                <Link
-                  to={`/encontros/${encontro.numero}/quiz`}
-                  className="inline-flex w-full sm:w-auto justify-center items-center gap-3 px-6 sm:px-8 py-4 bg-[var(--color-primary)] text-white rounded-full font-medium hover:bg-[var(--color-primary-dark)] transition-all shadow-lg hover:shadow-xl group"
-                >
-                  Testar o que aprendi com o quiz
-                  <span className="transition-transform group-hover:translate-x-1">→</span>
-                </Link>
-              </div>
+              {encontro.quiz?.length > 0 && (
+                <div className="border-t border-[var(--color-border)] pt-8 mt-12">
+                  <Link
+                    to={`/encontros/${encontro.numero}/quiz`}
+                    className="inline-flex w-full sm:w-auto justify-center items-center gap-3 px-6 sm:px-8 py-4 bg-[var(--color-primary)] text-white rounded-full font-medium hover:bg-[var(--color-primary-dark)] transition-all shadow-lg hover:shadow-xl group"
+                  >
+                    Testar o que aprendi com o quiz
+                    <span className="transition-transform group-hover:translate-x-1">→</span>
+                  </Link>
+                </div>
+              )}
             </motion.div>
           )}
 
@@ -319,6 +335,31 @@ export default function EncontroDetalhe() {
                   </motion.div>
                 ))}
               </div>
+
+              {encontro.musica && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 }}
+                  className="bg-[var(--color-surface-warm)] border border-[var(--color-border)] rounded-2xl p-6 mt-8"
+                >
+                  <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-gold-dark)] font-medium mb-3">
+                    Música do Encontro
+                  </p>
+                  <h3
+                    className="text-lg sm:text-xl mb-4 text-[var(--color-text)]"
+                    style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
+                  >
+                    {encontro.musica.titulo}
+                  </h3>
+                  <pre
+                    className="whitespace-pre-wrap text-[var(--color-text)] leading-relaxed text-sm sm:text-base italic"
+                    style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem' }}
+                  >
+                    {encontro.musica.letra}
+                  </pre>
+                </motion.div>
+              )}
             </motion.div>
           )}
         </AnimatePresence>

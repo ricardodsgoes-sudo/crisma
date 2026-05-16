@@ -1,5 +1,173 @@
 export const encontros = [
   {
+    id: 3,
+    numero: 3,
+    titulo: 'Deus Filho',
+    subtitulo: 'Jesus Cristo, o Messias Enviado pelo Pai',
+    imagem: '/deus-filho.webp',
+    data: '2026-05-16',
+    versiculoDestaque:
+      'De fato, para isso é que vocês foram chamados, pois Cristo também sofreu por vocês, deixando-lhes um exemplo para que sigam os seus passos.',
+    versiculoRef: '1 Pedro 2,21',
+    leituras: [
+      { ref: '1 Pedro 2, 21', titulo: 'Cristo nosso modelo e exemplo' },
+    ],
+    formacao: [
+      {
+        titulo: 'A boa nova: Deus enviou seu Filho',
+        conteudo:
+          'Cremos que Jesus de Nazaré, nascido judeu de uma filha de Israel, em Belém, no tempo do rei Herodes Magno e do Imperador César Augusto, carpinteiro, morto e crucificado em Jerusalém, é o Filho eterno de Deus feito homem. Movidos pela graça do Espírito Santo e atraídos pelo Pai, cremos e confessamos acerca de Jesus: "Tu és o Cristo, o Filho do Deus vivo". Foi sobre a rocha desta fé, confessada por São Pedro, que Cristo construiu a sua Igreja.\n\n"Jesus" significa, em hebraico, "Deus salva". Seu nome exprime sua identidade e sua missão, pois "ele vai salvar o povo dos seus pecados". "Cristo" significa em grego "Messias" e em hebraico "ungido". Jesus é o Cristo porque está consagrado por Deus, ungido pelo Espírito Santo para a missão redentora. É o Messias esperado por Israel, enviado ao mundo pelo Pai.',
+      },
+      {
+        titulo: 'Filho de Deus',
+        conteudo:
+          'Jesus é o Filho de Deus em sentido único e perfeito. No momento do Batismo e da Transfiguração, a voz do Pai designa Jesus como seu "Filho bem-amado". Apresentando a si mesmo como o Filho que "conhece o Pai", Jesus afirma a sua relação única e eterna com Deus.',
+      },
+      {
+        titulo: 'Senhor',
+        conteudo:
+          'O Novo Testamento utiliza o título de Senhor para o Pai e para Jesus, reconhecido assim como o próprio Deus. Jesus o atribui a si mesmo e revela a sua soberania divina mediante o seu poder sobre a natureza, sobre os demônios, sobre o pecado e sobre a morte, sobretudo com a sua Ressurreição.\n\nDesde o princípio da história cristã, a afirmação do senhorio de Jesus sobre o mundo e sobre a história significa também o reconhecimento de que o homem não deve submeter, de maneira absoluta, sua liberdade pessoal a nenhum poder terrestre, mas somente a Deus Pai e ao Senhor Jesus Cristo: César não é "o Senhor". A Igreja "crê que a chave, o centro e o fim de toda a história humana encontram-se em seu Senhor e Mestre".',
+      },
+      {
+        titulo: 'O Filho de Deus se fez homem',
+        conteudo:
+          'O Filho de Deus encarnou-se no seio da Virgem Maria por obra do Espírito Santo, "por nós homens e para nossa salvação", ou seja, para reconciliar a nós, pecadores, com Deus; para nos fazer conhecer seu amor infinito; para ser o nosso modelo de santidade; para nos fazer participantes da natureza divina. O acontecimento único e totalmente singular da Encarnação do Filho de Deus não significa que Jesus Cristo seja em parte Deus e em parte homem, nem que ele seja o resultado da mescla confusa entre o divino e o humano. Ele se fez verdadeiramente homem, permanecendo verdadeiro Deus.',
+      },
+      {
+        titulo: 'Paixão, morte e ressurreição de Jesus Cristo',
+        conteudo:
+          'O mistério pascal da cruz e da ressurreição de Cristo está no centro da Boa Nova que os Apóstolos e a Igreja, na continuidade deles, devem anunciar ao mundo. O projeto salvador de Deus realizou-se "uma vez por todas", pela morte redentora de seu Filho, Jesus Cristo. Todas as Escrituras ganham sentido e são iluminadas a partir do Mistério Pascal.\n\nJesus aceitou livremente os sofrimentos físicos e morais impostos pela injustiça dos pecadores. A cruz de Cristo é, antes de tudo, a manifestação do amor generoso da Trindade para com os homens, de um amor que nos salva. O mistério da Cruz, presente nos sacramentos, conduz-nos a uma vida nova. Por meio da ressurreição de Jesus, Deus inaugurou uma nova vida, a vida do mundo futuro, e a colocou à disposição dos homens.',
+      },
+    ],
+    reflexao: [
+      'Quem é Jesus Cristo para mim hoje?',
+      'Tenho reconhecido Jesus como Senhor da minha vida?',
+      'De que maneira posso seguir os passos de Cristo no meu dia a dia?',
+      'O que a cruz de Jesus me ensina sobre amor e entrega?',
+      'Como posso testemunhar a Ressurreição através da minha vida?',
+    ],
+    compromisso:
+      'Rezar diariamente a jaculatória: "Jesus, manso e humilde de coração, fazei o nosso coração semelhante ao Vosso". Durante a semana, meditar sobre a vida de Jesus e praticar um gesto concreto de amor, humildade ou perdão.',
+    musica: {
+      titulo: 'Ninguém te ama como Eu',
+      letra: `Tenho esperado este momento
+Tenho esperado que viesses a Mim
+Tenho esperado que Me fales
+Tenho esperado que estivesses assim
+
+Eu sei bem o que tens vivido
+Sei também que tens chorado
+Eu sei bem que tens sofrido
+Pois permaneço ao teu lado
+
+Ninguém te ama como Eu
+Ninguém te ama como Eu
+Olhe para a cruz, está é a Minha grande prova
+Ninguém te ama como Eu
+
+Ninguém te ama como Eu
+Ninguém te ama como Eu
+Olhe para a cruz, foi por ti, porque Eu te amo
+Ninguém te ama como Eu`,
+    },
+    recursos: [
+      { tipo: 'Música', titulo: 'Ninguém te ama como eu', autor: 'Música Católica' },
+      { tipo: 'Bíblia', titulo: 'Primeira Epístola de Pedro, capítulo 2' },
+      {
+        tipo: 'Catecismo',
+        titulo: 'Catecismo da Igreja Católica — Segunda Seção, Capítulo II',
+      },
+      {
+        tipo: 'Livro',
+        titulo:
+          'Síntese da Fé Católica: a doutrina da Igreja em 36 aulas (Cultor de Livros, 2023) — Tema 12: A Encarnação, p. 129-140; Tema 13: Paixão, morte e ressurreição de Jesus Cristo, p. 141-151',
+        autor: 'JIMÉNEZ, Gerard; YÁNIZ, Javier (org.)',
+      },
+    ],
+    quiz: [
+      {
+        pergunta: 'O que significa o nome "Jesus" em hebraico?',
+        opcoes: [
+          '"Deus reina"',
+          '"Deus cria"',
+          '"Deus salva"',
+          '"Deus ama"',
+        ],
+        correta: 2,
+        explicacao:
+          '"Jesus" significa, em hebraico, "Deus salva". Seu nome exprime sua identidade e missão: ele vai salvar o povo dos seus pecados.',
+      },
+      {
+        pergunta: 'O que significa o título "Cristo"?',
+        opcoes: [
+          '"Salvador" em latim',
+          '"Messias" em grego e "ungido" em hebraico',
+          '"Filho de Deus" em aramaico',
+          '"Senhor" em grego',
+        ],
+        correta: 1,
+        explicacao:
+          '"Cristo" significa em grego "Messias" e em hebraico "ungido". Jesus é o Cristo consagrado por Deus e ungido pelo Espírito Santo para a missão redentora.',
+      },
+      {
+        pergunta: 'Por que o Filho de Deus se encarnou?',
+        opcoes: [
+          'Apenas para cumprir as profecias do Antigo Testamento',
+          'Para reconciliar-nos com Deus, revelar seu amor, ser nosso modelo e nos fazer partícipes da natureza divina',
+          'Para estabelecer um reino político em Israel',
+          'Somente para fundar a Igreja Católica',
+        ],
+        correta: 1,
+        explicacao:
+          'O Filho de Deus encarnou-se "por nós homens e para nossa salvação": para nos reconciliar com Deus, revelar seu amor infinito, ser modelo de santidade e nos fazer participantes da natureza divina.',
+      },
+      {
+        pergunta: 'O que está no centro da Boa Nova anunciada pelos Apóstolos e pela Igreja?',
+        opcoes: [
+          'O nascimento de Jesus em Belém',
+          'Os milagres realizados por Jesus',
+          'O mistério pascal da cruz e da ressurreição de Cristo',
+          'A fundação da Igreja por São Pedro',
+        ],
+        correta: 2,
+        explicacao:
+          'O mistério pascal da cruz e da ressurreição de Cristo está no centro da Boa Nova que os Apóstolos e a Igreja devem anunciar ao mundo.',
+      },
+      {
+        pergunta: 'O que a afirmação do senhorio de Jesus implica para os cristãos?',
+        opcoes: [
+          'Obediência total ao poder político terrestre',
+          'Submissão absoluta às leis civis acima de tudo',
+          'Que nenhum poder terrestre pode ser absolutizado — somente Deus é Senhor',
+          'Afastamento completo da sociedade e do mundo',
+        ],
+        correta: 2,
+        explicacao:
+          'Reconhecer Jesus como Senhor significa que o homem não deve submeter, de maneira absoluta, sua liberdade a nenhum poder terrestre, mas somente a Deus Pai e ao Senhor Jesus Cristo.',
+      },
+    ],
+  },
+  {
+    id: 1,
+    numero: 1,
+    titulo: 'Apresentação',
+    subtitulo: 'Abertura e boas-vindas',
+    data: '2026-05-02',
+    versiculoDestaque: 'Vinde a mim, todos os que estais cansados e sobrecarregados, e eu vos aliviarei.',
+    versiculoRef: 'Mateus 11,28',
+    leituras: [],
+    formacao: [
+      {
+        titulo: 'Abertura do Crisma de Adultos 2026',
+        conteudo: 'Neste primeiro encontro, o Padre apresentou a proposta do Crisma de Adultos 2026, explicando a dinâmica dos encontros, o significado do sacramento da Confirmação e o caminho de formação que será percorrido ao longo dos sábados. Foi um momento de acolhida, apresentação dos participantes e abertura do coração para esta jornada de fé.',
+      },
+    ],
+    reflexao: [],
+    compromisso: '',
+    recursos: [],
+    quiz: [],
+  },
+  {
     id: 2,
     numero: 2,
     titulo: 'Deus Pai',

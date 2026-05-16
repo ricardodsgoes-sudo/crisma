@@ -33,16 +33,41 @@ export default function Countdown() {
   const [tempo, setTempo] = useState(calcularTempo())
 
   function calcularTempo() {
-    const proximoSabado = getProximoSabado(getHoje())
-    proximoSabado.setHours(17, 0, 0, 0)
-    const diff = proximoSabado.getTime() - Date.now()
-    const ms = Math.max(0, diff)
+    const agora = new Date()
+    const hoje = getHoje()
+    const diaSemana = hoje.getDay()
+
+    let alvo
+
+    if (diaSemana === 6) {
+      const inicio = new Date(hoje)
+      inicio.setHours(17, 0, 0, 0)
+      const fim = new Date(hoje)
+      fim.setHours(18, 0, 0, 0)
+
+      if (agora < inicio) {
+        alvo = inicio
+      } else if (agora < fim) {
+        return { emAndamento: true }
+      } else {
+        const proximoSabado = getProximoSabado(hoje)
+        proximoSabado.setHours(17, 0, 0, 0)
+        alvo = proximoSabado
+      }
+    } else {
+      const proximoSabado = getProximoSabado(hoje)
+      proximoSabado.setHours(17, 0, 0, 0)
+      alvo = proximoSabado
+    }
+
+    const ms = Math.max(0, alvo.getTime() - agora.getTime())
     return {
+      emAndamento: false,
       dias: Math.floor(ms / (1000 * 60 * 60 * 24)),
       horas: Math.floor((ms / (1000 * 60 * 60)) % 24),
       minutos: Math.floor((ms / (1000 * 60)) % 60),
       segundos: Math.floor((ms / 1000) % 60),
-      data: proximoSabado,
+      data: alvo,
     }
   }
 
@@ -51,16 +76,34 @@ export default function Countdown() {
     return () => clearInterval(interval)
   }, [])
 
+  if (tempo.emAndamento) {
+    return (
+      <div className="text-center">
+        <p className="text-xs md:text-sm uppercase tracking-[0.28em] sm:tracking-[0.35em] text-[var(--color-gold-light)] font-semibold mb-4">
+          Encontro em andamento
+        </p>
+        <p
+          className="text-2xl sm:text-3xl md:text-4xl text-white"
+          style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic', textShadow: '0 1px 4px rgba(0,0,0,0.2)' }}
+        >
+          Seja bem-vindo!
+        </p>
+      </div>
+    )
+  }
+
   const dataFormatada = tempo.data.toLocaleDateString('pt-BR', {
     weekday: 'long',
     day: 'numeric',
     month: 'long',
   })
 
+  const isSabadoHoje = getHoje().getDay() === 6
+
   return (
     <div className="text-center">
       <p className="text-xs md:text-sm uppercase tracking-[0.28em] sm:tracking-[0.35em] text-[var(--color-gold-light)] font-semibold mb-2">
-        Próximo Encontro
+        {isSabadoHoje ? 'O encontro começa em' : 'Próximo Encontro'}
       </p>
       <p
         className="text-lg sm:text-xl md:text-2xl text-white mb-6 sm:mb-8 capitalize"
