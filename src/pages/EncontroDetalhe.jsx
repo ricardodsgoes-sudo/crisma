@@ -48,21 +48,9 @@ export default function EncontroDetalhe() {
   return (
     <PageTransition>
       <section className="red-paper-bg text-white relative overflow-hidden">
-        {!encontro.imagem && (
-          <div className="pointer-events-none absolute right-[-120px] sm:right-[-80px] md:right-[5vw] top-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[440px] md:h-[440px] opacity-[0.16] sm:opacity-[0.22] mix-blend-screen">
-            <DoveIcon className="w-full h-full" />
-          </div>
-        )}
-        {encontro.imagem && (
-          <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-[45%] hidden md:block">
-            <img
-              src={encontro.imagem}
-              alt={encontro.titulo}
-              className="w-full h-full object-cover object-center opacity-30"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#C41230] via-[#C41230]/60 to-transparent" />
-          </div>
-        )}
+        <div className="pointer-events-none absolute right-[-120px] sm:right-[-80px] md:right-[5vw] top-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[440px] md:h-[440px] opacity-[0.16] sm:opacity-[0.22] mix-blend-screen">
+          <DoveIcon className="w-full h-full" />
+        </div>
         <div className="relative max-w-5xl mx-auto px-4 md:px-8 py-10 sm:py-12 md:py-20">
           <div className="flex items-center justify-between gap-4 mb-5 sm:mb-6">
             <Link
@@ -144,6 +132,21 @@ export default function EncontroDetalhe() {
               transition={{ duration: 0.2 }}
               className="space-y-10 sm:space-y-12"
             >
+              {encontro.imagem && (
+                <motion.div
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className="rounded-2xl overflow-hidden shadow-md"
+                >
+                  <img
+                    src={encontro.imagem}
+                    alt={encontro.titulo}
+                    className="w-full object-contain"
+                  />
+                </motion.div>
+              )}
+
               {encontro.formacao.map((secao, i) => (
                 <motion.article
                   key={secao.titulo}
