@@ -44,6 +44,16 @@
     </noscript>
   </head>
   <body>
+    <div id="preloader" style="position:fixed;inset:0;background:#C41230;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;transition:opacity 0.5s ease">
+      <img src="./brasao-logo.webp" alt="" style="width:110px;height:auto" />
+      <style>
+        #preloader img { animation: crisma-pulse 1.6s ease-in-out infinite; }
+        @keyframes crisma-pulse {
+          0%,100% { opacity:.75; transform:scale(1); }
+          50%      { opacity:1;   transform:scale(1.06); }
+        }
+      </style>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
