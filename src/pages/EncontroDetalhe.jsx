@@ -91,11 +91,11 @@ export default function EncontroDetalhe() {
         </div>
       </section>
 
-      {(encontro.leituras?.length > 0 || encontro.reflexao?.length > 0 || encontro.recursos?.length > 0) && (
+      {(encontro.leituras?.length > 0 || encontro.reflexao?.length > 0 || encontro.recursos?.length > 0 || encontro.compromisso || encontro.quiz?.length > 0) && (
       <div className="sticky top-[124px] sm:top-[124px] md:top-[100px] z-40 bg-[var(--color-surface)]/95 backdrop-blur border-b border-[var(--color-border)] shadow-sm">
         <div className="max-w-5xl mx-auto px-3 sm:px-4 md:px-8 py-2 sm:py-0">
           <nav className="encounter-tabs-nav">
-            {TABS.map((t) => (
+            {TABS.filter((t) => t.id !== 'recursos' || encontro.recursos?.length > 0).map((t) => (
               <button
                 key={t.id}
                 onClick={() => setAba(t.id)}

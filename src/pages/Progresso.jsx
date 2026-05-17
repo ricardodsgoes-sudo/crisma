@@ -111,9 +111,9 @@ export default function Progresso() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.03 }}
                   className={`flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl border border-[var(--color-border)] transition-colors ${
-                    item.disponivel && item.numero !== 1
+                    item.disponivel
                       ? 'hover:border-[var(--color-gold)] active:bg-[var(--color-surface-warm)]'
-                      : !item.disponivel ? 'opacity-70' : ''
+                      : 'opacity-70'
                   }`}
                 >
                   <div
@@ -137,7 +137,7 @@ export default function Progresso() {
                     </div>
                   </div>
 
-                  {item.disponivel && item.numero !== 1 && (
+                  {item.disponivel && (
                     <span
                       aria-hidden="true"
                       className="flex-shrink-0 text-[var(--color-text-muted)] text-xl leading-none"
@@ -148,7 +148,7 @@ export default function Progresso() {
                 </motion.div>
               )
 
-              const semLink = !item.disponivel || item.numero === 1
+              const semLink = !item.disponivel
 
               return !semLink ? (
                 <Link
