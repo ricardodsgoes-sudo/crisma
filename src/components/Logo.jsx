@@ -20,7 +20,7 @@ export function CrismaCapa({ className = '' }) {
 export function ParishCrest({ className = '' }) {
   return (
     <img
-      src="./brasao-logo.webp"
+      src="./logo sem fundo.png"
       alt="Brasão da Paróquia Maria Mãe de Deus"
       className={className}
       loading="lazy"

@@ -13,6 +13,7 @@ export default defineConfig({
       includeAssets: [
         'apple-touch-icon.png',
         'brasao-logo.webp',
+        'logo sem fundo.png',
         'crisma-capa.webp',
         'crisma-capa@2x.webp',
         'pomba.webp',
