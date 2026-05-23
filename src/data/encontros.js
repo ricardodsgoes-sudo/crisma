@@ -1,5 +1,171 @@
 export const encontros = [
   {
+    id: 4,
+    numero: 4,
+    titulo: 'Deus Espírito Santo',
+    subtitulo: 'A terceira Pessoa da Santíssima Trindade',
+    imagem: '/Espirito Santo.png',
+    data: '2026-05-23',
+    versiculoDestaque:
+      'Apareceram então línguas como de fogo, que se repartiram e pousaram sobre cada um deles. Todos ficaram repletos do Espírito Santo.',
+    versiculoRef: 'Atos 2,3-4',
+    leituras: [
+      { ref: 'Atos 2, 3-4', titulo: 'A vinda do Espírito Santo em Pentecostes' },
+    ],
+    formacao: [
+      {
+        titulo: 'Creio no Espírito Santo',
+        conteudo:
+          'Crer no Espírito Santo é acreditar que Ele é a terceira Pessoa da Santíssima Trindade, unido ao Pai e ao Filho. O Espírito Santo foi revelado por Deus e continua agindo na Igreja e na vida dos cristãos.\n\nÉ através do Espírito Santo que acontece a missão da Igreja, a comunhão dos santos, o perdão dos pecados e a esperança da vida eterna.\n\nConhecemos a ação do Espírito Santo: nas Sagradas Escrituras; na Tradição da Igreja; no Magistério; nos sacramentos; na oração; nos carismas e ministérios; na missão evangelizadora; e no testemunho dos santos.',
+        imagem: '/ilustração enconto 4.png',
+      },
+      {
+        titulo: 'Os nomes e os símbolos do Espírito Santo',
+        conteudo:
+          'O termo "Espírito" traduz o termo hebraico "ruah", o qual, em seu sentido primeiro, significa sopro, ar, vento. Ao prometer a vinda do Espírito Santo, Jesus o denomina "Paráclito": "aquele que é chamado para perto de...", "defensor".',
+        visual: 'denominacoesEspirito',
+      },
+      {
+        titulo: 'O Espírito no tempo das promessas',
+        conteudo:
+          'O Espírito Santo está presente na obra da criação do homem, a quem Deus "soprou" dando-lhe a vida. Ele também falou pelos profetas, isto é, através de todos os que foram inspirados pelo Espírito para falar em nome de Deus. O Espírito dá às profecias do Antigo Testamento pleno cumprimento em Cristo, cujo mistério desvenda no Novo Testamento.',
+      },
+      {
+        titulo: 'Pentecostes',
+        conteudo:
+          'Cinquenta dias depois da Ressurreição ocorre uma grande teofania diante dos discípulos reunidos no cenáculo: um grande barulho, vento forte e línguas de fogo. Cristo glorificado derrama em profusão o Espírito e o manifesta como Pessoa divina, de modo que a Trindade Santa é plenamente revelada. O Espírito é a nova lei escrita nos corações. A Igreja, novo Povo de Deus, nasce aberta a todos os povos. Os apóstolos narram "as maravilhas de Deus", começando a "falar em outras línguas".\n\nNeste dia os apóstolos sofreram uma impressionante mutação espiritual: deixaram de ser covardes para se tornarem homens cheios de coragem; de ignorantes, em sábios; de vacilantes, em pessoas seguras; de débeis, em fortes. Neste dia começou a era da Igreja, a qual perdurará de geração em geração até o fim dos tempos.',
+      },
+      {
+        titulo: 'O que faz o Espírito na Igreja?',
+        conteudo:
+          'O Espírito edifica, anima e santifica a Igreja. Sendo Espírito de Amor, dá aos batizados a semelhança divina perdida por causa do pecado e os faz viver em Cristo a Vida da Trindade Santa. Manda-os testemunhar a Verdade de Cristo e os organiza nas suas mútuas funções, a fim de que todos produzam "o fruto do Espírito". Por meio dos sacramentos, Cristo comunica o seu Espírito e a graça de Deus que produz os frutos de vida nova. O Espírito é também o Mestre da oração, é a máxima intimidade de Deus em nós. O que a alma é para o corpo humano o Espírito é para o Corpo de Cristo, a Igreja.\n\n"Onde está o Espírito do Senhor, aí está a liberdade." (2 Coríntios 3,17)',
+      },
+    ],
+    reflexao: [
+      'Tenho buscado a presença do Espírito Santo na minha vida?',
+      'Quais frutos do Espírito preciso desenvolver mais?',
+      'De que forma posso testemunhar Jesus no meu dia a dia?',
+      'Tenho reservado tempo para oração e escuta de Deus?',
+      'O que Pentecostes ensina para minha caminhada cristã?',
+    ],
+    compromisso:
+      'Rezar diariamente "Vinde, Espírito Santo!", ler Atos dos Apóstolos capítulos 1 e 2, e pesquisar sobre os dons, carismas e frutos do Espírito Santo, pedindo um dom específico para sua vida familiar, profissional ou comunitária.',
+    musica: {
+      titulo: 'Eu Navegarei',
+      letra: `Eu navegarei
+No oceano do Espírito
+E ali adorarei
+Ao Deus do meu amor
+Eu adorarei
+Ao Deus da minha vida
+Que me compreendeu
+Sem nenhuma explicação
+
+Espírito, Espírito
+Que desce como fogo
+Vem como em Pentecostes
+E enche-me de novo
+Espírito, Espírito
+Que desce como fogo
+Vem como em Pentecostes
+E enche-me de novo
+
+Eu navegarei
+No oceano do Espírito
+E ali adorarei
+Ao Deus do meu amor
+Eu adorarei
+Ao Deus da minha vida
+Que me compreendeu
+Sem nenhuma explicação
+
+Espírito, Espírito
+Que desce como fogo
+Vem como em Pentecostes
+E enche-me de novo
+Espírito, Espírito
+Que desce como fogo
+Vem como em Pentecostes
+E enche-me de novo`,
+    },
+    recursos: [
+      { tipo: 'Música', titulo: 'Eu navegarei', autor: 'Gabriela Rocha' },
+      { tipo: 'Bíblia', titulo: 'Atos dos Apóstolos, capítulos 1 e 2' },
+      {
+        tipo: 'Catecismo',
+        titulo: 'Catecismo da Igreja Católica — Segunda Seção, Capítulo III',
+      },
+      {
+        tipo: 'Livro',
+        titulo:
+          'Síntese da Fé Católica: a doutrina da Igreja em 36 aulas (Cultor de Livros, 2023) — Tema 14: O Espírito Santo e sua ação na Igreja, p. 153-158',
+        autor: 'JIMÉNEZ, Gerard; YÁNIZ, Javier (org.)',
+      },
+    ],
+    quiz: [
+      {
+        pergunta: 'O que significa o termo hebraico "ruah", do qual deriva a palavra "Espírito"?',
+        opcoes: [
+          'Luz, brilho, esplendor',
+          'Sopro, ar, vento',
+          'Fogo, calor, chama',
+          'Voz, palavra, anúncio',
+        ],
+        correta: 1,
+        explicacao:
+          'O termo "Espírito" traduz o hebraico "ruah", que em seu sentido primeiro significa sopro, ar, vento.',
+      },
+      {
+        pergunta: 'Como Jesus denomina o Espírito Santo ao prometer sua vinda?',
+        opcoes: [
+          'Mestre',
+          'Senhor',
+          'Paráclito',
+          'Consolador eterno',
+        ],
+        correta: 2,
+        explicacao:
+          'Jesus denomina o Espírito Santo "Paráclito": aquele que é chamado para perto de..., defensor.',
+      },
+      {
+        pergunta: 'O que aconteceu com os apóstolos em Pentecostes?',
+        opcoes: [
+          'Receberam o sacramento da Ordem',
+          'Sofreram uma impressionante mutação espiritual: de covardes a corajosos, de ignorantes a sábios, de débeis a fortes',
+          'Iniciaram a redação dos Evangelhos',
+          'Foram enviados para a Terra Prometida',
+        ],
+        correta: 1,
+        explicacao:
+          'Em Pentecostes os apóstolos sofreram uma impressionante mutação espiritual: deixaram de ser covardes para se tornarem cheios de coragem, de ignorantes em sábios, de vacilantes em seguros, de débeis em fortes.',
+      },
+      {
+        pergunta: 'Segundo a formação, o que o Espírito faz na Igreja?',
+        opcoes: [
+          'Apenas inspira os profetas do Antigo Testamento',
+          'Edifica, anima e santifica a Igreja',
+          'Substitui a presença de Cristo entre nós',
+          'Atua somente no momento dos sacramentos',
+        ],
+        correta: 1,
+        explicacao:
+          'O Espírito edifica, anima e santifica a Igreja. Ele é para o Corpo de Cristo, a Igreja, o que a alma é para o corpo humano.',
+      },
+      {
+        pergunta: 'Qual destas é uma das denominações do Espírito Santo nas cartas de São Paulo?',
+        opcoes: [
+          'Espírito da Lei (Gl 5,1)',
+          'Espírito de Adoção (Rm 8,15)',
+          'Espírito do Templo (1Cor 3,16)',
+          'Espírito da Aliança (Hb 9,15)',
+        ],
+        correta: 1,
+        explicacao:
+          'Nas cartas de São Paulo o Espírito Santo é chamado, entre outros nomes, de Espírito de Adoção (Rm 8,15), Espírito Prometido (Gl 3,14), Espírito de Cristo (Rm 8,11), Espírito do Senhor (2Cor 3,17) e Espírito de Deus (Rm 8,9.14).',
+      },
+    ],
+  },
+  {
     id: 3,
     numero: 3,
     titulo: 'Deus Filho',

@@ -4,7 +4,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
 import { DoveIcon } from '../components/Logo'
 import ShareButton from '../components/ShareButton'
+import DenominacoesEspirito from '../components/DenominacoesEspirito'
 import { getEncontroById } from '../data/encontros'
+
+const VISUAIS = {
+  denominacoesEspirito: DenominacoesEspirito,
+}
 
 const TABS = [
   { id: 'formacao', label: 'Formação', short: 'Formação' },
@@ -157,6 +162,15 @@ export default function EncontroDetalhe() {
                   <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 text-[var(--color-primary)]">
                     {secao.titulo}
                   </h2>
+                  {secao.imagem && (
+                    <div className="rounded-2xl overflow-hidden shadow-md mb-6">
+                      <img
+                        src={secao.imagem}
+                        alt={secao.titulo}
+                        className="w-full object-contain"
+                      />
+                    </div>
+                  )}
                   {secao.conteudo.split('\n\n').map((paragrafo, j) => (
                     <p
                       key={j}
@@ -165,6 +179,10 @@ export default function EncontroDetalhe() {
                       {paragrafo}
                     </p>
                   ))}
+                  {secao.visual && VISUAIS[secao.visual] && (() => {
+                    const Visual = VISUAIS[secao.visual]
+                    return <Visual />
+                  })()}
                 </motion.article>
               ))}
 

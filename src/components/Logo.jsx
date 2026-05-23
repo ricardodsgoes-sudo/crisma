@@ -4,8 +4,8 @@
 export function CrismaCapa({ className = '' }) {
   return (
     <img
-      src="./crisma-capa.webp"
-      srcSet="./crisma-capa.webp 1x, ./crisma-capa@2x.webp 2x"
+      src="/crisma-capa.webp"
+      srcSet="/crisma-capa.webp 1x, /crisma-capa@2x.webp 2x"
       alt="Crisma de Adultos 2026 — Paróquia Maria Mãe de Deus"
       className={className}
       loading="eager"
@@ -20,7 +20,7 @@ export function CrismaCapa({ className = '' }) {
 export function ParishCrest({ className = '' }) {
   return (
     <img
-      src="./logo sem fundo.png"
+      src="/logo sem fundo.png"
       alt="Brasão da Paróquia Maria Mãe de Deus"
       className={className}
       loading="lazy"
@@ -34,7 +34,7 @@ export function ParishCrest({ className = '' }) {
 export function DoveIcon({ className = '', style = {} }) {
   return (
     <img
-      src="./pomba.webp"
+      src="/pomba.webp"
       alt=""
       aria-hidden="true"
       className={`object-contain ${className}`}
