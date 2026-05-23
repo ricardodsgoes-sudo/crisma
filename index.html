@@ -27,6 +27,15 @@
     <!-- Preload do hero LCP para reduzir Largest Contentful Paint -->
     <link rel="preload" as="image" href="./crisma-capa.webp" imagesrcset="./crisma-capa.webp 1x, ./crisma-capa@2x.webp 2x" fetchpriority="high" />
 
+    <!-- Google Analytics GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVRQMC8J9K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LVRQMC8J9K');
+    </script>
+
     <!-- Google Fonts com preconnect + async (não bloqueia render) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
