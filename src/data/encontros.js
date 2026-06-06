@@ -539,15 +539,28 @@ export function getProximoSabado(referencia = new Date()) {
   return data
 }
 
-export function gerarCalendarioEncontros(inicio = '2026-05-02', total = 17) {
+// Sábados em que NÃO houve encontro. A sequência "pula" estas datas:
+// elas não recebem número nem aparecem no calendário, e os encontros
+// seguintes avançam uma semana para reocupar o lugar.
+export const SABADOS_SEM_ENCONTRO = ['2026-05-30']
+
+export function gerarCalendarioEncontros(
+  inicio = '2026-05-02',
+  total = 17,
+  puladas = SABADOS_SEM_ENCONTRO
+) {
   const lista = []
   const dataInicio = new Date(inicio + 'T00:00:00')
-  for (let i = 0; i < total; i++) {
+  let semana = 0
+  while (lista.length < total) {
     const data = new Date(dataInicio)
-    data.setDate(data.getDate() + i * 7)
+    data.setDate(data.getDate() + semana * 7)
+    semana++
+    const iso = data.toISOString().slice(0, 10)
+    if (puladas.includes(iso)) continue // sábado sem encontro: não conta na numeração
     lista.push({
-      numero: i + 1,
-      data: data.toISOString().slice(0, 10),
+      numero: lista.length + 1,
+      data: iso,
     })
   }
   return lista

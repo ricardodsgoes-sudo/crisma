@@ -12,8 +12,9 @@ O PDF contém: oração inicial, palavra de Deus, texto de formação, reflexão
 2. **Determinar o número do encontro** no calendário do app:
    - O calendário começa em `2026-05-02` (1º sábado) com `numero: 1`.
    - Cada sábado subsequente é `numero + 1`.
+   - **Sábados sem encontro NÃO contam.** Eles estão listados em `SABADOS_SEM_ENCONTRO` em `src/data/encontros.js` (ex.: `2026-05-30` não teve encontro). A sequência os "pula": os encontros seguintes avançam uma semana.
    - O PDF pode usar numeração interna diferente (ex.: "Encontro 2 – Deus Filho"), mas no app o número é o do calendário (sábado correspondente).
-   - O encontro atual é sempre o sábado mais recente. Use a data do encontro para calcular: `numero = (dias desde 2026-05-02 / 7) + 1`.
+   - O encontro atual é sempre o sábado mais recente. Para achar o número, use a função `gerarCalendarioEncontros()` (que já desconta os sábados sem encontro) e localize a data do encontro na lista — o `numero` dela é o número correto. Não use a fórmula simples `dias / 7` sozinha, pois ela ignora os sábados pulados.
 
 3. **Extrair os dados** do PDF e montar o objeto no padrão abaixo.
 
