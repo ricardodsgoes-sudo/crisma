@@ -1,5 +1,189 @@
 export const encontros = [
   {
+    id: 5,
+    numero: 5,
+    titulo: 'A Santíssima Trindade e a Igreja',
+    subtitulo: 'Um só Deus em três Pessoas e a Igreja, Povo de Deus',
+    imagem: '/trindade.png',
+    data: '2026-06-06',
+    versiculoDestaque:
+      'Ide, pois, e fazei discípulos todos os povos, batizando-os em nome do Pai, do Filho e do Espírito Santo.',
+    versiculoRef: 'Mateus 28,19',
+    leituras: [
+      {
+        ref: 'Mateus 28, 19',
+        titulo: 'Ide e fazei discípulos todos os povos, batizando-os em nome do Pai, do Filho e do Espírito Santo',
+      },
+      {
+        ref: 'Mateus 16, 18',
+        titulo: 'Tu és Pedro, e sobre esta pedra edificarei a minha Igreja',
+      },
+    ],
+    formacao: [
+      {
+        titulo: 'O Mistério da Santíssima Trindade',
+        conteudo:
+          'O mistério da Santíssima Trindade é o mistério central da fé e da vida cristã. É o ensinamento mais fundamental e essencial na hierarquia das verdades de fé. É a principal doutrina do cristianismo, pois revela a verdade absoluta de Deus. Os outros mistérios da nossa fé nos dizem o que Deus realizou no tempo (Criação, Encarnação, Ressurreição...), mas a Trindade nos diz o que Deus é na eternidade. O parâmetro da teologia é, antes de tudo, o próprio Cristo. Por um lado, Ele chamou Deus de Pai, rezou para Ele, amou-o, obedeceu sua vontade. Por outro lado, afirmou ser um com o Pai e igual a Ele. E também prometeu enviar o seu Espírito.\n\nOs dados da Escritura, com base nos quais a Igreja deriva a doutrina trinitária, são essencialmente: há um único Deus (Dt 6,4); o Pai é Deus (Jo 5,18); o Filho é Deus (Jo 8,58); o Espírito Santo é Deus (Mt 28,19).',
+        imagem: '/trindade 2.png',
+      },
+      {
+        titulo: 'O Dogma da Santíssima Trindade',
+        conteudo:
+          'A Trindade é Una. Não professamos três deuses, mas um só Deus em três pessoas. As pessoas divinas não dividem entre si a única divindade, mas cada uma delas é Deus por inteiro. São distintos entre si por suas relações de origem: é o Pai que gera, o Filho que é gerado, o Espírito Santo que procede e cada pessoa divina cumpre a obra comum segundo a sua propriedade pessoal, no entanto não são três princípios das criaturas, mas um só princípio. A Unidade divina é Trina.',
+      },
+      {
+        titulo: 'Creio na Santa Igreja Católica',
+        conteudo:
+          'A palavra "igreja" [ekklésia, do grego \'ekkaléin\' - \'chamar para fora\'] significa "convocação". É um termo que designa assembleias do povo, em especial de caráter religioso. No Antigo Testamento é frequentemente usado para referir-se à assembleia do povo eleito diante de Deus, em especial no Sinai, onde Israel recebeu a Lei e foi constituído por Deus como seu povo santo. Ao se denominar "Igreja", a primeira comunidade dos seguidores de Jesus se reconhece herdeira dessa assembleia. Nela, Deus "convoca" seu povo de todos os confins da terra.\n\nNa linguagem cristã, a palavra Igreja designa a assembleia litúrgica, mas também a comunidade local ou toda a comunidade universal dos crentes. Esses três significados são inseparáveis: a Igreja é o Povo de Deus que se reúne no mundo inteiro. Existe nas comunidades locais e se realiza na liturgia.',
+        imagem: '/santa igreja.png',
+      },
+      {
+        titulo: 'Origem, fundação e missão da Igreja',
+        conteudo:
+          'É um projeto nascido no coração do Pai. Desde o princípio, a Igreja fez parte do desígnio de Deus de compartilhar sua vida divina com os homens. A "família de Deus", que é a Igreja, foi se formando gradualmente ao longo das etapas da história humana. Jesus levou à sua plenitude o desígnio de Deus para a Igreja, primeiro através de sua pregação e dando testemunho da Boa Nova do Reino, com seus dons de libertação do pecado e participação na vida divina. Jesus instituiu os princípios de uma estrutura visível da Igreja que permanecerão até que o Reino seja totalmente realizado, através da escolha dos Doze Apóstolos, tendo Pedro como cabeça. A Igreja foi manifestada pelo Espírito Santo e será consumada na Glória.',
+      },
+      {
+        titulo: 'O mistério da Igreja',
+        conteudo:
+          'A Igreja é muito mais do que aquilo que podemos ver. A Igreja é "o Corpo místico (invisível) de Cristo". Mas ela é também "o Povo (visível) de Deus". Tal como o homem é, simultaneamente, invisível (alma) e visível (corpo), assim é Cristo e assim é a sua Igreja. A Igreja é um sacramento da união de todos os homens com Deus e um sacramento da união de todos os povos entre si, já que a Igreja une pessoas de "todas as nações, tribos, povos e línguas". A Igreja é o projeto visível do amor de Deus pela humanidade que quer que o gênero humano inteiro constitua o único povo de Deus, se congregue no único corpo de Cristo, seja construído no único templo do Espírito Santo.\n\nOs atributos da Igreja: os atributos da Igreja são as propriedades essenciais que a caracterizam e que professamos no Símbolo Niceno-Constantinopolitano: a Igreja é una, santa, católica e apostólica.',
+      },
+    ],
+    reflexao: [
+      'O que mais me chamou atenção sobre a Santíssima Trindade?',
+      'Como posso viver melhor a comunhão dentro da Igreja?',
+      'Tenho participado da vida da minha comunidade?',
+    ],
+    compromisso:
+      'Rezar diariamente o Sinal da Cruz com mais atenção; participar da Santa Missa durante a semana; ler Mateus 16,13-20; rezar um Pai-Nosso, uma Ave-Maria e um Glória pelas necessidades da Igreja, pelo Papa e pelo nosso Padre; e procurar conhecer melhor algum serviço ou pastoral da comunidade.',
+    musicas: [
+      {
+        titulo: 'A tua Igreja vem feliz e unida',
+        letra: `A Tua Igreja vem feliz e unida
+Agradecer a Ti, ó Deus da vida
+Com grande júbilo, rezar, louvar
+E a boa nova ao mundo anunciar
+
+É Tua Igreja, Senhor
+Que canta com alegria
+Esta que busca o amor
+Vivenciar todo dia
+Que vai levar salvação
+Esta é a nossa missão
+
+Nós que fazemos parte desta Igreja
+Que missionária é por natureza
+Te damos graças por Teu esplendor
+Seremos eco do Teu grande amor
+
+Todos os povos serão Teus discípulos
+E batizados com Teu Santo Espírito
+Temos certeza de tua companhia
+Nos dando força hoje e todo dia`,
+      },
+      {
+        titulo: 'Misericórdia Infinita',
+        letra: `Olha para tua história, tua vida
+O que ainda te prende ao que passou?
+
+Se tantos hinos cantamos
+Tantos salmos recitamos
+Falando da misericórdia infinita do Pai
+Tantos hinos cantamos
+Tantos salmos recitamos
+Falando da misericórdia infinita do Pai
+
+Saibas que todo o teu pecado, em toda a tua vida
+É uma pequena gota que se derramou no mar
+Da misericórdia infinita de Deus
+Quem poderá dizer que ela existiu?
+Foi uma pequena gota
+O mar a consumiu
+
+Saibas que todo o teu pecado, em toda a tua vida
+É uma pequena gota que se derramou no mar
+Da misericórdia infinita de Deus
+Quem poderá dizer que ela existiu?
+Foi uma pequena gota
+O mar a consumiu!
+Foi uma pequena gota
+O mar a consumiu!`,
+      },
+    ],
+    recursos: [
+      { tipo: 'Música', titulo: 'A tua Igreja vem feliz e unida', autor: 'Música Católica' },
+      { tipo: 'Música', titulo: 'Misericórdia Infinita', autor: 'Música Católica' },
+      { tipo: 'Bíblia', titulo: 'Evangelho segundo Mateus' },
+      {
+        tipo: 'Catecismo',
+        titulo:
+          'Catecismo da Igreja Católica — Segunda Seção, Capítulo I, Parágrafo 2; Capítulo III, Artigo 9',
+      },
+    ],
+    quiz: [
+      {
+        pergunta: 'Segundo a formação, o que o mistério da Santíssima Trindade nos revela?',
+        opcoes: [
+          'O que Deus realizou no tempo: Criação, Encarnação e Ressurreição',
+          'O que Deus é na eternidade',
+          'Apenas a história do povo de Israel',
+          'As regras morais da vida cristã',
+        ],
+        correta: 1,
+        explicacao:
+          'Os outros mistérios da fé nos dizem o que Deus realizou no tempo (Criação, Encarnação, Ressurreição), mas a Trindade nos diz o que Deus é na eternidade.',
+      },
+      {
+        pergunta: 'O que afirma o dogma da Santíssima Trindade?',
+        opcoes: [
+          'Que existem três deuses distintos',
+          'Que Deus é uma só pessoa com três nomes diferentes',
+          'Que há um só Deus em três pessoas, sendo cada uma delas Deus por inteiro',
+          'Que o Pai é maior que o Filho e o Espírito Santo',
+        ],
+        correta: 2,
+        explicacao:
+          'Não professamos três deuses, mas um só Deus em três pessoas. As pessoas divinas não dividem entre si a única divindade, mas cada uma delas é Deus por inteiro.',
+      },
+      {
+        pergunta: 'Como se distinguem entre si as três Pessoas divinas?',
+        opcoes: [
+          'Por suas relações de origem: o Pai gera, o Filho é gerado e o Espírito Santo procede',
+          'Por terem poderes e naturezas diferentes',
+          'Por agirem em tempos diferentes da história',
+          'Por habitarem lugares distintos',
+        ],
+        correta: 0,
+        explicacao:
+          'As Pessoas divinas são distintas entre si por suas relações de origem: é o Pai que gera, o Filho que é gerado e o Espírito Santo que procede.',
+      },
+      {
+        pergunta: 'O que significa a palavra "igreja" (ekklésia), do grego "ekkaléin"?',
+        opcoes: [
+          'Templo ou edifício sagrado',
+          'Convocação — assembleia chamada para fora',
+          'Família reunida pela fé',
+          'Reino de Deus na terra',
+        ],
+        correta: 1,
+        explicacao:
+          'A palavra "igreja" [ekklésia, do grego \'ekkaléin\' - \'chamar para fora\'] significa "convocação"; designa a assembleia do povo que Deus convoca.',
+      },
+      {
+        pergunta:
+          'Quais são os atributos da Igreja professados no Símbolo Niceno-Constantinopolitano?',
+        opcoes: [
+          'Visível, invisível, local e universal',
+          'Una, santa, católica e apostólica',
+          'Pobre, missionária, orante e servidora',
+          'Romana, oriental, latina e grega',
+        ],
+        correta: 1,
+        explicacao:
+          'Os atributos da Igreja são as propriedades essenciais que professamos no Símbolo Niceno-Constantinopolitano: a Igreja é una, santa, católica e apostólica.',
+      },
+    ],
+  },
+  {
     id: 4,
     numero: 4,
     titulo: 'Deus Espírito Santo',

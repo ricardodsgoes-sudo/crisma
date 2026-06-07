@@ -40,6 +40,8 @@ export default function EncontroDetalhe() {
 
   if (!encontro) return <Navigate to="/encontros" replace />
 
+  const musicas = encontro.musicas ?? (encontro.musica ? [encontro.musica] : [])
+
   function toggleCompromisso() {
     const novo = !compromissoFeito
     setCompromissoFeito(novo)
@@ -357,7 +359,7 @@ export default function EncontroDetalhe() {
                 ))}
               </div>
 
-              {encontro.musica && (
+              {musicas.length > 0 && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -365,20 +367,31 @@ export default function EncontroDetalhe() {
                   className="bg-[var(--color-surface-warm)] border border-[var(--color-border)] rounded-2xl p-6 mt-8"
                 >
                   <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-gold-dark)] font-medium mb-3">
-                    Música do Encontro
+                    {musicas.length > 1 ? 'Músicas do Encontro' : 'Música do Encontro'}
                   </p>
-                  <h3
-                    className="text-lg sm:text-xl mb-4 text-[var(--color-text)]"
-                    style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
-                  >
-                    {encontro.musica.titulo}
-                  </h3>
-                  <pre
-                    className="whitespace-pre-wrap text-[var(--color-text)] leading-relaxed text-sm sm:text-base italic"
-                    style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem' }}
-                  >
-                    {encontro.musica.letra}
-                  </pre>
+                  <div className="space-y-8">
+                    {musicas.map((m, i) => (
+                      <div
+                        key={m.titulo}
+                        className={
+                          i > 0 ? 'border-t border-[var(--color-border)] pt-6' : ''
+                        }
+                      >
+                        <h3
+                          className="text-lg sm:text-xl mb-4 text-[var(--color-text)]"
+                          style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
+                        >
+                          {m.titulo}
+                        </h3>
+                        <pre
+                          className="whitespace-pre-wrap text-[var(--color-text)] leading-relaxed text-sm sm:text-base italic"
+                          style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem' }}
+                        >
+                          {m.letra}
+                        </pre>
+                      </div>
+                    ))}
+                  </div>
                 </motion.div>
               )}
             </motion.div>
