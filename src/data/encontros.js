@@ -1,5 +1,215 @@
 export const encontros = [
   {
+    id: 6,
+    numero: 6,
+    titulo: 'Vida de Oração',
+    subtitulo: 'Conversar, escutar e permanecer na presença de Deus',
+    imagem: '/6 encontro imagem.png',
+    data: '2026-06-13',
+    versiculoDestaque:
+      'Alegrai-vos sempre. Orai sem cessar. Em todas as circunstâncias dai graças, pois esta é a vontade de Deus a vosso respeito, em Cristo Jesus.',
+    versiculoRef: '1 Tessalonicenses 5,16-18',
+    leituras: [
+      { ref: '1 Tessalonicenses 5, 16-18', titulo: 'Alegrai-vos sempre, orai sem cessar e dai graças' },
+    ],
+    formacao: [
+      {
+        titulo: 'Meditando a Palavra',
+        conteudo:
+          'São Paulo nos convida a viver uma fé que transforma todo o nosso dia: alegrar-se, rezar e agradecer. A verdadeira alegria nasce da certeza de que Deus caminha conosco, mesmo nas dificuldades. A oração constante nos mantém unidos ao Senhor, e a gratidão abre nossos olhos para reconhecer sua presença em cada momento. Quem vive assim descobre que a vontade de Deus não é um peso, mas um caminho de amor e plenitude.',
+      },
+      {
+        titulo: 'O que é a oração?',
+        conteudo:
+          'Santa Teresinha do Menino Jesus dizia: "A oração é um impulso do coração, um simples olhar dirigido ao céu." A oração não é apenas repetir palavras, ela é conversar com Deus, escutar Deus, permanecer na sua presença e cultivar uma amizade com Ele.\n\nO conteúdo da oração, como o de todo o diálogo de amor, pode ser múltiplo e variado. Destaca-se:\n\nPetição — é frequente ao longo de toda a Sagrada Escritura. O reconhecimento da realidade de Deus provoca a tendência de dirigir-se a Ele, solicitando sua proteção e ajuda.\n\nAção de graças — o reconhecimento dos bens recebidos, e através deles da magnificência e misericórdia divinas, leva a dirigir o espírito a Deus para proclamar e agradecer os seus benefícios.\n\nAdoração e louvor — faz parte essencial da oração reconhecer e proclamar a grandeza de Deus, a plenitude do seu ser, a infinidade da sua bondade e do seu amor. A partir da consideração da beleza e magnitude do universo, podemos chegar ao louvor. A oração será sempre um encontro íntimo e filial entre o homem e Deus.',
+      },
+      {
+        titulo: 'Expressões ou formas de oração',
+        conteudo:
+          'O Catecismo da Igreja Católica estrutura sua exposição distinguindo entre oração vocal, meditação e oração de contemplação. As três têm em comum uma característica fundamental: o recolhimento do coração.',
+      },
+      {
+        titulo: 'Oração vocal',
+        imagem: '/01.png',
+      },
+      {
+        titulo: 'Meditação',
+        imagem: '/02.png',
+      },
+      {
+        titulo: 'Oração de contemplação',
+        imagem: '/03.png',
+      },
+      {
+        titulo: 'Condições e características da oração',
+        conteudo:
+          '"A oração nasce de um coração que se recolhe, confia e persevera na presença de Deus." A oração, como todo ato plenamente pessoal, requer atenção e intenção, consciência da presença de Deus e diálogo simples e sincero com Ele. A condição para que tudo isso seja possível é o "recolhimento". Outra condição é a "confiança": sem uma plena confiança em Deus e em seu amor, não haverá oração, pelo menos oração sincera e capaz de superar as provas e dificuldades. Uma qualidade da oração é a "perseverança". E outra característica específica e fundamental é o seu caráter trinitário.',
+        imagem: '/04.png',
+      },
+      {
+        titulo: 'Necessidade da oração cristã',
+        conteudo:
+          'A oração não é algo opcional para a vida espiritual, mas sim uma necessidade vital. São João Crisóstomo escreveu: "Nada se compara em valor à oração: ela torna possível o que é impossível, fácil o que é difícil. É impossível que caia em pecado o homem que reza." E Santo Afonso de Ligório disse: "Quem reza certamente se salva; quem não reza certamente se condena." "Quem faz da oração um hábito encontra em Deus a força para viver e perseverar."',
+        imagem: '/05.png',
+      },
+      {
+        titulo: 'Dinâmica: vamos escrever uma carta para Deus?',
+        conteudo:
+          'Nesse pequeno papel que você recebeu, escreva um agradecimento, um pedido ou um compromisso seu com Deus e, em seguida, coloque-o aos pés do altar.',
+      },
+    ],
+    reflexao: [
+      'Como está minha vida de oração atualmente?',
+      'Qual é minha maior dificuldade para rezar?',
+      'Tenho buscado Deus diariamente ou apenas quando preciso?',
+      'O que preciso mudar para crescer na intimidade com Deus?',
+      'Minha oração tem sido apenas de pedidos ou também de gratidão e louvor?',
+    ],
+    compromisso:
+      'Reservar 10 minutos diários para oração; ler 1 Tessalonicenses capítulo 5; rezar um Pai-Nosso pelas necessidades da Igreja; participar da Santa Missa com maior atenção; e fazer uma visita ao Santíssimo Sacramento.',
+    musicas: [
+      {
+        titulo: 'Ladainha da Humildade',
+        letra: `Do desejo de ser amado
+Estimado, procurado, livra-me Senhor
+Do desejo de ser honrado
+Preferido e louvado, livra-me Senhor
+Do desejo de ser aceito
+Aprovado e adulado, livra-me Senhor
+Troca o meu coração orgulhoso e ferido
+Pelo Teu coração, Jesus, manso e humilde
+Que diminua eu até desaparecer
+Que cresça a Tua graça aqui
+Reina em mim, Jesus
+Reina em mim, Jesus
+Reina em mim, Jesus
+Reina em mim
+
+Do temor de ser humilhado
+Desprezado, rejeitado, livra-me Senhor
+Do temor de ser esquecido
+Caluniado, injuriado, livra-me Senhor
+Do temor de ser escarnecido
+Ridicularizado, livra-me Senhor
+Troca o meu coração orgulhoso e ferido
+Pelo Teu coração, Jesus, manso e humilde
+Que diminua eu até desaparecer
+Que cresça a Tua graça aqui
+Reina em mim, Jesus
+Reina em mim, Jesus
+Reina em mim, Jesus
+Reina em mim, Jesus
+Jesus...`,
+      },
+      {
+        titulo: 'Nada te perturbe',
+        letra: `Eleva o pensamento, ao céu sobe
+Por nada te angusties, nada te perturbe.
+A Jesus Cristo segue com coração grande
+E venha o que vier, nada te espante...
+
+Vês a glória do mundo? É glória vã:
+Nada tem de estável, tudo passa!
+
+Nada te perturbe, nada te espante, tudo passa!
+Aspira às coisas celestes, que sempre duram.
+
+Fiel e rico em promessas, Deus não muda.
+Ama-o como merece, bondade imensa...
+Mas não há verdadeiro amor, sem a paciência!
+
+A confiança e fé viva mantém a alma.
+Quem crê e espera, tudo alcança.
+
+Deus não muda! A paciência... tudo alcança!
+Do inferno acoçado, embora se veja,
+Enganará seus furores, quem a Deus tem.
+Que lhe venham desamparos, cruzes e desgraças...
+
+Sendo Deus, o seu tesouro, nada lhe falta!
+Ide, pois, bens do mundo, pois tudo é nada...
+
+Ainda que tudo percas, só Deus basta!
+Quem a Deus tem, nada lhe falta...
+Só Deus basta!`,
+      },
+    ],
+    recursos: [
+      { tipo: 'Música', titulo: 'Ladainha da Humildade', autor: 'Missionário Shalom' },
+      { tipo: 'Música', titulo: 'Nada te perturbe', autor: 'Santa Teresa D\'Ávila' },
+      { tipo: 'Bíblia', titulo: 'Primeira Carta aos Tessalonicenses, capítulo 5' },
+      {
+        tipo: 'Livro',
+        titulo:
+          'Síntese da Fé Católica: a doutrina da Igreja em 36 aulas (Cultor de Livros, 2023) — Tema 35: A oração na vida cristã, p. 387-397',
+        autor: 'JIMÉNEZ, Gerard; YÁNIZ, Javier (org.)',
+      },
+    ],
+    quiz: [
+      {
+        pergunta: 'Segundo Santa Teresinha do Menino Jesus, o que é a oração?',
+        opcoes: [
+          'Uma obrigação imposta pela Igreja',
+          'Um impulso do coração, um simples olhar dirigido ao céu',
+          'A repetição de fórmulas decoradas',
+          'Um privilégio reservado aos sacerdotes',
+        ],
+        correta: 1,
+        explicacao:
+          'Santa Teresinha do Menino Jesus dizia: "A oração é um impulso do coração, um simples olhar dirigido ao céu." A oração é conversar com Deus, escutá-Lo e permanecer na sua presença.',
+      },
+      {
+        pergunta:
+          'Quais são as três expressões ou formas de oração distinguidas pelo Catecismo da Igreja Católica?',
+        opcoes: [
+          'Petição, ação de graças e adoração',
+          'Terço, novena e ladainha',
+          'Oração vocal, meditação e oração de contemplação',
+          'Silêncio, jejum e esmola',
+        ],
+        correta: 2,
+        explicacao:
+          'O Catecismo distingue entre oração vocal, meditação e oração de contemplação. As três têm em comum uma característica fundamental: o recolhimento do coração.',
+      },
+      {
+        pergunta: 'Qual característica é comum às três formas de oração?',
+        opcoes: [
+          'O recolhimento do coração',
+          'O uso de palavras pronunciadas em voz alta',
+          'A presença de um sacerdote',
+          'A leitura obrigatória da Bíblia',
+        ],
+        correta: 0,
+        explicacao:
+          'Oração vocal, meditação e contemplação têm em comum uma característica fundamental: o recolhimento do coração.',
+      },
+      {
+        pergunta: 'Quais são as condições e características da oração apresentadas na formação?',
+        opcoes: [
+          'Pressa, repetição, esforço e silêncio',
+          'Dúvida, distância, exigência e cansaço',
+          'Solidão, jejum, penitência e voto',
+          'Recolhimento, confiança, perseverança e caráter trinitário',
+        ],
+        correta: 3,
+        explicacao:
+          'A oração requer recolhimento e confiança; tem como qualidade a perseverança e, como característica fundamental, o seu caráter trinitário.',
+      },
+      {
+        pergunta: 'O que escreveu São João Crisóstomo sobre a oração?',
+        opcoes: [
+          'Que a oração é uma prática opcional para os fiéis',
+          'Que ela torna possível o que é impossível e é impossível que caia em pecado o homem que reza',
+          'Que somente a oração vocal tem valor diante de Deus',
+          'Que basta rezar uma vez por semana',
+        ],
+        correta: 1,
+        explicacao:
+          'São João Crisóstomo escreveu: "Nada se compara em valor à oração: ela torna possível o que é impossível, fácil o que é difícil. É impossível que caia em pecado o homem que reza."',
+      },
+    ],
+  },
+  {
     id: 5,
     numero: 5,
     titulo: 'A Santíssima Trindade e a Igreja',

@@ -173,7 +173,7 @@ export default function EncontroDetalhe() {
                       />
                     </div>
                   )}
-                  {secao.conteudo.split('\n\n').map((paragrafo, j) => (
+                  {secao.conteudo?.split('\n\n').map((paragrafo, j) => (
                     <p
                       key={j}
                       className="text-[var(--color-text)] leading-relaxed mb-4 text-[15px] sm:text-base md:text-lg"
