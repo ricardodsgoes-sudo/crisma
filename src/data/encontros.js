@@ -4,7 +4,7 @@ export const encontros = [
     numero: 6,
     titulo: 'Vida de Oração',
     subtitulo: 'Conversar, escutar e permanecer na presença de Deus',
-    imagem: '/6 encontro imagem.png',
+    imagem: '/6 encontro imagem.webp',
     data: '2026-06-13',
     versiculoDestaque:
       'Alegrai-vos sempre. Orai sem cessar. Em todas as circunstâncias dai graças, pois esta é a vontade de Deus a vosso respeito, em Cristo Jesus.',
@@ -30,27 +30,27 @@ export const encontros = [
       },
       {
         titulo: 'Oração vocal',
-        imagem: '/01.png',
+        imagem: '/01.webp',
       },
       {
         titulo: 'Meditação',
-        imagem: '/02.png',
+        imagem: '/02.webp',
       },
       {
         titulo: 'Oração de contemplação',
-        imagem: '/03.png',
+        imagem: '/03.webp',
       },
       {
         titulo: 'Condições e características da oração',
         conteudo:
           '"A oração nasce de um coração que se recolhe, confia e persevera na presença de Deus." A oração, como todo ato plenamente pessoal, requer atenção e intenção, consciência da presença de Deus e diálogo simples e sincero com Ele. A condição para que tudo isso seja possível é o "recolhimento". Outra condição é a "confiança": sem uma plena confiança em Deus e em seu amor, não haverá oração, pelo menos oração sincera e capaz de superar as provas e dificuldades. Uma qualidade da oração é a "perseverança". E outra característica específica e fundamental é o seu caráter trinitário.',
-        imagem: '/04.png',
+        imagem: '/04.webp',
       },
       {
         titulo: 'Necessidade da oração cristã',
         conteudo:
           'A oração não é algo opcional para a vida espiritual, mas sim uma necessidade vital. São João Crisóstomo escreveu: "Nada se compara em valor à oração: ela torna possível o que é impossível, fácil o que é difícil. É impossível que caia em pecado o homem que reza." E Santo Afonso de Ligório disse: "Quem reza certamente se salva; quem não reza certamente se condena." "Quem faz da oração um hábito encontra em Deus a força para viver e perseverar."',
-        imagem: '/05.png',
+        imagem: '/05.webp',
       },
       {
         titulo: 'Dinâmica: vamos escrever uma carta para Deus?',
