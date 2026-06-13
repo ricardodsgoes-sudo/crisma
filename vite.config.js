@@ -56,6 +56,8 @@ export default defineConfig({
       workbox: {
         // Cacheia tudo do bundle + imagens, permitindo offline
         globPatterns: ['**/*.{js,css,html,webp,png,svg,woff2}'],
+        // Imagens dos slides em alta passam de 2 MB (limite padrão); eleva p/ 3 MiB
+        maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
         // Fontes do Google: cache de runtime
         runtimeCaching: [
           {
