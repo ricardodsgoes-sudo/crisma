@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { getProximoSabado } from '../data/encontros'
+import { getProximoSabado, getRecessoAtivo } from '../data/encontros'
 import { getHoje } from '../data/dataSimulada'
 
 function FlipDigit({ value, label }) {
@@ -38,6 +38,24 @@ export default function Countdown() {
     const diaSemana = hoje.getDay()
 
     let alvo
+
+    // Durante o recesso, conta para o sábado da retomada, ignorando os
+    // sábados intermediários (que estão em pausa).
+    const recesso = getRecessoAtivo(hoje)
+    if (recesso) {
+      alvo = recesso.retorno
+      alvo.setHours(17, 0, 0, 0)
+      const ms = Math.max(0, alvo.getTime() - agora.getTime())
+      return {
+        emAndamento: false,
+        recesso: true,
+        dias: Math.floor(ms / (1000 * 60 * 60 * 24)),
+        horas: Math.floor((ms / (1000 * 60 * 60)) % 24),
+        minutos: Math.floor((ms / (1000 * 60)) % 60),
+        segundos: Math.floor((ms / 1000) % 60),
+        data: alvo,
+      }
+    }
 
     if (diaSemana === 6) {
       const inicio = new Date(hoje)
@@ -99,11 +117,17 @@ export default function Countdown() {
   })
 
   const isSabadoHoje = getHoje().getDay() === 6
+  const emRecesso = tempo.recesso
 
   return (
     <div className="text-center">
+      {emRecesso && (
+        <p className="inline-block mb-4 px-4 py-1.5 rounded-full bg-[var(--color-gold-light)]/15 border border-[var(--color-gold-light)]/40 text-[var(--color-gold-light)] text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em]">
+          ✦ Estamos em recesso
+        </p>
+      )}
       <p className="text-xs md:text-sm uppercase tracking-[0.28em] sm:tracking-[0.35em] text-[var(--color-gold-light)] font-semibold mb-2">
-        {isSabadoHoje ? 'O encontro começa em' : 'Próximo Encontro'}
+        {emRecesso ? 'Voltamos em' : isSabadoHoje ? 'O encontro começa em' : 'Próximo Encontro'}
       </p>
       <p
         className="text-lg sm:text-xl md:text-2xl text-white mb-6 sm:mb-8 capitalize"
@@ -111,6 +135,11 @@ export default function Countdown() {
       >
         {dataFormatada} · 17h às 18h
       </p>
+      {emRecesso && (
+        <p className="text-sm sm:text-base text-white/90 -mt-3 mb-7 sm:mb-8 max-w-md mx-auto leading-relaxed">
+          Os encontros estão em pausa. Retomaremos a caminhada juntos nesta data. Você pode revisitar os encontros anteriores e os quizzes.
+        </p>
+      )}
 
       <div className="grid grid-cols-4 gap-2 sm:gap-3 md:gap-6 w-full max-w-[18rem] sm:max-w-md md:max-w-xl mx-auto">
         <FlipDigit value={tempo.dias} label="Dias" />

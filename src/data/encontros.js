@@ -933,6 +933,28 @@ export function getProximoSabado(referencia = new Date()) {
   return data
 }
 
+// Recesso dos encontros. Enquanto `ativo` for true, a Home mostra o aviso de
+// recesso e o contador passa a contar para a data de `retorno` (um sábado).
+// O recesso NÃO renumera os encontros: é uma pausa, não um cancelamento — por
+// isso os sábados pulados não entram em SABADOS_SEM_ENCONTRO. Ao terminar o
+// recesso, basta trocar `ativo` para false (ou apagar este objeto) que tudo
+// volta ao comportamento normal sozinho.
+export const RECESSO = {
+  ativo: true,
+  retorno: '2026-07-11', // sábado da retomada
+}
+
+// Retorna os dados do recesso se ele estiver ativo E ainda não tiver chegado a
+// data de retorno; caso contrário, null (comportamento normal).
+export function getRecessoAtivo(referencia = new Date()) {
+  if (!RECESSO.ativo) return null
+  const hoje = new Date(referencia)
+  hoje.setHours(0, 0, 0, 0)
+  const retorno = new Date(RECESSO.retorno + 'T00:00:00')
+  if (hoje >= retorno) return null
+  return { retorno }
+}
+
 // Sábados em que NÃO houve encontro. A sequência "pula" estas datas:
 // elas não recebem número nem aparecem no calendário, e os encontros
 // seguintes avançam uma semana para reocupar o lugar.

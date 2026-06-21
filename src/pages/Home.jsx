@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
 import Countdown from '../components/Countdown'
+import AvisoRecesso from '../components/AvisoRecesso'
 import { InstallAppCallout } from '../components/InstallAppButton'
 import { CrismaCapa, DoveIcon } from '../components/Logo'
 import { getCalendarioComStatus, getEncontroAtual } from '../data/encontros'
@@ -15,6 +16,7 @@ export default function Home() {
 
   return (
     <PageTransition>
+      <AvisoRecesso />
       {SIMULANDO && (
         <div className="bg-amber-400 text-amber-900 text-[11px] sm:text-xs font-semibold text-center py-2 px-3 sm:px-4 tracking-wide">
           <span className="sm:hidden">Modo simulação · {hoje.toLocaleDateString('pt-BR')}</span>
