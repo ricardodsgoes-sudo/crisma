@@ -1,4 +1,5 @@
 import { ParishCrest } from './Logo'
+import OnlineCounter from './OnlineCounter'
 
 export default function Footer() {
   return (
@@ -25,6 +26,7 @@ export default function Footer() {
         <p className="text-xs text-[var(--color-text-muted)] mt-4">
           © 2026 — Crisma de Adultos
         </p>
+        <OnlineCounter />
       </div>
     </footer>
   )

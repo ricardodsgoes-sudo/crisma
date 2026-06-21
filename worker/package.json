@@ -1,0 +1,8 @@
+{
+  "name": "crisma-presenca",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "wrangler": "^4.103.0"
+  }
+}

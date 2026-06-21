@@ -85,9 +85,21 @@ O PDF contém: oração inicial, palavra de Deus, texto de formação, reflexão
 
 Sempre rodar `npm run dev` para subir o servidor de desenvolvimento em http://localhost:5173 (as alterações aparecem automaticamente).
 
+## Hospedagem (Cloudflare é o padrão)
+
+**O projeto é hospedado no Cloudflare** — esse é o host padrão. Sempre que
+houver necessidade de infraestrutura (backend, tempo real, armazenamento,
+funções), pensar primeiro em soluções Cloudflare (Workers, Durable Objects,
+Pages, KV, D1, R2).
+
+- **Frontend:** Cloudflare Pages, projeto `crismadeadultos` → `crismadeadultos.pages.dev` (build do git, `npm run build` → `dist/`). Também há um deploy espelho no Netlify.
+- **Backend de presença:** Worker `crisma-presenca` em `worker/` (Durable Object com WebSocket Hibernation) que conta pessoas online em tempo real. URL: `https://crisma-presenca.ricardo-ds-goes.workers.dev`. Deploy: `cd worker && npx wrangler deploy`. Plano gratuito.
+
 ## Estrutura do projeto
 
 - `src/data/encontros.js` — dados de todos os encontros + funções do calendário
 - `src/pages/EncontroDetalhe.jsx` — página de detalhe (lê os dados; não precisa alterar)
 - `src/pages/Quiz.jsx` — quiz (lê os dados; não precisa alterar)
+- `src/components/OnlineCounter.jsx` — contador de pessoas online (rodapé), conecta no Worker de presença
 - `public/` — PDFs dos encontros (referência de leitura, não servidos como assets)
+- `worker/` — Worker Cloudflare de presença (Durable Object); deploy independente do frontend
