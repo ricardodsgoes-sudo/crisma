@@ -2,12 +2,14 @@
 
 ## Tarefa recorrente: novo encontro a cada sábado
 
-Todo sábado chega um novo PDF em `public/` com o material do encontro daquela semana.
+Todo sábado chega um novo PDF em `docs/pdfs/` com o material do encontro daquela semana.
+(Se o usuário colocar o PDF em `public/` por costume, mova-o para `docs/pdfs/` — PDFs em
+`public/` são publicados no site e incham o deploy.)
 O PDF contém: oração inicial, palavra de Deus, texto de formação, reflexão, compromisso e recursos.
 
 ### Passo a passo para criar um novo encontro
 
-1. **Ler o PDF** em `public/` (o mais recente pela data no nome do arquivo).
+1. **Ler o PDF** em `docs/pdfs/` (o mais recente pela data no nome do arquivo).
 
 2. **Determinar o número do encontro** no calendário do app:
    - O calendário começa em `2026-05-02` (1º sábado) com `numero: 1`.
@@ -101,5 +103,6 @@ Pages, KV, D1, R2).
 - `src/pages/EncontroDetalhe.jsx` — página de detalhe (lê os dados; não precisa alterar)
 - `src/pages/Quiz.jsx` — quiz (lê os dados; não precisa alterar)
 - `src/components/OnlineCounter.jsx` — contador de pessoas online (rodapé), conecta no Worker de presença
-- `public/` — PDFs dos encontros (referência de leitura, não servidos como assets)
+- `public/` — imagens e assets publicados no site (preferir WebP; PNG/JPG pesados entram no precache do PWA)
+- `docs/pdfs/` — PDFs dos encontros (referência de leitura; ficam fora de `public/` para não serem publicados)
 - `worker/` — Worker Cloudflare de presença (Durable Object); deploy independente do frontend
