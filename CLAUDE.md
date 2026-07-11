@@ -73,13 +73,19 @@ O PDF contém: oração inicial, palavra de Deus, texto de formação, reflexão
 
 ### Regra fundamental
 
-**Usar SOMENTE as informações que estão explicitamente no PDF.** Não inventar, não complementar, não adicionar leituras, referências, seções ou conteúdo que não esteja escrito no material. Se uma informação não estiver no PDF, não colocar.
+A regra tem **dois lados** e ambos valem sempre:
+
+1. **Usar SOMENTE as informações que estão no PDF.** Não inventar, não complementar, não adicionar leituras, referências, seções ou conteúdo que não esteja escrito no material. Se uma informação não estiver no PDF, não colocar.
+
+2. **Incluir TODAS as informações do PDF na página — nunca esconder ou omitir nada.** Todo conteúdo do PDF deve aparecer no app: motivação, textos de formação, citações e frases de destaque, jaculatórias, reflexão, compromisso, música, recursos, oração final, etc. O trabalho é **adaptar** cada trecho ao formato da página (seção de formação, destaque em negrito, campo próprio), não filtrar o que entra. Se estiver no PDF, tem que estar na página. Na dúvida sobre onde encaixar um trecho, incluir mesmo assim (adaptado) e, se necessário, perguntar o local — nunca simplesmente deixar de fora.
+
+Destaques em negrito do PDF: marcar com `**texto**` no `conteudo` (o componente `EncontroDetalhe.jsx` interpreta e renderiza em negrito, na mesma linha).
 
 ### Dicas
 
 - O campo `compromisso` é uma string única (não array). Se o PDF tiver jaculatória + lista de ações, combine tudo em uma ou duas frases.
 - O `versiculoDestaque` vem da seção "Meditando a Palavra" ou do versículo principal do PDF.
-- Para as `leituras`, sempre inclua a referência citada no PDF e adicione uma segunda leitura temática complementar.
+- Para as `leituras`, inclua apenas as referências realmente citadas no PDF (não adicionar leitura complementar que não esteja no material).
 - O quiz deve ter exatamente 5 questões com 4 opções cada. As respostas corretas não devem ficar sempre no mesmo índice.
 - Insira o novo objeto **no início** do array `encontros` (antes do encontro anterior), para que a listagem mostre o mais recente primeiro internamente.
 

@@ -11,6 +11,20 @@ const VISUAIS = {
   denominacoesEspirito: DenominacoesEspirito,
 }
 
+// Interpreta destaques em negrito marcados com **texto** dentro do conteúdo,
+// mantendo o texto na mesma linha. Retorna um array de strings e <strong>.
+function renderComNegrito(texto) {
+  return texto.split(/(\*\*[^*]+\*\*)/g).map((parte, i) =>
+    parte.startsWith('**') && parte.endsWith('**') ? (
+      <strong key={i} className="font-semibold text-[var(--color-primary)]">
+        {parte.slice(2, -2)}
+      </strong>
+    ) : (
+      parte
+    )
+  )
+}
+
 const TABS = [
   { id: 'formacao', label: 'Formação', short: 'Formação' },
   { id: 'palavra', label: 'Palavra de Deus', short: 'Palavra' },
@@ -178,7 +192,7 @@ export default function EncontroDetalhe() {
                       key={j}
                       className="text-[var(--color-text)] leading-relaxed mb-4 text-[15px] sm:text-base md:text-lg"
                     >
-                      {paragrafo}
+                      {renderComNegrito(paragrafo)}
                     </p>
                   ))}
                   {secao.visual && VISUAIS[secao.visual] && (() => {

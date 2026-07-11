@@ -1,5 +1,155 @@
 export const encontros = [
   {
+    id: 7,
+    numero: 7,
+    titulo: 'Pai-Nosso',
+    subtitulo: 'A oração que Jesus nos ensinou',
+    imagem: '/pai nosso.webp',
+    data: '2026-07-11',
+    versiculoDestaque:
+      'Vós, portanto, orai assim: Pai nosso que estais nos céus...',
+    versiculoRef: 'Mateus 6,9',
+    leituras: [
+      { ref: 'Mateus 6, 9-13', titulo: 'A oração do Senhor (Pai-Nosso)' },
+    ],
+    formacao: [
+      {
+        titulo: 'Meditando a Palavra',
+        conteudo:
+          'Jesus nos ensina que Deus é nosso Pai e deseja um relacionamento de amor e confiança conosco. O Pai-Nosso é mais que uma oração: é um caminho de vida. Cada pedido nos convida a buscar a vontade de Deus, confiar em sua providência, perdoar, viver como irmãos e vencer o mal. Ao rezá-lo, assumimos o compromisso de viver como verdadeiros filhos de Deus todos os dias.',
+      },
+      {
+        titulo: 'Motivação',
+        conteudo:
+          'Qual foi a primeira oração que vocês aprenderam? Quem ensinou o Pai-Nosso para vocês? Vocês costumam prestar atenção nas palavras enquanto rezam?\n\n"O Pai-Nosso não é apenas uma oração decorada. Foi o próprio Jesus quem a ensinou aos seus discípulos. Quando rezamos essa oração, estamos falando com Deus exatamente da forma que Jesus nos ensinou."',
+      },
+      {
+        titulo: 'Jesus nos ensina a dirigir-nos a Deus como Pai',
+        conteudo:
+          'A primeira palavra da Oração do Senhor, "Pai", é a mais importante: "Orar ao Pai é entrar em seu mistério, tal qual Ele é, e tal como o Filho no-lo revelou." Jesus revela também aos seus discípulos que eles agora participam da sua condição de Filho. A oração do cristão, então, é a oração de um filho de Deus que se dirige ao seu Pai Deus com confiança filial.',
+        imagem: '/jesus.webp',
+      },
+      {
+        titulo: 'Filiação divina e fraternidade cristã',
+        conteudo:
+          'A santidade cristã, mesmo sendo pessoal e individual, nunca é individualista ou egocêntrica. Quando chamamos Deus de Pai Nosso, reconhecemos que a filiação divina nos une a Cristo, primogênito entre muitos irmãos, por meio de uma verdadeira fraternidade sobrenatural. "Na terra, há apenas uma raça: a raça dos filhos de Deus". Por isso, o cristão deve sentir-se solidário na tarefa de conduzir a Deus toda a humanidade. Com os filhos de Deus temos que nos comportar como filhos de Deus!',
+      },
+      {
+        titulo: 'As sete petições do Pai-Nosso',
+        conteudo:
+          'Na oração do Senhor, seguem-se sete petições depois da invocação inicial "Pai nosso que estais no céu". Os três primeiros pedidos têm por objeto a Glória do Pai. Os quatro seguintes apresentam-lhe nossos desejos.\n\n**Santificado seja o vosso nome** – Que Deus seja reconhecido como Santo e que vivamos em santidade.\n\n**Venha a nós o vosso Reino** – Pedimos que o Reino de Deus se realize plenamente em nossas vidas e no mundo.\n\n**Seja feita a vossa vontade** – Que saibamos cumprir a vontade de Deus, seguindo o exemplo de Jesus.\n\n**O pão nosso de cada dia nos dai hoje** – Confiamos em Deus, que nos concede o necessário para a vida material e espiritual.\n\n**Perdoai-nos as nossas ofensas** – Pedimos o perdão de Deus e nos comprometemos a perdoar os nossos irmãos.\n\n**Não nos deixeis cair na tentação** – Suplicamos força e discernimento para resistir ao pecado.\n\n**Mas livrai-nos do mal** – Pedimos que Deus nos proteja do Maligno e nos livre de todo mal, conduzindo-nos à vida eterna.',
+        imagem: '/sete petições.webp',
+      },
+      {
+        titulo: 'Oração Final',
+        conteudo:
+          'Senhor Jesus, obrigado por nos ensinar a oração mais perfeita de todas. Que nunca pronunciemos o Pai-Nosso apenas com os lábios, mas também com o coração. Ajuda-nos a viver como verdadeiros filhos do Pai e irmãos uns dos outros. Que a tua vontade seja sempre a nossa vontade. Amém.\n\n**"Cada vez que rezamos o Pai-Nosso, renovamos nosso compromisso de viver como filhos do Pai e construir o seu Reino com amor, fé e esperança."**',
+      },
+    ],
+    reflexao: [
+      'Deus é verdadeiramente o Pai da minha vida?',
+      'Quando rezo o Pai-Nosso, procuro viver aquilo que estou pedindo a Deus?',
+      'Tenho vivido como verdadeiro irmão, praticando o perdão, a caridade e o amor ao próximo?',
+      'Estou disposto a fazer a vontade de Deus, mesmo quando ela é diferente da minha?',
+    ],
+    compromisso:
+      'Rezar o Pai-Nosso lentamente todos os dias; escolher uma das sete petições para colocar em prática; e fazer um gesto concreto de perdão, caridade ou reconciliação.',
+    musica: {
+      titulo: 'Pai Nosso',
+      letra: `Pai nosso que estás no céu
+Santificado seja o teu nome
+E venha a nós o teu reino
+E seja feita a tua vontade
+Pai, meu pai do céu
+Meu pai do céu, eu quase me esqueci
+Me esqueci que o teu amor vela por mim
+Vela por mim que seja feito assim
+
+O alimento desse dia
+Dai-nos agora e sempre
+E perdoai as nossas ofensas
+De um modo maior com que perdoamos
+Pai, meu pai do céu
+Meu pai do céu, eu quase me esqueci
+Me esqueci que o teu amor vela por mim
+Vela por mim que seja feito assim
+
+E não nos deixeis cair em tentação
+Mas livrai-nos de todo o mal
+Amém
+Amém`,
+    },
+    recursos: [
+      { tipo: 'Música', titulo: 'Pai Nosso', autor: 'Thiago Brado' },
+      { tipo: 'Bíblia', titulo: 'Evangelho segundo Mateus 6,9-13' },
+      {
+        tipo: 'Catecismo',
+        titulo:
+          'Parte IV – A Oração Cristã, Segunda Seção – A Oração do Senhor (Pai-Nosso)',
+      },
+      {
+        tipo: 'Livro',
+        titulo:
+          'Síntese da Fé Católica: a doutrina da Igreja em 36 aulas (Cultor de Livros, 2023) — Tema 36, p. 399-407',
+        autor: 'JIMÉNEZ, Gerard; YÁNIZ, Javier (org.)',
+      },
+    ],
+    quiz: [
+      {
+        pergunta: 'Qual é a primeira e mais importante palavra da Oração do Senhor?',
+        opcoes: ['Nosso', 'Pai', 'Céu', 'Amém'],
+        correta: 1,
+        explicacao:
+          'A primeira palavra "Pai" é a mais importante: "Orar ao Pai é entrar em seu mistério, tal qual Ele é, e tal como o Filho no-lo revelou."',
+      },
+      {
+        pergunta:
+          'Quantas petições tem o Pai-Nosso depois da invocação inicial "Pai nosso que estais no céu"?',
+        opcoes: ['Três', 'Cinco', 'Sete', 'Dez'],
+        correta: 2,
+        explicacao:
+          'Seguem-se sete petições. Os três primeiros pedidos têm por objeto a Glória do Pai; os quatro seguintes apresentam a Ele nossos desejos.',
+      },
+      {
+        pergunta: 'O que têm por objeto os três primeiros pedidos do Pai-Nosso?',
+        opcoes: [
+          'Nossos desejos materiais',
+          'A Glória do Pai',
+          'O perdão dos pecados',
+          'A proteção contra o mal',
+        ],
+        correta: 1,
+        explicacao:
+          'Os três primeiros pedidos têm por objeto a Glória do Pai; os quatro seguintes apresentam a Ele nossos desejos.',
+      },
+      {
+        pergunta:
+          'Por que, ao chamar Deus de "Pai Nosso", a santidade cristã nunca é individualista?',
+        opcoes: [
+          'Porque a filiação divina nos une a Cristo e aos irmãos numa fraternidade sobrenatural',
+          'Porque cada um deve buscar a salvação sozinho',
+          'Porque a oração deve ser feita sempre em silêncio',
+          'Porque somente os santos podem rezar',
+        ],
+        correta: 0,
+        explicacao:
+          'A filiação divina nos une a Cristo, primogênito entre muitos irmãos: "Na terra, há apenas uma raça: a raça dos filhos de Deus." Por isso o cristão é solidário na tarefa de conduzir a Deus toda a humanidade.',
+      },
+      {
+        pergunta: 'O que pedimos na petição "Perdoai-nos as nossas ofensas"?',
+        opcoes: [
+          'Apenas os bens materiais de cada dia',
+          'A vinda plena do Reino de Deus',
+          'O perdão de Deus, comprometendo-nos a perdoar os nossos irmãos',
+          'A santificação do nome de Deus',
+        ],
+        correta: 2,
+        explicacao:
+          'Pedimos o perdão de Deus e nos comprometemos a perdoar os nossos irmãos.',
+      },
+    ],
+  },
+  {
     id: 6,
     numero: 6,
     titulo: 'Vida de Oração',
@@ -941,7 +1091,7 @@ export function getProximoSabado(referencia = new Date()) {
 // já volta ao comportamento normal sozinho; pode-se também trocar `ativo`
 // para false (ou apagar este objeto).
 export const RECESSO = {
-  ativo: true,
+  ativo: false,
   retorno: '2026-07-11', // sábado da retomada
 }
 
