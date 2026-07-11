@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
 // Worker de presença no Cloudflare (Durable Object + WebSocket Hibernation).
-const PRESENCE_URL = 'wss://crisma-presenca.ricardo-ds-goes.workers.dev/ws'
+const PRESENCE_URL = 'wss://crisma-presenca.goesdev.workers.dev/ws'
 
 // Contador discreto de pessoas online agora. Mantém um WebSocket vivo com o
 // Worker; o servidor avisa o total sempre que alguém entra ou sai.
