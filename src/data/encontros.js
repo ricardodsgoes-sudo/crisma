@@ -1,5 +1,203 @@
 export const encontros = [
   {
+    id: 8,
+    numero: 8,
+    titulo: 'Nossa Senhora',
+    subtitulo: 'Mãe de Cristo e Mãe da Igreja',
+    imagem: '/nossa senhora.webp',
+    data: '2026-07-18',
+    versiculoDestaque: '"Mulher, eis o teu filho!" — "Eis tua mãe!"',
+    versiculoRef: 'João 19, 26-27',
+    leituras: [
+      {
+        ref: 'João 19, 25-27',
+        titulo: 'Jesus entrega Maria como Mãe ao discípulo amado',
+      },
+    ],
+    formacao: [
+      {
+        titulo: 'Meditando a Palavra',
+        conteudo:
+          'Maria permanece junto à cruz, fiel a Jesus mesmo diante do sofrimento. Nesse momento, Jesus a entrega como Mãe ao discípulo amado: "Eis tua mãe!" A Igreja reconhece nessa passagem Maria como Mãe dos discípulos de Cristo e Mãe da Igreja. Ela nos ensina a permanecer firmes na fé e nos conduz sempre a Jesus. Maria nos ensina a confiar em Deus, permanecer junto de Jesus e fazer tudo o que Ele nos disser.',
+      },
+      {
+        titulo: 'Motivação',
+        conteudo:
+          'Qual é a importância de Maria na sua caminhada de fé? O que você sente quando a Igreja chama Maria de "Mãe"? Você costuma rezar pedindo a intercessão de Nossa Senhora?\n\nMaria nunca nos afasta de Jesus. Pelo contrário, ela nos conduz a Ele e nos ensina a fazer tudo o que Ele nos disser.',
+      },
+      {
+        titulo: 'A maternidade de Maria com relação à Igreja',
+        conteudo:
+          'O papel de Maria para com a Igreja é inseparável de sua união com Cristo, decorrendo diretamente dela. Esta união manifesta-se desde a hora da concepção virginal de Cristo até sua morte. Após a ascensão de seu Filho, Maria assistiu com suas orações a Igreja nascente. Reunida com os apóstolos e algumas mulheres, vemos Maria pedindo, também ela, com suas orações, o dom do Espírito, o qual, na Anunciação, a tinha coberto com sua sombra. **"Maria, Mãe de Cristo, Mãe da Igreja".**',
+      },
+      {
+        titulo: 'Os dogmas marianos',
+        conteudo:
+          'Os dogmas marianos são quatro verdades de fé proclamadas pela Igreja Católica sobre a Virgem Maria: **Maria, Mãe de Deus**, **Perpétua Virgindade de Maria**, **Imaculada Conceição de Maria** e **Assunção de Maria**.',
+        imagem: '/maria mae de deus.webp',
+      },
+      {
+        titulo: 'Maria, Mãe de Deus',
+        conteudo:
+          'Maria é verdadeiramente Mãe de Jesus Cristo, que é verdadeiro Deus e verdadeiro homem. Por isso, a Igreja a reconhece como Mãe de Deus (Theotókos). Essa verdade foi proclamada no Concílio de Éfeso, em 431, e confirma a fé na divindade de Jesus.',
+      },
+      {
+        titulo: 'Perpétua Virgindade de Maria',
+        conteudo:
+          'Maria é virgem antes, durante e depois do parto. É o dogma mariano mais antigo das Igrejas Católica e Oriental Ortodoxa, afirmando a "real e perpétua virgindade mesmo no ato de dar à luz o Filho de Deus feito homem". Essa doutrina foi definida dogmaticamente pelo Concílio de Trento, em 1555, embora já fosse um dogma no cristianismo primitivo, como indicam escritos de São Justino Mártir e Orígenes. **"É uma crença que já está na sagrada Escritura e defende que Maria concebeu Jesus virginalmente, deu à luz virginalmente e assim permaneceu até o final da vida".**',
+      },
+      {
+        titulo: 'Imaculada Conceição',
+        conteudo:
+          'Maria foi preservada do pecado original desde o primeiro momento de sua existência, por uma graça especial de Deus, para ser a Mãe do Salvador. Esse dogma foi proclamado pelo Papa Pio IX, em 1854, e é celebrado no dia 8 de dezembro.',
+      },
+      {
+        titulo: 'Assunção de Maria',
+        conteudo:
+          'A Assunção de Maria ensina que, ao final de sua vida terrena, a Virgem Maria foi elevada por Deus em corpo e alma à glória do céu. Essa verdade é celebrada pela Igreja desde os primeiros séculos do cristianismo. A Igreja já celebrava a chamada Dormição de Maria entre os séculos V e VI. O dogma foi proclamado pelo Papa Pio XII em 1º de novembro de 1950. Maria, Mãe de Deus e sempre Virgem, foi glorificada por Deus de modo especial. Sua Assunção manifesta a vitória da vida sobre a morte e o pecado. Ela é, para todos nós, um sinal de esperança na vida eterna junto de Deus. **"Maria, elevada ao céu em corpo e alma, é para nós um sinal de esperança e a promessa da vida eterna junto de Deus."**',
+      },
+      {
+        titulo: 'Maria, modelo da Igreja',
+        conteudo:
+          'Por sua adesão total à vontade do Pai, à obra redentora de seu Filho, a cada moção do Espírito Santo, a virgem Maria é para a Igreja o modelo da fé e da caridade. Com isso, ela é "membro supereminente e absolutamente único da Igreja", sendo até a "realização exemplar da Igreja". A Santíssima Virgem é com razão venerada pela Igreja com um culto especial, que se manifesta nas numerosas festas, memórias litúrgicas e práticas de piedade que nós católicos lhe dedicamos. **"Cremos que a Santíssima Mãe de Deus, nova Eva, Mãe da Igreja, continua no Céu sua função materna em relação aos membros de Cristo."**',
+      },
+    ],
+    reflexao: [
+      'O que mais me chama atenção na vida de Maria?',
+      'Em que aspecto da vida preciso imitar Maria?',
+      'Tenho permanecido junto de Jesus nos momentos difíceis?',
+      'Como posso dizer "sim" a Deus em minha vida?',
+      'O que posso fazer para me aproximar mais de Jesus?',
+    ],
+    compromisso:
+      'Rezar uma Ave-Maria todos os dias, com atenção e confiança; ler e meditar o texto de João 19,25-27; escolher uma atitude de Maria para praticar durante a semana (serviço, oração, perdão, caridade ou perseverança); e fazer um gesto concreto de amor e cuidado por alguém, perguntando-se: "Como posso imitar Maria nesta situação?"',
+    musica: {
+      titulo: 'Acaso Não Sabeis',
+      letra: `Eu me consagro a ti
+Mãe de Deus e minha
+Eu me consagro a ti
+Mestra e rainha
+
+Eu me consagro a ti
+Mãe de Deus e minha
+Eu me consagro a ti
+Mestra e rainha
+
+Acaso não sabeis
+Que eu sou da Imaculada?
+Acaso não sabeis
+Tenho uma advogada?
+
+Só quem já foi órfão
+Sabe o valor do amor de mãe
+Só quem já foi órfão
+Sabe o valor do colo de mãe
+
+Só quem já foi órfão
+Sabe o valor do amor de mãe
+Só quem já foi órfão
+Sabe o valor do colo de mãe
+
+Acaso não sabeis
+Que eu sou da Imaculada?
+Acaso não sabeis
+Tenho uma advogada?
+
+Só quem já foi órfão
+Sabe o valor do amor de mãe
+Só quem já foi órfão
+Sabe o valor do colo de mãe
+
+Só quem já foi órfão
+Sabe o valor do amor de mãe
+Só quem já foi órfão
+Sabe o valor do colo de mãe
+
+Eu me consagro a ti
+Mãe de Deus e minha
+Eu me consagro a ti
+Mestra e rainha
+
+Eu me consagro a ti
+Mãe de Deus e minha
+Eu me consagro a ti
+Mestra e rainha`,
+    },
+    recursos: [
+      { tipo: 'Música', titulo: 'Acaso não sabeis', autor: 'Colo de Deus' },
+      { tipo: 'Bíblia', titulo: 'Evangelho segundo João, capítulo 19' },
+      {
+        tipo: 'Catecismo',
+        titulo: 'Primeira Parte, Segunda Seção, Capítulo III, Parágrafo 6',
+      },
+    ],
+    quiz: [
+      {
+        pergunta:
+          'Em João 19,25-27, o que Jesus faz junto à cruz com relação a Maria?',
+        opcoes: [
+          'Pede que Maria volte para casa',
+          'Entrega Maria como Mãe ao discípulo amado: "Eis tua mãe!"',
+          'Promete o Espírito Santo aos apóstolos',
+          'Consagra Maria como rainha do céu',
+        ],
+        correta: 1,
+        explicacao:
+          'Jesus entrega Maria como Mãe ao discípulo amado: "Eis tua mãe!" A Igreja reconhece nessa passagem Maria como Mãe dos discípulos de Cristo e Mãe da Igreja.',
+      },
+      {
+        pergunta:
+          'Em que Concílio foi proclamada a verdade de que Maria é Mãe de Deus (Theotókos)?',
+        opcoes: [
+          'Concílio de Trento',
+          'Concílio de Niceia',
+          'Concílio de Éfeso, em 431',
+          'Concílio Vaticano II',
+        ],
+        correta: 2,
+        explicacao:
+          'A verdade de que Maria é Mãe de Deus (Theotókos) foi proclamada no Concílio de Éfeso, em 431, e confirma a fé na divindade de Jesus.',
+      },
+      {
+        pergunta:
+          'Qual é o dogma mariano mais antigo das Igrejas Católica e Oriental Ortodoxa?',
+        opcoes: [
+          'Imaculada Conceição',
+          'Assunção de Maria',
+          'Maria, Mãe de Deus',
+          'Perpétua Virgindade de Maria',
+        ],
+        correta: 3,
+        explicacao:
+          'A Perpétua Virgindade de Maria é o dogma mariano mais antigo: Maria é virgem antes, durante e depois do parto. Foi definida dogmaticamente pelo Concílio de Trento, em 1555, mas já era um dogma no cristianismo primitivo.',
+      },
+      {
+        pergunta: 'Quem proclamou o dogma da Imaculada Conceição, e em que ano?',
+        opcoes: [
+          'Papa Pio IX, em 1854',
+          'Papa Pio XII, em 1950',
+          'Papa Leão XIII, em 1900',
+          'Papa João XXIII, em 1962',
+        ],
+        correta: 0,
+        explicacao:
+          'O dogma da Imaculada Conceição — Maria preservada do pecado original desde o primeiro momento de sua existência — foi proclamado pelo Papa Pio IX, em 1854, e é celebrado no dia 8 de dezembro.',
+      },
+      {
+        pergunta: 'O que ensina o dogma da Assunção de Maria?',
+        opcoes: [
+          'Que Maria foi preservada do pecado original',
+          'Que Maria é virgem antes, durante e depois do parto',
+          'Que, ao final de sua vida terrena, Maria foi elevada por Deus em corpo e alma à glória do céu',
+          'Que Maria é modelo da fé e da caridade',
+        ],
+        correta: 2,
+        explicacao:
+          'A Assunção ensina que, ao final de sua vida terrena, a Virgem Maria foi elevada por Deus em corpo e alma à glória do céu. O dogma foi proclamado pelo Papa Pio XII em 1º de novembro de 1950.',
+      },
+    ],
+  },
+  {
     id: 7,
     numero: 7,
     titulo: 'Pai-Nosso',
