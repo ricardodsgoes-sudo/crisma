@@ -1,5 +1,167 @@
 export const encontros = [
   {
+    id: 9,
+    numero: 9,
+    titulo: 'Liturgia',
+    subtitulo: 'Encontro com Cristo na celebração',
+    imagem: '/liturgia.webp',
+    data: '2026-07-25',
+    versiculoDestaque:
+      'Fica conosco, pois já é tarde e a noite vem chegando... E, estando à mesa com eles, tomou o pão, abençoou-o, partiu-o e lhes deu.',
+    versiculoRef: 'Lucas 24, 29-30',
+    leituras: [
+      {
+        ref: 'Lucas 24, 29-30',
+        titulo: 'Os discípulos de Emaús reconhecem Jesus ao partir o pão',
+      },
+      {
+        ref: 'Lucas 24, 13-35',
+        titulo: 'O caminho de Emaús',
+      },
+    ],
+    formacao: [
+      {
+        titulo: 'Meditando a Palavra',
+        conteudo:
+          'Os discípulos de Emaús só reconheceram Jesus quando Ele partiu o pão. Antes disso, Ele já caminhava com eles, escutava suas dores e lhes explicava as Escrituras. Assim também acontece conosco: Cristo está presente em nossa caminhada e se revela de maneira especial na Liturgia. Cada celebração é um convite para abrir o coração e reconhecer Aquele que nunca deixa de caminhar ao nosso lado.',
+      },
+      {
+        titulo: 'Por que a liturgia?',
+        conteudo:
+          'Na liturgia a Igreja celebra principalmente o mistério pascal pelo qual Cristo realizou a obra da nossa salvação, a fim de que os fiéis vivam e deem testemunho dele no mundo. Na tradição cristã, a palavra "liturgia" significa que **o povo de Deus toma parte na "obra de Deus"**. Pela liturgia, Cristo, nosso redentor e sumo sacerdote, continua em sua Igreja, com ela e por ela, a obra de nossa redenção. Toda celebração litúrgica é ação sagrada por excelência, cuja eficácia, no mesmo título e grau, não é igualada por nenhuma outra ação da Igreja.\n\nAlém de ser obra de Cristo, a liturgia é também uma ação de sua Igreja, mas não se esgota nisso: ela tem de ser precedida pela evangelização, pela fé e pela conversão. A liturgia é também participação da oração de Cristo, dirigida ao Pai no Espírito Santo. Pela liturgia, o homem interior é enraizado e fundado no grande amor com o qual o Pai nos amou em seu Filho bem-amado. É a mesma maravilha de Deus que é vivida e interiorizada por toda oração, em todo tempo, no Espírito.\n\nPor fim, a liturgia é o lugar privilegiado da catequese do povo de Deus. A catequese litúrgica tem em vista introduzir no mistério de Cristo, procedendo do visível para o invisível, do significante para o significado, dos "sacramentos" para os "mistérios".',
+      },
+      {
+        titulo: 'O Pai, fonte e fim da liturgia',
+        conteudo:
+          'Na liturgia da Igreja, a bênção divina é plenamente revelada e comunicada: o Pai é reconhecido e adorado como a fonte e o fim de todas as bênçãos da criação e da salvação; em seu Verbo, encarnado, morto e ressuscitado por nós, ele nos cumula com suas bênçãos, e por meio dele derrama em nossos corações **o dom que contém todos os dons: o Espírito Santo.**',
+      },
+      {
+        titulo: 'A obra de Cristo na liturgia',
+        conteudo:
+          'Sentado à direita do Pai e derramando o Espírito Santo em seu Corpo que é a Igreja, Cristo age agora pelos sacramentos, instituídos por Ele para comunicar sua graça. Na liturgia da Igreja, Cristo significa e realiza principalmente seu mistério pascal. Cristo está sempre presente em sua Igreja, no sacrifício da missa, tanto na pessoa do ministro, quanto sobretudo sob as espécies eucarísticas. **Na liturgia terrestre, antegozando participamos já da liturgia celeste.**',
+      },
+      {
+        titulo: 'O Espírito Santo e a Igreja na liturgia',
+        conteudo:
+          'A missão do Espírito Santo na liturgia da Igreja é preparar a assembleia para encontrar-se com Cristo; recordar e manifestar Cristo à fé da assembleia; tornar presente e atualizar a obra salvífica de Cristo por seu poder transformador e fazer frutificar o dom da comunhão na Igreja.',
+      },
+      {
+        titulo: 'Sacramentos da Igreja',
+        conteudo:
+          'Os sacramentos são sinais sensíveis (palavras e ações), acessíveis à nossa humanidade atual. São sinais eficazes da graça, instituídos por Cristo e confiado à Igreja, por meio dos quais nos é dispensada a vida divina. Os ritos visíveis sob os quais os sacramentos são celebrados significam e realizam as graças próprias de cada sacramento. Produzem fruto naqueles que os recebem com as disposições exigidas.\n\nA Igreja celebra os sacramentos como comunidade sacerdotal estruturada pelo sacerdócio batismal e pelo dos ministros ordenados. O Espírito Santo prepara para a recepção dos sacramentos por meio da Palavra de Deus e da fé que acolhe a Palavra nos corações bem dispostos. Então, os sacramentos fortalecem e exprimem a fé.\n\nO fruto da vida sacramental é ao mesmo tempo pessoal e eclesial. Por um lado, este fruto é para cada fiel uma vida para Deus em Cristo Jesus; por outro, é para a Igreja crescimento na caridade e em sua missão de testemunho.',
+      },
+      {
+        titulo: 'A celebração sacramental do mistério pascal',
+        conteudo:
+          'A celebração litúrgica comporta sinais e símbolos que se referem à criação (luz, água, fogo), à vida humana (lavar, ungir, partir o pão) e à história da salvação (os ritos da Páscoa). A Liturgia da Palavra é uma parte integrante da celebração. O sentido da celebração é expresso pela Palavra de Deus que é anunciada e pelo compromisso da fé que ela exige como resposta. O canto e a música guardam uma conexão íntima com a ação litúrgica. As santas imagens destinam-se a despertar e a alimentar nossa fé no mistério de Cristo.\n\nO domingo, "dia do Senhor", é o dia principal da celebração da Eucaristia por ser o dia da ressurreição. É o dia da família cristã, o dia da alegria e do descanso do trabalho.\n\n**"A Liturgia é o céu tocando a terra e Deus encontrando o seu povo."**',
+        imagem: '/celebração.webp',
+      },
+    ],
+    reflexao: [
+      'Como tenho participado da Santa Missa: com atenção ou por obrigação?',
+      'Em qual momento da Missa eu percebo mais a presença de Jesus?',
+      'O que posso fazer para viver a Liturgia de forma mais consciente e participativa?',
+      'Depois desta formação, qual compromisso assumo para fortalecer minha vida de fé?',
+    ],
+    compromisso:
+      'Participar da Santa Missa; ler Lucas 24,13-35; reservar um momento de oração durante a semana; observar os sinais litúrgicos presentes na Missa; e praticar um gesto de amor ao próximo.',
+    musica: {
+      titulo: 'No Silêncio do Altar',
+      letra: `Guarda-me Senhor em teus átrios e esconde-me em teu altar
+Pois, aí eu sou feliz, este é o meu maior prazer, te adorar
+Assim como a virgem santíssima
+Que te amou no escondimento quero também te amar
+É no teu altar que sou feliz
+É o teu altar o meu melhor esconderijo
+Distante das multidões em solidão
+Este é o meu maior prazer, te adorar
+No silêncio do altar
+(Quero te amar, te oferto tudo o que sou no silêncio do altar
+Meu maior prazer é te conhecer meu Senhor no silêncio do altar)
+
+Te oferto tudo o que sou
+Sem reservas e sem condições
+Te oferto minha dor
+
+Eu quero te conhecer
+Eu quero te buscar
+Em Ti, vou me esconder
+Vou a Ti me ofertar`,
+    },
+    recursos: [
+      { tipo: 'Música', titulo: 'No Silêncio do Altar', autor: 'Frei Gilson' },
+      { tipo: 'Bíblia', titulo: 'Evangelho segundo Lucas, capítulo 24' },
+      {
+        tipo: 'Catecismo',
+        titulo: 'Segunda Parte, Primeira Seção',
+      },
+    ],
+    quiz: [
+      {
+        pergunta: 'Na tradição cristã, o que significa a palavra "liturgia"?',
+        opcoes: [
+          'O conjunto de regras de silêncio dentro da igreja',
+          'A oração particular de cada fiel em casa',
+          'Que o povo de Deus toma parte na "obra de Deus"',
+          'O estudo dos livros da Bíblia',
+        ],
+        correta: 2,
+        explicacao:
+          'Na tradição cristã, a palavra "liturgia" significa que o povo de Deus toma parte na "obra de Deus". Pela liturgia, Cristo continua em sua Igreja, com ela e por ela, a obra de nossa redenção.',
+      },
+      {
+        pergunta:
+          'Na liturgia da Igreja, quem é reconhecido e adorado como a fonte e o fim de todas as bênçãos da criação e da salvação?',
+        opcoes: [
+          'O Pai',
+          'O sacerdote que preside a celebração',
+          'A assembleia reunida',
+          'Os santos venerados pela Igreja',
+        ],
+        correta: 0,
+        explicacao:
+          'O Pai é reconhecido e adorado como a fonte e o fim de todas as bênçãos da criação e da salvação; por meio do seu Verbo ele derrama em nossos corações o dom que contém todos os dons: o Espírito Santo.',
+      },
+      {
+        pergunta: 'Qual é a missão do Espírito Santo na liturgia da Igreja?',
+        opcoes: [
+          'Substituir Cristo na celebração enquanto Ele está no céu',
+          'Preparar a assembleia para encontrar-se com Cristo, recordar e manifestar Cristo à fé da assembleia, tornar presente a obra salvífica de Cristo e fazer frutificar o dom da comunhão',
+          'Escolher os ministros que vão presidir cada celebração',
+          'Definir os sinais e símbolos usados em cada rito',
+        ],
+        correta: 1,
+        explicacao:
+          'A missão do Espírito Santo na liturgia é preparar a assembleia para encontrar-se com Cristo; recordar e manifestar Cristo à fé da assembleia; tornar presente e atualizar a obra salvífica de Cristo por seu poder transformador e fazer frutificar o dom da comunhão na Igreja.',
+      },
+      {
+        pergunta: 'O que são os sacramentos?',
+        opcoes: [
+          'Orações compostas pela Igreja ao longo dos séculos',
+          'Símbolos que lembram episódios da vida de Jesus',
+          'Bênçãos concedidas apenas aos ministros ordenados',
+          'Sinais sensíveis e eficazes da graça, instituídos por Cristo e confiados à Igreja, por meio dos quais nos é dispensada a vida divina',
+        ],
+        correta: 3,
+        explicacao:
+          'Os sacramentos são sinais sensíveis (palavras e ações), sinais eficazes da graça, instituídos por Cristo e confiados à Igreja, por meio dos quais nos é dispensada a vida divina. Produzem fruto naqueles que os recebem com as disposições exigidas.',
+      },
+      {
+        pergunta:
+          'Por que o domingo é o dia principal da celebração da Eucaristia?',
+        opcoes: [
+          'Porque é o dia em que todos estão livres do trabalho',
+          'Porque foi o dia escolhido pelos apóstolos por sorteio',
+          'Por ser o dia da ressurreição',
+          'Porque é o primeiro dia do calendário litúrgico',
+        ],
+        correta: 2,
+        explicacao:
+          'O domingo, "dia do Senhor", é o dia principal da celebração da Eucaristia por ser o dia da ressurreição. É o dia da família cristã, o dia da alegria e do descanso do trabalho.',
+      },
+    ],
+  },
+  {
     id: 8,
     numero: 8,
     titulo: 'Nossa Senhora',
