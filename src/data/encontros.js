@@ -1,5 +1,162 @@
 export const encontros = [
   {
+    id: 10,
+    numero: 10,
+    titulo: 'Batismo',
+    subtitulo: 'Mergulhados em Cristo, nascemos para uma vida nova',
+    imagem: '/batismo.webp',
+    data: '2026-08-01',
+    versiculoDestaque:
+      'Ide, pois, fazer discípulos entre todas as nações, e batizai-os em nome do Pai, do Filho e do Espírito Santo.',
+    versiculoRef: 'Mateus 28, 19',
+    leituras: [
+      {
+        ref: 'Mateus 28, 19',
+        titulo: 'O mandato de Jesus: ide e batizai todas as nações',
+      },
+      {
+        ref: 'Mateus 28, 16-20',
+        titulo: 'Leitura proposta para a semana',
+      },
+    ],
+    formacao: [
+      {
+        titulo: 'Meditando a Palavra',
+        conteudo:
+          'Jesus nos mostra que o Batismo não é apenas um rito, mas o início de uma vida nova com Deus. Pelo Batismo, somos chamados a pertencer a Cristo, viver como seus discípulos e testemunhar o Evangelho. Hoje, somos convidados a olhar para nossa própria caminhada e perguntar: Tenho vivido de acordo com a graça que recebi no meu Batismo? Minha vida revela que pertenço a Cristo? Que esta Palavra desperte em nós o desejo de renovar nossa fé e assumir com mais consciência a missão de sermos verdadeiros discípulos de Jesus.',
+      },
+      {
+        titulo: 'O que é o Batismo?',
+        conteudo:
+          'O Batismo é o primeiro Sacramento da iniciação cristã. Por meio dele, somos incorporados a Cristo, libertados do pecado, regenerados como filhos de Deus e incorporados à Igreja. A palavra Batismo vem do grego baptizein, que significa mergulhar. Esse significado ajuda-nos a compreender a riqueza do Sacramento: somos mergulhados em Cristo e, com Ele, passamos da morte para a vida. O Batismo nos une à morte e à Ressurreição de Jesus.',
+      },
+      {
+        titulo: 'Fundamentos bíblicos e instituição do Batismo',
+        conteudo:
+          'Jesus é batizado nas águas do Jordão no início do seu ministério público, não por necessidade, mas por solidariedade redentora. Nessa ocasião, a água fica definitivamente indicada como elemento material do sinal sacramental. Além disso, abrem-se os céus, desce o Espírito em forma de pomba e a voz de Deus Pai confirma a filiação divina de Cristo: acontecimentos que revelam na Cabeça da futura Igreja o que se realizará depois sacramentalmente em seus membros.\n\nAntes de subir aos céus, o Senhor diz aos apóstolos: "Ide, pois, fazer discípulos entre todas as nações, e batizai-os em nome do Pai, do Filho e do Espírito Santo." Esse mandato é fielmente seguido a partir de Pentecostes e indica o objetivo primário da evangelização, que continua sendo atual.',
+        imagem: '/batismo-jesus.webp',
+      },
+      {
+        titulo: 'A justificação e os efeitos do Batismo',
+        conteudo:
+          'O batismo, incorporando o fiel à vida, morte e ressurreição de Jesus Cristo e à sua ação salvadora, outorga a justificação. A justificação batismal traduz-se em efeitos concretos na alma do cristão, que a teologia apresenta como efeitos que curam e elevam. Os primeiros referem-se ao perdão dos pecados; isso inclui a remissão do pecado original e, nos adultos, de todos os pecados pessoais. O aspecto que eleva consiste na efusão do Espírito Santo; com efeito "em um só Espírito fomos batizados". Com a filiação divina, Deus confere ao batizado a graça santificante, as virtudes teologais e morais e os dons do Espírito Santo.\n\nJunto a essa realidade da graça, "o batismo imprime no cristão um selo espiritual indelével de sua pertença a Cristo. Este selo não é apagado por nenhum pecado, embora o pecado impeça o batismo de dar frutos de salvação".',
+      },
+      {
+        titulo: 'Necessidade do Batismo',
+        conteudo:
+          'O Batismo é necessário para a salvação daqueles que receberam o anúncio do Evangelho e têm a possibilidade de receber este Sacramento. Entretanto, a misericórdia de Deus é maior do que aquilo que conseguimos compreender. A Igreja ensina que aqueles que, sem culpa própria, desconhecem o Evangelho de Cristo e procuram sinceramente a verdade, buscando cumprir a vontade de Deus conforme a conhecem, podem alcançar a salvação. Por isso, não devemos transformar o ensinamento sobre o Batismo em julgamento sobre as pessoas. Nossa missão é anunciar Cristo, conduzir as pessoas à fé e confiar na misericórdia de Deus.',
+      },
+      {
+        titulo: 'Celebração litúrgica',
+        conteudo:
+          'A matéria válida do Sacramento é a água pura que os homens consideram tal. Enquanto o ministro derrama três vezes a água sobre a cabeça do candidato, ou a submerge, pronuncia as palavras: "NN, eu te batizo em nome do Pai e do Filho e do Espírito Santo". Os ritos pós-batismais ilustram o mistério realizado. Unge-se a cabeça do candidato para significar sua participação no sacerdócio comum e evocar a futura unção da crisma. A vela acesa no círio pascal simboliza a luz de Cristo, entregue para viver como filhos da luz pela fé recebida. O rito do effeta, tocando com o dedo polegar os ouvidos e a boca do candidato, significa a atitude de escuta e proclamação da palavra de Deus.',
+        imagem: '/simbolos-batismo.webp',
+      },
+      {
+        titulo: 'Ministro e sujeito. O Batismo na vida do cristão',
+        conteudo:
+          'O batismo é destinado a todos os homens e mulheres que não o tenham recebido ainda. O caráter sacramental é um sinal espiritual que configura com Cristo e que imprime na alma uma semelhança com Ele, uma imagem de Cristo, a quem a partir desse momento pertencemos e com quem devemos assemelhar-nos cada vez mais. Este é o fundamento batismal da chamada universal à santidade.\n\nEste mesmo caráter batismal é também sinal espiritual distintivo e dispositivo. Por distintivo se entende que distingue os cristãos dos não cristãos, enquanto que por dispositivo entende-se que constitui a base sobre a qual se apoia a radical igualdade de todos os batizados. Essa igualdade fundamental, junto a ser "um" em Cristo, impulsiona-nos a viver a fraternidade.\n\n**"Pelo Batismo, nascemos para uma vida nova em Cristo. Pela Crisma, somos fortalecidos pelo Espírito Santo para testemunhar essa vida no mundo."**',
+      },
+    ],
+    reflexao: [
+      'O que mais me chamou atenção sobre o Batismo neste encontro?',
+      'O que significa para mim saber que sou filho(a) de Deus?',
+      'Em quais atitudes da minha vida eu demonstro que pertenço a Cristo?',
+      'Existe alguma área da minha vida que ainda precisa ser transformada pela graça de Deus?',
+      'Como posso testemunhar minha fé dentro da minha família, trabalho, comunidade e sociedade?',
+    ],
+    compromisso:
+      'Todos os dias, rezar: "Senhor, ajuda-me a viver como verdadeiro filho(a) de Deus."; realizar conscientemente uma atitude concreta de amor, serviço ou perdão; ler durante a semana Mateus 28,16-20; e pesquisar quando foi o seu Batismo (caso já tenha sido batizado[a]).',
+    musica: {
+      titulo: 'Vem Oh! Água Viva',
+      letra: `Batiza-me senhor com teu espírito
+Pois minh'alma sedenta está
+
+Vem oh! Água viva, oh! Água pura
+Fecundar meu coração
+Vem oh! Água viva, oh! Água pura
+Transformar meu coração
+
+Cura-me senhor com teu espírito
+Pois meu coração ferido está`,
+    },
+    recursos: [
+      { tipo: 'Música', titulo: 'Vem oh! Água viva', autor: 'Flávinho' },
+      { tipo: 'Bíblia', titulo: 'Evangelho segundo Mateus, capítulo 28' },
+      {
+        tipo: 'Catecismo',
+        titulo: 'Segunda Parte, Segunda Seção, Capítulo I, Art. 1',
+      },
+      {
+        tipo: 'Livro',
+        titulo:
+          'Síntese da Fé Católica: a doutrina da Igreja em 36 aulas. São Paulo: Cultor de Livros, 2023. Tema 21 – Batismo e Confirmação, p. 217-223',
+        autor: 'Gerard Jiménez e Javier Yániz (org.)',
+      },
+    ],
+    quiz: [
+      {
+        pergunta:
+          'A palavra "Batismo" vem do grego baptizein. O que esse termo significa?',
+        opcoes: ['Purificar', 'Ungir', 'Consagrar', 'Mergulhar'],
+        correta: 3,
+        explicacao:
+          'Baptizein significa mergulhar. Esse significado ajuda-nos a compreender a riqueza do Sacramento: somos mergulhados em Cristo e, com Ele, passamos da morte para a vida.',
+      },
+      {
+        pergunta:
+          'Por que Jesus é batizado nas águas do Jordão no início do seu ministério público?',
+        opcoes: [
+          'Porque precisava ser purificado dos seus pecados',
+          'Não por necessidade, mas por solidariedade redentora',
+          'Para cumprir uma exigência da lei judaica',
+          'Para ser reconhecido publicamente como profeta',
+        ],
+        correta: 1,
+        explicacao:
+          'Jesus é batizado não por necessidade, mas por solidariedade redentora. Nessa ocasião, a água fica definitivamente indicada como elemento material do sinal sacramental, abrem-se os céus, desce o Espírito em forma de pomba e a voz de Deus Pai confirma a filiação divina de Cristo.',
+      },
+      {
+        pergunta:
+          'Segundo a formação, quais são os efeitos que "curam" trazidos pela justificação batismal?',
+        opcoes: [
+          'O perdão dos pecados, incluindo a remissão do pecado original e, nos adultos, de todos os pecados pessoais',
+          'A cura das doenças do corpo e das enfermidades da alma',
+          'A libertação de todas as dificuldades da vida',
+          'A garantia de que o batizado nunca mais poderá pecar',
+        ],
+        correta: 0,
+        explicacao:
+          'Os efeitos que curam referem-se ao perdão dos pecados; isso inclui a remissão do pecado original e, nos adultos, de todos os pecados pessoais. Já o aspecto que eleva consiste na efusão do Espírito Santo.',
+      },
+      {
+        pergunta:
+          'O que a formação ensina sobre o selo espiritual indelével impresso pelo Batismo?',
+        opcoes: [
+          'Ele se apaga quando o cristão comete um pecado grave',
+          'Ele precisa ser renovado a cada sacramento recebido',
+          'Ele não é apagado por nenhum pecado, embora o pecado impeça o batismo de dar frutos de salvação',
+          'Ele só permanece enquanto o batizado frequenta a Igreja',
+        ],
+        correta: 2,
+        explicacao:
+          'O batismo imprime no cristão um selo espiritual indelével de sua pertença a Cristo. Este selo não é apagado por nenhum pecado, embora o pecado impeça o batismo de dar frutos de salvação.',
+      },
+      {
+        pergunta: 'O que significa o rito do effeta na celebração do Batismo?',
+        opcoes: [
+          'A participação no sacerdócio comum e a futura unção da crisma',
+          'A atitude de escuta e proclamação da palavra de Deus',
+          'A luz de Cristo entregue ao batizado',
+          'A pertença do batizado à comunidade da Igreja',
+        ],
+        correta: 1,
+        explicacao:
+          'O rito do effeta, tocando com o dedo polegar os ouvidos e a boca do candidato, significa a atitude de escuta e proclamação da palavra de Deus.',
+      },
+    ],
+  },
+  {
     id: 9,
     numero: 9,
     titulo: 'Liturgia',
