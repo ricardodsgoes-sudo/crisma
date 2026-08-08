@@ -1,5 +1,197 @@
 export const encontros = [
   {
+    id: 11,
+    numero: 11,
+    titulo: 'Eucaristia',
+    subtitulo: 'Fonte e ápice de toda a vida cristã',
+    imagem: '/eucaristia.webp',
+    data: '2026-08-08',
+    versiculoDestaque:
+      'Tomem e comam, isto é o meu corpo. Bebam dele todos, pois isto é o meu sangue, o sangue da nova aliança, que é derramado em favor de muitos, para remissão dos pecados.',
+    versiculoRef: 'Mateus 26, 26-28',
+    leituras: [
+      {
+        ref: 'Mateus 26, 26-28',
+        titulo: 'A instituição da Eucaristia na Última Ceia',
+      },
+    ],
+    formacao: [
+      {
+        titulo: 'Meditando a Palavra',
+        conteudo:
+          'Na Última Ceia, Jesus toma o pão e o vinho e os entrega aos discípulos, dizendo: "Isto é o meu corpo... este é o meu sangue." Jesus não entrega apenas algo; Ele entrega a si mesmo por amor a nós. Na Eucaristia, Cristo continua presente, alimentando nossa fé e nos convidando a permanecer unidos a Ele. Hoje, somos chamados a perguntar: Tenho reconhecido Jesus na Eucaristia? Tenho permitido que Ele transforme minha vida? Que, ao receber Cristo, também aprendamos a amar, perdoar e nos entregar pelos outros.',
+      },
+      {
+        titulo: 'O que é a Eucaristia?',
+        conteudo:
+          'A Eucaristia é o sacramento que torna presente, na celebração litúrgica da Igreja, a Pessoa de Jesus Cristo (Corpo, Sangue, Alma e Divindade) e seu sacrifício redentor na plenitude do Mistério Pascal da sua paixão, morte e ressurreição.',
+      },
+      {
+        titulo: 'Natureza sacramental da Santíssima Eucaristia',
+        conteudo:
+          'Jesus Cristo instituiu este sacramento na Última Ceia. Os três evangelhos sinóticos: Mateus, Marcos e Lucas e São Paulo transmitiram-nos o relato da instituição. Fiel ao mandato de Jesus, a Igreja, guiada pelo "Espírito de verdade", que é o Espírito Santo, quando celebra a Eucaristia não faz senão seguir o rito eucarístico realizado pelo Senhor na Última Ceia.\n\nA Eucaristia é **"fonte e ápice de toda a vida cristã"**. Os demais sacramentos, assim como todos os ministérios eclesiásticos e tarefas apostólicas, se ligam à sagrada Eucaristia e a ela se ordenam. Pois a santíssima Eucaristia contém todo o bem espiritual da Igreja, a saber, o próprio Cristo, nossa Páscoa.',
+        imagem: '/ultima-ceia.webp',
+      },
+      {
+        titulo: 'A presença real eucarística',
+        conteudo:
+          'Na celebração da Eucarística torna-se presente a Pessoa de Cristo com uma modalidade de presença mística, sobrenatural, única. Não é simplesmente uma "figura", capaz de significar e de levar a mente a pensar em Cristo, presente em realidade em outro lugar, no Céu; nem é um simples "sinal", através do qual nos é oferecida a "virtude salvadora" – a graça – que provém de Cristo.\n\nA Eucaristia é, pelo contrário, presença objetiva do ser-em-si (a substância) do Corpo e do Sangue de Cristo, da sua Humanidade total. Portanto, a presença do verdadeiro Corpo e do verdadeiro Sangue de Cristo nesse sacramento **"não se pode descobrir pelos sentidos, mas só com fé, baseada na autoridade de Deus."**',
+        imagem: '/jesus-eucaristia.webp',
+      },
+      {
+        titulo: 'Disposições para receber a Sagrada Comunhão',
+        conteudo:
+          'Para comungar dignamente é necessário estar em graça de Deus. Ninguém deve, portanto, aproximar-se da Sagrada Eucaristia com consciência de pecado mortal por muito contrito que pense estar. Para comungar com fruto, é necessário, além de estar em graça de Deus, um sério empenho para receber o Senhor com a maior devoção atual possível: preparação (remota e próxima); atos de amor e reparação, de humildade, de ação de graças etc.\n\nDisposições do corpo:\n\na) a Igreja prescreve o jejum uma hora antes de comungar. Deve-se também cuidar a limpeza do corpo, o modo de vestir adequado, os gestos de veneração;\n\nb) o modo tradicional de receber a Sagrada Comunhão é de joelhos e na boca. Também se pode comungar de pé e, em algumas dioceses do mundo, é permitido – nunca imposto – receber a comunhão na mão.\n\nO preceito da comunhão sacramental é obrigatório a partir do uso da razão. Convém preparar muito bem e não atrasar a Primeira Comunhão das crianças.',
+        imagem: '/sagrada-comunhao.webp',
+      },
+      {
+        titulo: 'Efeitos da Sagrada Comunhão',
+        conteudo:
+          'O que o alimento produz no corpo para o bem da vida física, a Eucaristia produz na alma, de modo infinitamente mais sublime, para o bem da vida espiritual. Mas, enquanto o alimento se converte em nossa substância corporal, ao receber a Sagrada Comunhão, somos nós que nos convertemos em Cristo. Mediante a Eucaristia, a nova vida em Cristo, iniciada no cristão com o batismo pode consolidar-se e desenvolver-se até alcançar sua plenitude, permitindo que o cristão leve a termo o ideal enunciado por São Paulo: **"Eu vivo, mas já não sou eu, é Cristo que vive em mim" (Gl 2,20).**\n\nPortanto, a Eucaristia nos configura com Cristo, nos torna participantes do ser e da missão do Filho, nos identifica com as suas intenções e sentimentos, e nos dá a força para amar como Cristo nos pede. Pela Sagrada Comunhão, Deus aumenta a graça e as virtudes, fortalece a caridade que, vivificada apaga os pecados veniais, preserva dos pecados mortais e dá perseverança no bem.\n\nA Eucaristia promove a unidade de todos os fiéis cristãos no Senhor, ou seja, a unidade da Igreja, Corpo Místico de Cristo. É também penhor ou garantia da glória futura, quer dizer, da ressurreição da vida eterna feliz junto de Deus, Uno e Trino, dos Anjos e de todos os santos.\n\n**"Quem come a minha carne e bebe o meu sangue permanece em mim e eu nele." (João 6,56)**',
+      },
+    ],
+    reflexao: [
+      'O que a Eucaristia significa para mim?',
+      'Como posso me preparar melhor para receber Jesus na Sagrada Comunhão?',
+      'Quais frutos da Eucaristia já experimentei em minha vida?',
+      'De que maneira posso participar mais ativamente da Santa Missa?',
+      'Como a Eucaristia me impulsiona a amar e servir os irmãos?',
+    ],
+    compromisso:
+      'Participar da Santa Missa com atenção e devoção; fazer um ato de amor e gratidão a Jesus Eucarístico todos os dias; ler durante a semana Mateus 26,26-28; visitar o Santíssimo Sacramento (se possível) e agradecer a Jesus por este grande dom que é a Eucaristia.',
+    musica: {
+      titulo: 'Milagre de Amor',
+      letra: `Que bom Te receber no meu coração
+Te tocar, ter-Te em minhas mãos
+Com carinho, Te acolher
+E contigo ser um só
+Ter contigo uma perfeita comunhão
+Corpo e sangue, vinho e pão
+
+Milagre de amor
+Fonte de vida
+Ó, meu Jesus eucaristia
+Eu Te recebo em comunhão
+Pois mesmo sem que eu mereça
+Vens fazer morada no meu coração
+Eu te adoro, meu Jesus
+Doce mistério no meu coração
+Como um Deus tão grande e soberano
+Se faz pequeno, um pedaço de pão
+Só por amor
+
+Que bom Te receber no meu coração
+Te tocar, ter-Te em minhas mãos
+Com carinho, Te acolher
+E contigo ser um só
+Ter contigo uma perfeita comunhão
+Corpo e sangue, vinho e pão
+
+Milagre de amor
+Fonte de vida
+Ó, meu Jesus eucaristia
+Eu Te recebo em comunhão
+Pois mesmo sem que eu mereça
+Vens fazer morada no meu coração
+Eu te adoro, meu Jesus
+Doce mistério no meu coração
+Como um Deus tão grande e soberano
+Se faz pequeno, um pedaço de pão
+
+Ó, meu Jesus eucaristia
+Eu Te recebo em comunhão
+Pois mesmo sem que eu mereça
+Vens fazer morada no meu coração
+Eu te adoro, meu Jesus
+Doce mistério no meu coração
+Como um Deus tão grande e soberano
+Se faz pequeno, um pedaço de pão
+Só por amor
+Oh, oh, oh, oh`,
+    },
+    recursos: [
+      { tipo: 'Música', titulo: 'Milagre de Amor', autor: 'Juliana de Paula' },
+      { tipo: 'Bíblia', titulo: 'Evangelho segundo São Mateus, capítulo 26' },
+      {
+        tipo: 'Catecismo',
+        titulo: 'Segunda Parte, Segunda Seção, Capítulo I, Art. 3',
+      },
+      {
+        tipo: 'Livro',
+        titulo:
+          'Síntese da Fé Católica: a doutrina da Igreja em 36 aulas. São Paulo: Cultor de Livros, 2023. Tema 22 – A Eucaristia, p. 229-251',
+        autor: 'Gerard Jiménez e Javier Yániz (org.)',
+      },
+    ],
+    quiz: [
+      {
+        pergunta:
+          'Segundo a formação, o que a Eucaristia torna presente na celebração litúrgica da Igreja?',
+        opcoes: [
+          'Apenas uma lembrança simbólica da Última Ceia',
+          'A Pessoa de Jesus Cristo (Corpo, Sangue, Alma e Divindade) e seu sacrifício redentor',
+          'A graça santificante recebida no Batismo',
+          'A presença espiritual dos santos e dos anjos',
+        ],
+        correta: 1,
+        explicacao:
+          'A Eucaristia é o sacramento que torna presente, na celebração litúrgica da Igreja, a Pessoa de Jesus Cristo (Corpo, Sangue, Alma e Divindade) e seu sacrifício redentor na plenitude do Mistério Pascal da sua paixão, morte e ressurreição.',
+      },
+      {
+        pergunta:
+          'Como a formação define o lugar da Eucaristia em relação aos demais sacramentos?',
+        opcoes: [
+          'Ela é "fonte e ápice de toda a vida cristã", e os demais sacramentos se ligam a ela e a ela se ordenam',
+          'Ela é o último dos sacramentos da iniciação cristã',
+          'Ela tem a mesma importância de todos os outros sacramentos',
+          'Ela substitui os demais sacramentos na vida do cristão',
+        ],
+        correta: 0,
+        explicacao:
+          'A Eucaristia é "fonte e ápice de toda a vida cristã". Os demais sacramentos, assim como todos os ministérios eclesiásticos e tarefas apostólicas, se ligam à sagrada Eucaristia e a ela se ordenam, pois ela contém todo o bem espiritual da Igreja, a saber, o próprio Cristo, nossa Páscoa.',
+      },
+      {
+        pergunta:
+          'Como se pode reconhecer a presença do verdadeiro Corpo e do verdadeiro Sangue de Cristo na Eucaristia?',
+        opcoes: [
+          'Pelos sentidos, já que as espécies mudam de aparência',
+          'Pelo raciocínio filosófico',
+          'Não se pode descobrir pelos sentidos, mas só com fé, baseada na autoridade de Deus',
+          'Somente por meio de milagres eucarísticos comprovados',
+        ],
+        correta: 2,
+        explicacao:
+          'A presença do verdadeiro Corpo e do verdadeiro Sangue de Cristo nesse sacramento "não se pode descobrir pelos sentidos, mas só com fé, baseada na autoridade de Deus".',
+      },
+      {
+        pergunta:
+          'Segundo as disposições do corpo apresentadas na formação, qual é o jejum prescrito pela Igreja antes de comungar?',
+        opcoes: [
+          'Três horas antes',
+          'Uma hora antes',
+          'Desde a meia-noite',
+          'Não há jejum prescrito',
+        ],
+        correta: 1,
+        explicacao:
+          'A Igreja prescreve o jejum uma hora antes de comungar. Deve-se também cuidar a limpeza do corpo, o modo de vestir adequado e os gestos de veneração.',
+      },
+      {
+        pergunta:
+          'Qual a diferença entre o alimento comum e a Eucaristia, conforme os efeitos da Sagrada Comunhão?',
+        opcoes: [
+          'Os dois se convertem em nossa substância corporal',
+          'A Eucaristia alimenta o corpo, e o alimento comum alimenta a alma',
+          'O alimento se converte em nossa substância corporal, mas ao receber a Comunhão somos nós que nos convertemos em Cristo',
+          'Não há diferença: ambos produzem o mesmo efeito na alma',
+        ],
+        correta: 2,
+        explicacao:
+          'Enquanto o alimento se converte em nossa substância corporal, ao receber a Sagrada Comunhão, somos nós que nos convertemos em Cristo — permitindo que o cristão viva o ideal de São Paulo: "Eu vivo, mas já não sou eu, é Cristo que vive em mim" (Gl 2,20).',
+      },
+    ],
+  },
+  {
     id: 10,
     numero: 10,
     titulo: 'Batismo',
