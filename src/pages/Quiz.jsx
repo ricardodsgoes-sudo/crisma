@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link, useParams, Navigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
 import PageTransition from '../components/PageTransition'
 import { getEncontroById } from '../data/encontros'
+
+const SEGUNDOS_ATE_RESULTADO = 3
 
 export default function Quiz() {
   const { id } = useParams()
@@ -14,64 +16,11 @@ export default function Quiz() {
   const [respostas, setRespostas] = useState([])
   const [terminado, setTerminado] = useState(false)
   const [shake, setShake] = useState(false)
+  const [contagem, setContagem] = useState(null)
+  const explicacaoRef = useRef(null)
 
-  if (!encontro) return <Navigate to="/encontros" replace />
-
-  const pergunta = encontro.quiz[perguntaAtual]
-  const total = encontro.quiz.length
-  const acertos = respostas.filter((r) => r.acertou).length
-
-  function selecionar(idx) {
-    if (respondida) return
-    setRespostaSelecionada(idx)
-    setRespondida(true)
-    const acertou = idx === pergunta.correta
-    setRespostas([...respostas, { idx, acertou }])
-
-    if (acertou) {
-      confetti({
-        particleCount: 60,
-        spread: 70,
-        origin: { y: 0.6 },
-        colors: ['#C41230', '#F5C842', '#B8860B', '#FFFFFF'],
-        scalar: 0.85,
-      })
-    } else {
-      setShake(true)
-      setTimeout(() => setShake(false), 400)
-    }
-  }
-
-  function proxima() {
-    if (perguntaAtual < total - 1) {
-      setPerguntaAtual(perguntaAtual + 1)
-      setRespostaSelecionada(null)
-      setRespondida(false)
-    } else {
-      finalizar()
-    }
-  }
-
-  function finalizar() {
-    setTerminado(true)
-    const acertosFinais = respostas.filter((r) => r.acertou).length
-    const score = Math.round((acertosFinais / total) * 100)
-
-    const data = JSON.parse(localStorage.getItem(`crisma:encontro-${id}`) || '{}')
-    localStorage.setItem(
-      `crisma:encontro-${id}`,
-      JSON.stringify({
-        ...data,
-        quizConcluido: true,
-        quizScore: score,
-        quizData: new Date().toISOString(),
-      })
-    )
-
-    if (score >= 60) {
-      setTimeout(() => dispararConfetti(score), 300)
-    }
-  }
+  const total = encontro ? encontro.quiz.length : 0
+  const ehUltima = total > 0 && perguntaAtual === total - 1
 
   function dispararConfetti(score) {
     const cores = ['#C41230', '#F5C842', '#B8860B', '#FFFFFF']
@@ -102,12 +51,94 @@ export default function Quiz() {
     }
   }
 
+  function finalizar() {
+    setTerminado(true)
+    setContagem(null)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    const acertosFinais = respostas.filter((r) => r.acertou).length
+    const score = Math.round((acertosFinais / total) * 100)
+
+    const data = JSON.parse(localStorage.getItem(`crisma:encontro-${id}`) || '{}')
+    localStorage.setItem(
+      `crisma:encontro-${id}`,
+      JSON.stringify({
+        ...data,
+        quizConcluido: true,
+        quizScore: score,
+        quizData: new Date().toISOString(),
+      })
+    )
+
+    if (score >= 60) {
+      setTimeout(() => dispararConfetti(score), 300)
+    }
+  }
+
+  // rola até a explicação/botão, que nascem abaixo da dobra em telas pequenas
+  useEffect(() => {
+    if (!respondida) return
+    const t = setTimeout(() => {
+      explicacaoRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' })
+    }, 380)
+    return () => clearTimeout(t)
+  }, [respondida, perguntaAtual])
+
+  // contagem regressiva da última pergunta até a tela de resultado
+  useEffect(() => {
+    if (contagem === null || terminado) return
+    const t = setTimeout(() => {
+      if (contagem <= 1) finalizar()
+      else setContagem(contagem - 1)
+    }, 1000)
+    return () => clearTimeout(t)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [contagem, terminado])
+
+  if (!encontro) return <Navigate to="/encontros" replace />
+
+  const pergunta = encontro.quiz[perguntaAtual]
+  const acertos = respostas.filter((r) => r.acertou).length
+
+  function selecionar(idx) {
+    if (respondida) return
+    setRespostaSelecionada(idx)
+    setRespondida(true)
+    const acertou = idx === pergunta.correta
+    setRespostas([...respostas, { idx, acertou }])
+    if (ehUltima) setContagem(SEGUNDOS_ATE_RESULTADO)
+
+    if (acertou) {
+      confetti({
+        particleCount: 60,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#C41230', '#F5C842', '#B8860B', '#FFFFFF'],
+        scalar: 0.85,
+      })
+    } else {
+      setShake(true)
+      setTimeout(() => setShake(false), 400)
+    }
+  }
+
+  function proxima() {
+    if (perguntaAtual < total - 1) {
+      setPerguntaAtual(perguntaAtual + 1)
+      setRespostaSelecionada(null)
+      setRespondida(false)
+      setContagem(null)
+    } else {
+      finalizar()
+    }
+  }
+
   function reiniciar() {
     setPerguntaAtual(0)
     setRespostaSelecionada(null)
     setRespondida(false)
     setRespostas([])
     setTerminado(false)
+    setContagem(null)
   }
 
   if (terminado) {
@@ -233,11 +264,12 @@ export default function Quiz() {
             <AnimatePresence>
               {respondida && (
                 <motion.div
+                  ref={explicacaoRef}
                   initial={{ opacity: 0, y: 10, height: 0 }}
                   animate={{ opacity: 1, y: 0, height: 'auto' }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="mt-6 overflow-hidden"
+                  className="mt-6 overflow-hidden scroll-mb-8"
                 >
                   <div
                     className={`p-4 md:p-5 rounded-xl ${
@@ -256,12 +288,24 @@ export default function Quiz() {
                     </p>
                   </div>
 
-                  <button
-                    onClick={proxima}
-                    className="mt-6 w-full sm:w-auto px-8 py-3.5 bg-[var(--color-primary)] text-white rounded-full font-medium hover:bg-[var(--color-primary-dark)] transition-colors shadow-md"
-                  >
-                    {perguntaAtual < total - 1 ? 'Próxima pergunta →' : 'Ver resultado'}
-                  </button>
+                  <div className="mt-6 flex flex-col sm:flex-row sm:items-center gap-3">
+                    <button
+                      onClick={proxima}
+                      className="w-full sm:w-auto px-8 py-3.5 bg-[var(--color-primary)] text-white rounded-full font-medium hover:bg-[var(--color-primary-dark)] transition-colors shadow-md"
+                    >
+                      {!ehUltima
+                        ? 'Próxima pergunta →'
+                        : contagem !== null
+                        ? 'Ver resultado agora →'
+                        : 'Ver resultado'}
+                    </button>
+
+                    {ehUltima && contagem !== null && (
+                      <p className="text-sm text-[var(--color-text-muted)] text-center sm:text-left">
+                        Mostrando o resultado em {contagem}s…
+                      </p>
+                    )}
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>
