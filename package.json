@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "img:dims": "node scripts/gerar-dimensoes.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

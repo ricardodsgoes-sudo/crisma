@@ -89,6 +89,13 @@ Destaques em negrito do PDF: marcar com `**texto**` no `conteudo` (o componente 
 - O quiz deve ter exatamente 5 questões com 4 opções cada. As respostas corretas não devem ficar sempre no mesmo índice.
 - Insira o novo objeto **no início** do array `encontros` (antes do encontro anterior), para que a listagem mostre o mais recente primeiro internamente.
 
+## Ao adicionar imagens novas em `public/`
+
+Rodar `npm run img:dims`. Ele regenera `src/data/imagensDim.js` com a largura/altura
+real de cada imagem, usadas nos atributos `width`/`height` das `<img>` para o navegador
+reservar o espaço e o texto não "pular" durante o carregamento. Esquecer não quebra nada:
+a imagem só volta ao comportamento antigo, sem espaço reservado.
+
 ## Após cada modificação
 
 Sempre rodar `npm run dev` para subir o servidor de desenvolvimento em http://localhost:5173 (as alterações aparecem automaticamente).
@@ -112,3 +119,4 @@ Pages, KV, D1, R2).
 - `public/` — imagens e assets publicados no site (preferir WebP; PNG/JPG pesados entram no precache do PWA)
 - `docs/pdfs/` — PDFs dos encontros (referência de leitura; ficam fora de `public/` para não serem publicados)
 - `worker/` — Worker Cloudflare de presença (Durable Object); deploy independente do frontend
+- `scripts/gerar-dimensoes.mjs` — gera `src/data/imagensDim.js` (dimensões das imagens de `public/`)

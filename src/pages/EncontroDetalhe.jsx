@@ -6,6 +6,7 @@ import { DoveIcon } from '../components/Logo'
 import ShareButton from '../components/ShareButton'
 import DenominacoesEspirito from '../components/DenominacoesEspirito'
 import { getEncontroById } from '../data/encontros'
+import { dimensoesDaImagem } from '../data/imagensDim'
 
 const VISUAIS = {
   denominacoesEspirito: DenominacoesEspirito,
@@ -163,7 +164,9 @@ export default function EncontroDetalhe() {
                   <img
                     src={encontro.imagem}
                     alt={encontro.titulo}
-                    className="w-full object-contain"
+                    {...dimensoesDaImagem(encontro.imagem)}
+                    decoding="async"
+                    className="w-full h-auto object-contain"
                   />
                 </motion.div>
               )}
@@ -183,7 +186,10 @@ export default function EncontroDetalhe() {
                       <img
                         src={secao.imagem}
                         alt={secao.titulo}
-                        className="w-full object-contain"
+                        {...dimensoesDaImagem(secao.imagem)}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-auto object-contain"
                       />
                     </div>
                   )}

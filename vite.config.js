@@ -56,12 +56,33 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Cacheia tudo do bundle + imagens, permitindo offline
-        globPatterns: ['**/*.{js,css,html,webp,png,svg,woff2}'],
-        // Imagens dos slides em alta passam de 2 MB (limite padrão); eleva p/ 3 MiB
+        // Precache = baixado em segundo plano já no primeiro acesso. Fica só o
+        // essencial (bundle, CSS, HTML e ícones do app). As imagens dos
+        // encontros NÃO entram aqui: com todas no precache, quem abria o site
+        // pela primeira vez baixava ~2,8 MB de dados móveis, incluindo imagens
+        // de encontros que talvez nunca abrisse. Elas passaram para o
+        // runtimeCaching abaixo, cacheadas conforme forem sendo vistas.
+        // (As imagens da Home continuam no precache via `includeAssets`, pois
+        // aparecem na primeira tela.)
+        globPatterns: ['**/*.{js,css,html,woff2}', 'pwa-*.png'],
         maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
-        // Fontes do Google: cache de runtime
         runtimeCaching: [
+          {
+            // Imagens dos encontros: na 1ª visualização vêm da rede e ficam
+            // guardadas; nas seguintes abrem offline, sem baixar de novo.
+            urlPattern: ({ request, sameOrigin }) =>
+              sameOrigin && request.destination === 'image',
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'crisma-imagens',
+              expiration: {
+                maxEntries: 80,
+                maxAgeSeconds: 60 * 60 * 24 * 180,
+                purgeOnQuotaError: true,
+              },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\//,
             handler: 'StaleWhileRevalidate',
