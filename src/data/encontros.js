@@ -1,5 +1,162 @@
 export const encontros = [
   {
+    id: 12,
+    numero: 12,
+    titulo: 'Confirmação',
+    subtitulo: 'Selados com o Dom do Espírito Santo',
+    imagem: '/confirmacao.webp',
+    data: '2026-08-15',
+    versiculoDestaque: 'Sede selados com o Dom do Espírito Santo.',
+    versiculoRef: 'Efésios 1,13',
+    leituras: [
+      {
+        ref: '2Coríntios 1,22',
+        titulo: 'Palavra de Deus do encontro',
+      },
+    ],
+    formacao: [
+      {
+        titulo: 'Meditando a Palavra',
+        conteudo:
+          'Pentecostes revela a força do Espírito Santo na vida dos discípulos. Antes estavam com medo e escondidos; depois da vinda do Espírito, saíram para anunciar Jesus com coragem. A Crisma nos convida a viver essa mesma transformação: receber o Espírito Santo, fortalecer a nossa fé e assumir com coragem a missão de testemunhar Cristo.',
+      },
+      {
+        titulo: 'O que é a Confirmação?',
+        conteudo:
+          'A Confirmação, também chamada de Crisma, é um dos três sacramentos da iniciação cristã, juntamente com o Batismo e a Eucaristia. Pela Confirmação, o cristão recebe uma efusão especial do Espírito Santo e é fortalecido para viver sua fé com maturidade e testemunhá-la no mundo. Assim como os Apóstolos receberam o Espírito Santo em Pentecostes, o confirmado é chamado a deixar que o Espírito transforme sua vida. **A Crisma não é simplesmente uma "formatura da catequese". É um sacramento, uma ação de Deus em nossa vida que nos fortalece para a missão.**',
+      },
+      {
+        titulo: 'Fundamentos bíblicos e históricos da Crisma',
+        conteudo:
+          'Jesus prometeu enviar o Espírito Santo, promessa que se realizou em Pentecostes, quando o Espírito desceu sobre os Apóstolos e deu início à missão universal da Igreja. Na Igreja primitiva, o Espírito era comunicado aos batizados por meio da imposição das mãos e da oração, prática mencionada na Carta aos Hebreus. São Paulo e São João relacionam o Espírito Santo às imagens de unção e selo, que passaram a ser expressas na liturgia pela unção com óleo perfumado.\n\nInicialmente, Batismo, Confirmação e Eucaristia eram celebrados juntos, especialmente na Vigília Pascal, sob a presidência do bispo. Com a expansão do cristianismo e o aumento do batismo de crianças, essa prática mudou: no Ocidente, a Confirmação passou a ser normalmente separada do Batismo e reservada ao bispo; no Oriente, os três sacramentos continuaram sendo celebrados juntos, inclusive nas crianças.',
+      },
+      {
+        titulo: 'Significado litúrgico e efeitos sacramentais',
+        conteudo:
+          'O crisma, composto de azeite de oliva e bálsamo, é consagrado pelo bispo ou o patriarca, e só por ele durante a missa da confirmação. A unção do confirmando com o santo crisma é sinal da sua consagração ao Senhor. **"Pela Confirmação, os cristãos, isto é, os que são ungidos, participam mais intensamente da missão de Jesus e da plenitude do Espírito Santo, de que Jesus é cumulado, a fim de que toda a vida deles exale \'o bom odor de Cristo\'. Por esta unção, o confirmando recebe \'a marca\', o selo do Espírito Santo".**\n\nEssa unção é precedida liturgicamente, quando se realizada separadamente do batismo, pela renovação das promessas do batismo e a profissão de fé dos confirmandos. Assim aparece com clareza que a Confirmação se situa na sequência do Batismo. Segue-se na liturgia romana a extensio manuum do bispo para todos os confirmandos, enquanto pronuncia uma oração de grande conteúdo epiclético (quer dizer, de invocação e súplica).\n\nChega-se então ao rito especificamente sacramental que se realiza **"pela unção do santo crisma na fronte, impondo as mãos e com estas palavras: \'Recebe por este sinal o dom do Espírito Santo\'".** O rito é concluído com o beijo da paz, como manifestação de comunhão eclesial com o bispo.\n\nAssim pois, a confirmação possui uma unidade intrínseca com o batismo, embora não se expresse necessariamente no mesmo rito. Com ela, o patrimônio batismal do candidato completa-se com os dons sobrenaturais característicos da maturidade cristã. A confirmação é conferida uma única vez, **"pois imprime na alma uma marca espiritual indelével, o \'caráter\', que é o sinal de que Jesus Cristo assinalou um cristão com o selo de seu Espírito, revestindo-o da força do alto para ser sua testemunha".** Os cristãos recebem, por ela, com particular abundância os dons do Espírito Santo, ficam mais estreitamente vinculados à Igreja, "e desta forma obrigam-se com maior compromisso a difundir e defender a fé, com sua palavra e suas obras". (Lumen Gentium, 11).\n\nAssim pois, um cristão batizado e confirmado está destinado a participar na missão evangelizadora da Igreja em virtude desses sacramentos. Essa "destinação" inclui, ao mesmo tempo, em particular pela Confirmação, os meios sobrenaturais necessários para o próprio crescimento na vida cristã, inclusive para bem enfrentar as diversas vicissitudes que um cristão encontra ao longo de sua vida. O confirmado é chamado a dar testemunho de Cristo com uma vida cristã íntegra e com sua palavra.',
+      },
+      {
+        titulo: 'Ministro e sujeito da Crisma',
+        conteudo:
+          'Como sucessores dos apóstolos, só os bispos são "os ministros originários da Confirmação". No rito latino, o ministro ordinário é exclusivamente o bispo; um presbítero pode confirmar validamente só nos casos previstos pela legislação geral (batismo de adultos, acolhida na comunhão católica, equiparação episcopal, perigo de morte), ou quando recebe a faculdade específica ou quando é associado temporariamente a isto pelo bispo.\n\nComo sacramento de iniciação, a confirmação está destinada a todos os cristãos, não só a alguns escolhidos. No rito latino, ela é conferida uma vez que o candidato tenha chegado ao uso da razão: a idade concreta depende dos costumes locais que devem respeitar seu caráter de iniciação. Requer-se a prévia instrução, uma verdadeira intenção e o estado de graça. **"Não recebemos o Espírito Santo para permanecer parados, mas para sermos fortalecidos e enviados em missão."**',
+      },
+    ],
+    reflexao: [
+      'O que significa para mim receber o Espírito Santo?',
+      'Em quais momentos da minha vida preciso mais da força do Espírito Santo?',
+      'Tenho deixado o Espírito Santo conduzir minhas escolhas?',
+      'Qual dos sete dons do Espírito Santo mais preciso desenvolver?',
+      'Como posso ser testemunha de Jesus dentro da minha família?',
+      'O que significa, para mim, ser um cristão confirmado?',
+      'Estou preparado para assumir uma missão dentro da Igreja?',
+    ],
+    compromisso:
+      'Participar da Santa Missa com atenção e devoção; fazer diariamente uma breve oração ao Espírito Santo; ler Atos 2,1-13 e meditar sobre Pentecostes; escolher um dos sete dons do Espírito Santo para pedir especialmente durante a semana e rezar por uma pessoa que precisa conhecer mais o amor de Deus.',
+    musica: {
+      titulo: 'Quero Mergulhar Nas Profundezas',
+      letra: `Quero mergulhar nas profundezas do Espírito de Deus
+E descobrir suas riquezas em meu coração
+E descobrir suas riquezas em meu coração
+
+É tão lindo
+Tão simples
+Brisa leve, tão suave, doce Espírito Santo de Deus
+Tão suave, brisa leve, doce Espírito Santo de Deus
+
+Quero mergulhar nas profundezas do Espírito de Deus
+E descobrir suas riquezas em meu coração
+E descobrir suas riquezas em meu coração
+
+É tão lindo
+Tão simples
+Brisa leve, tão suave, doce Espírito Santo de Deus
+Tão suave, brisa leve, doce Espírito Santo de Deus`,
+    },
+    recursos: [
+      {
+        tipo: 'Música',
+        titulo: 'Quero mergulhar nas profundezas',
+        autor: 'Padre Marcelo Rossi',
+      },
+      { tipo: 'Bíblia', titulo: 'Segunda Carta aos Coríntios, capítulo 1' },
+      {
+        tipo: 'Catecismo',
+        titulo: 'Segunda Parte, Segunda Seção, Capítulo I, Art. 2',
+      },
+      {
+        tipo: 'Livro',
+        titulo:
+          'Síntese da Fé Católica: a doutrina da Igreja em 36 aulas. São Paulo: Cultor de Livros, 2023. Tema 21 – Batismo e Confirmação, p. 224-228',
+        autor: 'Gerard Jiménez e Javier Yániz (org.)',
+      },
+    ],
+    quiz: [
+      {
+        pergunta:
+          'Segundo a formação, quais são os três sacramentos da iniciação cristã?',
+        opcoes: [
+          'Batismo, Confissão e Eucaristia',
+          'Batismo, Confirmação e Eucaristia',
+          'Confirmação, Eucaristia e Matrimônio',
+          'Batismo, Confirmação e Unção dos Enfermos',
+        ],
+        correta: 1,
+        explicacao:
+          'A Confirmação, também chamada de Crisma, é um dos três sacramentos da iniciação cristã, juntamente com o Batismo e a Eucaristia.',
+      },
+      {
+        pergunta: 'De que é composto o santo crisma e quem o consagra?',
+        opcoes: [
+          'De água e sal, consagrado por qualquer presbítero',
+          'De vinho e mirra, consagrado pelo pároco na Vigília Pascal',
+          'De azeite de oliva e bálsamo, consagrado pelo bispo ou o patriarca',
+          'De óleo dos enfermos, consagrado pelos diáconos',
+        ],
+        correta: 2,
+        explicacao:
+          'O crisma, composto de azeite de oliva e bálsamo, é consagrado pelo bispo ou o patriarca, e só por ele durante a missa da confirmação. A unção do confirmando com o santo crisma é sinal da sua consagração ao Senhor.',
+      },
+      {
+        pergunta:
+          'Quais são as palavras do rito especificamente sacramental da Confirmação?',
+        opcoes: [
+          '"Recebe por este sinal o dom do Espírito Santo"',
+          '"Eu te batizo em nome do Pai, do Filho e do Espírito Santo"',
+          '"Recebe o selo do Batismo para a vida eterna"',
+          '"Vai e sê testemunha de Cristo no mundo"',
+        ],
+        correta: 0,
+        explicacao:
+          'O rito sacramental se realiza "pela unção do santo crisma na fronte, impondo as mãos e com estas palavras: \'Recebe por este sinal o dom do Espírito Santo\'". O rito é concluído com o beijo da paz, como manifestação de comunhão eclesial com o bispo.',
+      },
+      {
+        pergunta: 'Por que a Confirmação é conferida uma única vez?',
+        opcoes: [
+          'Porque o bispo só pode visitar a paróquia uma vez',
+          'Porque substitui os demais sacramentos da iniciação',
+          'Porque a graça recebida se esgota depois de um tempo',
+          'Porque imprime na alma uma marca espiritual indelével, o "caráter"',
+        ],
+        correta: 3,
+        explicacao:
+          'A confirmação é conferida uma única vez, "pois imprime na alma uma marca espiritual indelével, o \'caráter\', que é o sinal de que Jesus Cristo assinalou um cristão com o selo de seu Espírito, revestindo-o da força do alto para ser sua testemunha".',
+      },
+      {
+        pergunta:
+          'No rito latino, quem é o ministro ordinário da Confirmação e o que se requer do candidato?',
+        opcoes: [
+          'Qualquer presbítero; requer-se apenas o desejo de ser confirmado',
+          'Exclusivamente o bispo; requerem-se a prévia instrução, uma verdadeira intenção e o estado de graça',
+          'O diácono; requer-se somente ter sido batizado',
+          'O padrinho de Crisma; requer-se a frequência à catequese',
+        ],
+        correta: 1,
+        explicacao:
+          'Como sucessores dos apóstolos, só os bispos são "os ministros originários da Confirmação". No rito latino, o ministro ordinário é exclusivamente o bispo, e do candidato requer-se a prévia instrução, uma verdadeira intenção e o estado de graça.',
+      },
+    ],
+  },
+  {
     id: 11,
     numero: 11,
     titulo: 'Eucaristia',
