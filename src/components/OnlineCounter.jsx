@@ -66,10 +66,24 @@ export default function OnlineCounter() {
       reconnectRef.current = setTimeout(conectar, espera)
     }
 
+    // O iOS derruba o WebSocket quando o Safari vai para segundo plano ou a
+    // tela é bloqueada. Ao voltar, o backoff podia deixar o contador parado por
+    // até 30s — então aqui zeramos as tentativas e reconectamos na hora.
+    function aoVoltarParaTela() {
+      if (document.visibilityState !== 'visible' || !ativoRef.current) return
+      const ws = wsRef.current
+      if (ws && (ws.readyState === WebSocket.OPEN || ws.readyState === WebSocket.CONNECTING)) return
+      clearTimeout(reconnectRef.current)
+      tentativasRef.current = 0
+      conectar()
+    }
+
+    document.addEventListener('visibilitychange', aoVoltarParaTela)
     conectar()
 
     return () => {
       ativoRef.current = false
+      document.removeEventListener('visibilitychange', aoVoltarParaTela)
       clearTimeout(reconnectRef.current)
       clearInterval(heartbeatRef.current)
       if (wsRef.current) {

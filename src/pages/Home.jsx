@@ -94,7 +94,7 @@ export default function Home() {
         className="text-white py-14 sm:py-16 md:py-20 relative overflow-hidden"
         style={{
           backgroundColor: '#C41230',
-          backgroundImage: 'url("./background-paper-red.webp?v=1")',
+          backgroundImage: 'url("/background-paper-red.webp?v=1")',
           backgroundSize: 'cover',
           backgroundPosition: 'center 50%',
         }}

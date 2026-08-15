@@ -4,7 +4,12 @@ import OnlineCounter from './OnlineCounter'
 export default function Footer() {
   return (
     <footer className="border-t border-[var(--color-border)] bg-[var(--color-surface-warm)] mt-24">
-      <div className="max-w-6xl mx-auto px-4 md:px-8 py-12 flex flex-col items-center text-center gap-4">
+      {/* pb com safe-area: com o app instalado na tela de início do iPhone, o
+          conteúdo vai até a borda e o rodapé encostaria no indicador de home. */}
+      <div
+        className="max-w-6xl mx-auto px-4 md:px-8 pt-12 flex flex-col items-center text-center gap-4"
+        style={{ paddingBottom: 'max(3rem, calc(env(safe-area-inset-bottom) + 1.5rem))' }}
+      >
         <ParishCrest className="w-20 h-24" />
         <div>
           <p

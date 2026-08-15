@@ -34,7 +34,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col">
+      {/* 100dvh em vez de 100vh: no Safari do iPhone o 100vh inclui a área da
+          barra de endereço, o que deixa a página mais alta que a tela. */}
+      <div className="min-h-[100dvh] flex flex-col">
         <Header />
         <main className="flex-1">
           <AnimatedRoutes />
