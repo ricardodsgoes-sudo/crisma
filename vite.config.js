@@ -4,7 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: './',
+  // Caminhos absolutos: com './' o navegador resolve os assets a partir da rota
+  // atual (/encontros/11/assets/...), o que quebra o acesso direto a rotas internas.
+  base: '/',
   plugins: [
     react(),
     tailwindcss(),
@@ -29,8 +31,8 @@ export default defineConfig({
         background_color: '#C41230',
         display: 'standalone',
         orientation: 'portrait',
-        scope: './',
-        start_url: './',
+        scope: '/',
+        start_url: '/',
         lang: 'pt-BR',
         icons: [
           {
