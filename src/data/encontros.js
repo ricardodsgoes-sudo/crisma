@@ -1,5 +1,151 @@
 export const encontros = [
   {
+    id: 13,
+    numero: 13,
+    titulo: 'Matrimônio',
+    subtitulo: 'Uma aliança de amor vivida na presença de Deus',
+    imagem: '/matrimonio.webp',
+    data: '2026-08-22',
+    versiculoDestaque: 'Pelo pacto conjugal já não são dois, mas uma só carne.',
+    versiculoRef: 'Gênesis 2,24',
+    leituras: [
+      {
+        ref: 'Gênesis 2,24',
+        titulo: 'Palavra de Deus do encontro',
+      },
+    ],
+    formacao: [
+      {
+        titulo: 'Meditando a Palavra',
+        conteudo:
+          'O matrimônio é um chamado para transformar duas histórias em uma nova história de amor. Ser uma só carne é aprender a caminhar juntos, deixando o egoísmo de lado e escolhendo, todos os dias, amar, perdoar, cuidar e permanecer. Deus deseja estar no centro dessa união, fortalecendo o casal para que seu amor seja sinal do Seu próprio amor.',
+      },
+      {
+        titulo: 'O Sacramento do Matrimônio',
+        conteudo:
+          'O matrimônio é uma sábia instituição do Criador para realizar na humanidade seu desígnio de amor. Os esposos, mediante sua doação pessoal recíproca, tendem à comunhão de seu ser com vistas a um mútuo aperfeiçoamento pessoal, para colaborar com Deus na geração e na educação de novas vidas. Nos batizados, o matrimônio reveste-se da dignidade de sinal sacramental da graça, na medida em que representa a união de Cristo e da Igreja.\n\nO amor mútuo entre os esposos se torna uma imagem do amor absoluto e indefectível de Deus pelo homem. Esse amor, abençoado por Deus, é destinado a ser fecundo e a realizar-se na obra comum de preservação da criação. O dom próprio que caracteriza o amor conjugal são as próprias pessoas: o dom de si.\n\nOs esposos são chamados a uma entrega recíproca, total e verdadeira, aberta à geração e à educação dos filhos. Pelo fato de a comunidade matrimonial ser fundamento natural da família, célula da sociedade, não se situa exclusivamente na esfera privada, mas trata-se de um bem de interesse público. A sociedade protege o matrimônio por meio de sua institucionalização legal: o matrimônio civil na sociedade civil e o matrimônio canônico na Igreja. Quando existe uma verdadeira vontade conjugal, o amor entre os esposos deve ser compreendido como uma doação total e definitiva das pessoas entre si.',
+        imagem: '/celebracao-matrimonio.webp',
+      },
+      {
+        titulo: 'A celebração do Matrimônio',
+        conteudo:
+          'O matrimônio nasce do consentimento pessoal e irrevogável dos esposos. O consentimento matrimonial é o ato da vontade pelo qual o homem e a mulher se entregam e se aceitam mutuamente em aliança irrevogável para constituir o matrimônio. Na celebração do matrimônio, os esposos manifestam publicamente sua decisão de viver uma aliança de amor, fidelidade e entrega. De acordo com o Código de Direito Canônico, o matrimônio é celebrado diante do Ordinário do lugar ou do pároco, ou de um sacerdote ou diácono delegado por um deles para assistir à celebração, e diante de duas testemunhas.\n\nAs propriedades essenciais do matrimônio são a unidade e a indissolubilidade, que no matrimônio cristão alcançam particular firmeza em virtude do sacramento. O marido e a mulher, **"pelo pacto conjugal já não são dois, mas uma só carne"**. A poligamia é contrária a esta igual dignidade de um e outro e ao amor conjugal que é único e exclusivo. A união matrimonial é indissolúvel: o próprio Deus a estabeleceu: **"o que Deus uniu, o homem não separe"**. O divórcio é uma ofensa grave à lei natural.\n\nExiste uma diferença considerável entre o cônjuge que se esforçou sinceramente por ser fiel ao sacramento do Matrimônio e se vê injustamente abandonado e aquele que, por uma falta grave de sua parte, destrói um matrimônio canonicamente válido. Existem, no entanto, situações em que a convivência matrimonial se torna praticamente impossível por razões muito diversas. Em tais casos, a Igreja admite a separação física dos esposos, que deixam a coabitação. Os esposos não deixam de ser marido e mulher diante de Deus; nem ficam livre para contrair uma nova união.',
+        imagem: '/bencao-matrimonio.webp',
+      },
+      {
+        titulo: 'A paternidade responsável',
+        conteudo:
+          'Pela sua própria natureza, a instituição matrimonial e o amor conjugal estão ordenados à procriação e à educação dos filhos, que constituem o ponto alto da sua missão. Os filhos são o dom mais excelente do Matrimônio e contribuem grandemente para o bem dos próprios pais.\n\nNa Igreja, a família é chamada Igreja doméstica, porque a comunhão específica de seus membros está chamada a ser "revelação e atuação específica da comunhão eclesial". Os pais devem ser para seus filhos os primeiros pregadores da fé, tanto com sua palavra como com seu exemplo, e devem fomentar a vocação sagrada. É aí que se exercita de modo privilegiado o sacerdócio batismal do pai de família, da mãe, dos filhos, de todos os membros da família, na recepção dos sacramentos, na oração e na ação de graças, como testemunho de uma vida santa com a renúncia e o amor que se traduz em obras. O lar é assim a primeira escola de vida cristã e escola do mais rico humanismo. Nele se aprende a paciência e o gozo do trabalho, o amor fraterno, o perdão generoso e repetido, e, sobretudo, o culto divino, por meio da oração e da entrega de sua vida.\n\n**"O matrimônio cristão não é apenas a união de duas pessoas, mas uma aliança de amor vivida na presença de Deus."**',
+      },
+    ],
+    reflexao: [
+      'O que significa, para mim, o matrimônio como uma aliança de amor e doação?',
+      'O que significa dizer que marido e mulher se tornam "uma só carne"?',
+      'Como posso cultivar a unidade, a fidelidade e o diálogo dentro da minha família?',
+      'De que maneira um casal cristão pode testemunhar o amor de Cristo no mundo?',
+      'O que significa viver a família como uma Igreja doméstica?',
+      'Como posso contribuir para que meu lar seja uma escola de fé, perdão e amor?',
+      'O que significa exercer uma paternidade e uma maternidade responsáveis?',
+    ],
+    compromisso:
+      'Participar da Santa Missa com atenção e devoção; reservar um momento de oração pela família, pedindo a Deus pela união e pela santificação do lar; praticar um gesto concreto de amor, escuta, carinho ou perdão dentro de casa; ler Gênesis 2,24 e refletir sobre o significado da expressão "uma só carne" e rezar pela sua família, pedindo que seu lar seja uma verdadeira Igreja doméstica.',
+    musica: {
+      titulo: 'Você e Eu',
+      letra: `Quero estar com você
+Lembrar de cada momento bom
+Reviver a nossa história nosso amor
+Quem nos uniu foi Deus
+Para fazer um só, você e eu
+
+Agora somos um do outro
+Nosso amor foi crescendo aos poucos
+Provado na dor
+Como o ouro provado no fogo
+Pra poder se tornar com o tempo
+Um belo tesouro, tão raro no mundo
+Sacramento selado por Deus, você e eu`,
+    },
+    recursos: [
+      { tipo: 'Música', titulo: 'Você e eu', autor: 'Eliana Ribeiro' },
+      { tipo: 'Bíblia', titulo: 'Primeira Carta aos Coríntios, Capítulo 13' },
+      {
+        tipo: 'Catecismo',
+        titulo:
+          'Catecismo da Igreja Católica — Segunda Parte, Segunda Seção, Capítulo III, Art. 7',
+      },
+      {
+        tipo: 'Livro',
+        titulo:
+          'Síntese da Fé Católica: a doutrina da Igreja em 36 aulas. São Paulo: Cultor de Livros, 2023. Tema 24 – O Matrimônio e a Ordem Sacerdotal, p. 267-276',
+        autor: 'Gerard Jiménez e Javier Yániz (org.)',
+      },
+    ],
+    quiz: [
+      {
+        pergunta: 'Segundo a formação, o que é o consentimento matrimonial?',
+        opcoes: [
+          'A autorização dada pelos pais dos noivos antes da celebração',
+          'A bênção que o sacerdote pronuncia sobre as alianças',
+          'O registro civil do casamento feito no cartório',
+          'O ato da vontade pelo qual o homem e a mulher se entregam e se aceitam mutuamente em aliança irrevogável',
+        ],
+        correta: 3,
+        explicacao:
+          'O matrimônio nasce do consentimento pessoal e irrevogável dos esposos. O consentimento matrimonial é o ato da vontade pelo qual o homem e a mulher se entregam e se aceitam mutuamente em aliança irrevogável para constituir o matrimônio.',
+      },
+      {
+        pergunta:
+          'De acordo com o Código de Direito Canônico, diante de quem o matrimônio é celebrado?',
+        opcoes: [
+          'Diante do Ordinário do lugar, do pároco ou de um sacerdote ou diácono delegado, e de duas testemunhas',
+          'Diante apenas dos noivos e de seus padrinhos',
+          'Diante do bispo diocesano exclusivamente',
+          'Diante de um diácono e de quatro testemunhas',
+        ],
+        correta: 0,
+        explicacao:
+          'De acordo com o Código de Direito Canônico, o matrimônio é celebrado diante do Ordinário do lugar ou do pároco, ou de um sacerdote ou diácono delegado por um deles para assistir à celebração, e diante de duas testemunhas.',
+      },
+      {
+        pergunta: 'Quais são as propriedades essenciais do matrimônio?',
+        opcoes: [
+          'A fecundidade e a hospitalidade',
+          'A unidade e a indissolubilidade',
+          'A obediência e a caridade',
+          'A castidade e a pobreza',
+        ],
+        correta: 1,
+        explicacao:
+          'As propriedades essenciais do matrimônio são a unidade e a indissolubilidade, que no matrimônio cristão alcançam particular firmeza em virtude do sacramento.',
+      },
+      {
+        pergunta: 'Por que a família é chamada, na Igreja, de Igreja doméstica?',
+        opcoes: [
+          'Porque substitui a participação na vida da paróquia',
+          'Porque nela se celebram os sacramentos da iniciação cristã',
+          'Porque a comunhão específica de seus membros está chamada a ser "revelação e atuação específica da comunhão eclesial"',
+          'Porque cada casa deve ter um oratório com imagens dos santos',
+        ],
+        correta: 2,
+        explicacao:
+          'Na Igreja, a família é chamada Igreja doméstica, porque a comunhão específica de seus membros está chamada a ser "revelação e atuação específica da comunhão eclesial". O lar é assim a primeira escola de vida cristã e escola do mais rico humanismo.',
+      },
+      {
+        pergunta:
+          'Segundo a formação, o que caracteriza o dom próprio do amor conjugal?',
+        opcoes: [
+          'Os bens materiais que o casal partilha',
+          'O tempo que os esposos dedicam um ao outro',
+          'A convivência sob o mesmo teto',
+          'As próprias pessoas: o dom de si',
+        ],
+        correta: 3,
+        explicacao:
+          'O dom próprio que caracteriza o amor conjugal são as próprias pessoas: o dom de si. Os esposos são chamados a uma entrega recíproca, total e verdadeira, aberta à geração e à educação dos filhos.',
+      },
+    ],
+  },
+  {
     id: 12,
     numero: 12,
     titulo: 'Confirmação',
