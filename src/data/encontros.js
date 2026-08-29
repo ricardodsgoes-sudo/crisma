@@ -1,5 +1,186 @@
 export const encontros = [
   {
+    id: 14,
+    numero: 14,
+    titulo: 'Penitência',
+    subtitulo: 'O abraço da misericórdia infinita do Pai',
+    imagem: '/penitencia.webp',
+    data: '2026-08-29',
+    versiculoDestaque:
+      'Deus pode lavar nossas culpas, purificar nosso coração e renovar nossa vida.',
+    versiculoRef: 'Salmo 51,3-4',
+    leituras: [
+      {
+        ref: 'Salmo 51,3-4',
+        titulo: 'Palavra de Deus do encontro',
+      },
+    ],
+    formacao: [
+      {
+        titulo: 'Meditando a Palavra',
+        conteudo:
+          'O Salmo 51 nos convida a reconhecer nossas fraquezas e confiar na infinita misericórdia de Deus. Quando pecamos, Deus não nos abandona, mas nos chama de volta para perto Dele. O verdadeiro arrependimento nasce de um coração humilde, que reconhece seus erros e deseja mudar. Deus pode lavar nossas culpas, purificar nosso coração e renovar nossa vida. Que saibamos sempre buscar o perdão e recomeçar, confiando no amor misericordioso do Pai.',
+      },
+      {
+        titulo: 'A Penitência',
+        conteudo:
+          'Celebrar o Sacramento da Reconciliação significa ser envolvido por um abraço caloroso: é o abraço da misericórdia infinita do Pai. A Penitência é um sacramento específico de cura e salvação. Segundo a Tradição viva da Igreja e os ensinamentos do Magistério, Jesus instituiu especificamente o sacramento da Penitência e da Reconciliação quando, ressuscitado, insuflou o Espírito em seus Apóstolos, confiando-lhes seu próprio poder divino de perdoar os pecados. Trata-se de um poder transmitido aos bispos, sucessores dos Apóstolos como pastores da Igreja, e aos presbíteros (aos quais for concedida a faculdade) que são também sacerdotes da Nova Aliança, colaboradores dos bispos, em virtude do sacramento da Ordem.',
+      },
+      {
+        titulo: 'A Estrutura do Sacramento da Penitência',
+        conteudo:
+          'O primeiro elemento essencial do sacramento da Penitência é, pois, constituído pelos próprios atos do penitente, quer dizer, pela contrição do coração, a confissão dos pecados e o cumprimento das obras penitenciais impostas pelo ministro de Cristo e da Igreja. Entre os atos do penitente, ocupa o primeiro lugar a contrição, que é **"uma dor da alma e detestação do pecado cometido, com a resolução de não mais pecar no futuro"**.\n\nO segundo elemento da estrutura corresponde à absolvição do ministro, cuja parte essencial são as palavras: **"Eu te absolvo de teus pecados em nome do Pai, e do Filho, e do Espírito Santo"**. Assim, por meio do sacramento da Penitência, o Pai acolhe o filho que retorna a ele, Cristo toma sobre seus ombros a ovelha perdida e a conduz novamente ao redil e o Espírito Santo volta a santificar seu templo ou habita nele com maior plenitude.\n\nPremissa necessária para uma celebração correta e frutuosa do sacramento da confissão e da reconciliação é o exame de consciência, que a pessoa deve fazer antes da confissão. Com efeito, ninguém pode arrepender-se e acusar-se dos próprios pecados diante de Deus, se antes, iluminado pelo auxílio divino, não reflete sobre suas culpas. Os textos mais adaptados para esse fim devem ser procurados na catequese moral dos evangelhos e das cartas apostólicas: Sermão da Montanha, ensinamentos apostólicos.',
+        imagem: '/confissao.webp',
+      },
+      {
+        titulo: 'Os Efeitos do Sacramento da Penitência',
+        conteudo:
+          'Os efeitos são: a reconciliação com Deus e, portanto, o perdão dos pecados; a reconciliação com a Igreja; a recuperação do estado de graça que foi perdido; a remissão da pena eterna merecida por causa dos pecados mortais e, pelo menos em parte, das penas temporais que são consequência do pecado; a paz e a serenidade da consciência; a consolação do espírito; o crescimento das forças espirituais para o combate cristão. Esse sacramento, além disso, conforma os penitentes de modo particular com Cristo, vencedor do pecado através de sua paixão redentora e de sua ressurreição gloriosa.\n\nPor último, deve-se observar que, durante a celebração do sacramento, os fiéis vivem de modo "mistérico", mas real e efetivo, uma antecipação do juízo final de Cristo Senhor sobre os homens. Pode-se dizer com verdade que quem recebe a absolvição sacramental já foi julgado e absolvido pelo Senhor. Para os cristãos caídos depois do batismo, este sacramento da Penitência é tão necessário como o próprio Batismo para os ainda não regenerados.\n\nO ato interior de arrependimento (a contrição do coração) leva o cristão a buscar o perdão de Deus e a plena comunhão com Cristo e com a Igreja. O cristão pecador que desejar a reconciliação com Deus deve, pois, não só arrepender-se interiormente e reconhecer que precisa do perdão divino, mas também deve aceitar os meios através dos quais a graça e o perdão de Deus chegam aos homens no tempo da Igreja. A verdadeira contrição inclui sempre o desejo de receber o sacramento do perdão.\n\nA autoridade da Igreja especificou a respeito deste ponto: __"Aquele que tem consciência de ter cometido um pecado mortal não deve receber a Sagrada Comunhão [...] sem receber previamente a absolvição sacramental [...]"__. __"Conforme o mandamento da Igreja, todo fiel, depois de ter chegado à idade da discrição, é obrigado a confessar seus pecados graves, dos quais tem consciência, pelo menos uma vez por ano"__. __"Apesar de não ser estritamente necessária, a confissão das faltas cotidianas (pecados veniais) é vivamente recomendada pela Igreja. Com efeito, a confissão regular de nossos pecados veniais nos ajuda a formar a consciência, a lutar contra nossas más tendências, a deixar-nos curar por Cristo, a progredir na vida do Espírito"__. __"A recepção frequente e cuidadosa deste sacramento é igualmente muito útil em relação aos pecados veniais"__.\n\n**"Na Penitência, não encontramos apenas o perdão dos nossos pecados, mas o abraço de um Pai que nos acolhe, cura nossas feridas e nos dá a graça de recomeçar."**',
+      },
+    ],
+    reflexao: [
+      'O que significa, para mim, reconhecer meus erros e pedir verdadeiramente perdão a Deus?',
+      'Existe alguma situação ou pessoa que preciso perdoar ou pedir perdão para experimentar a verdadeira reconciliação?',
+      'Como tenho vivido o Sacramento da Confissão: por obrigação ou como um encontro com a misericórdia e o amor de Deus?',
+      'O que preciso mudar em minha vida para não voltar aos mesmos erros e crescer na minha caminhada com Cristo?',
+    ],
+    compromisso:
+      'Reservar um momento para o exame de consciência todos os dias, pedindo a luz do Espírito Santo; buscar o sacramento da Reconciliação com regularidade, com coração arrependido e sincero; praticar um gesto concreto de reconciliação, perdoando, pedindo perdão ou reparando uma situação; ler e meditar o Salmo 51, rezando com as palavras do salmista; e agradecer a Deus por sua infinita misericórdia, confiando sempre no acolhimento de Deus.',
+    musica: {
+      titulo: 'Eu Voltei',
+      letra: `Mestre, eu agora estou voltando
+Mas meu peito está sangrando
+Por demorar em voltar pra ti
+
+Mestre, tanto tempo caminhei com essa dor
+Hoje mesmo já nem sei quem eu sou
+Mas em ti volto a me encontrar
+
+Eu voltei
+Pro mesmo lugar de onde eu não devia ter saído
+Com meu coração todo ferido
+Mas o Senhor vem restaurar
+
+Eu voltei
+E agora estarei sempre aqui te adorando
+Voltei e o meu coração está te amando
+Valeu muito a pena voltar
+
+Filho, eu estava te esperando
+Pra poder te dar descanso
+E te fazer voltar ao primeiro amor
+
+Filho, vestes novas estou te dando
+Seu coração estou curando
+Te fazendo se reencontrar
+
+Eu voltei
+Pro mesmo lugar de onde eu não devia ter saído
+Com meu coração todo ferido
+Mas o Senhor vem restaurar
+
+Eu voltei
+E agora estarei sempre aqui te adorando
+Voltei e o meu coração está te amando
+Valeu muito apena voltar
+
+Mestre, teu amor me restaurou
+Agora já sei quem sou
+Eis-me aqui envia-me, Senhor
+
+Eu voltei
+Pro mesmo lugar de onde eu não devia ter saído
+Com meu coração todo ferido
+Mas o Senhor vem restaurar
+
+Eu voltei
+E agora estarei sempre aqui te adorando
+Voltei e o meu coração está te amando
+Valeu muito apena voltar
+Pra te amar`,
+    },
+    recursos: [
+      { tipo: 'Música', titulo: 'Eu voltei', autor: 'Thiago Brado' },
+      { tipo: 'Bíblia', titulo: 'Salmos, capítulo 51 (50)' },
+      {
+        tipo: 'Catecismo',
+        titulo: 'Segunda Parte, Segunda Seção, Capítulo II, Art. 4',
+      },
+      {
+        tipo: 'Livro',
+        titulo:
+          'Síntese da Fé Católica: a doutrina da Igreja em 36 aulas. São Paulo: Cultor de Livros, 2023. Tema 23 – A Penitência e a Unção dos enfermos, p. 253-261',
+        autor: 'Gerard Jiménez e Javier Yániz (org.)',
+      },
+    ],
+    quiz: [
+      {
+        pergunta:
+          'Segundo o texto, quando Jesus instituiu especificamente o sacramento da Penitência?',
+        opcoes: [
+          'Na Última Ceia, ao instituir a Eucaristia',
+          'Ressuscitado, ao insuflar o Espírito Santo sobre os Apóstolos, dando-lhes o poder de perdoar pecados',
+          'No dia de Pentecostes, cinquenta dias depois da Páscoa',
+          'No momento do seu Batismo no rio Jordão',
+        ],
+        correta: 1,
+        explicacao:
+          'O texto afirma que Jesus instituiu o sacramento da Penitência quando, ressuscitado, insuflou o Espírito em seus Apóstolos, confiando-lhes seu próprio poder divino de perdoar os pecados.',
+      },
+      {
+        pergunta:
+          'Qual é a parte essencial das palavras de absolvição do ministro?',
+        opcoes: [
+          'Ide em paz, o Senhor vos perdoou',
+          'Recebe o dom do Espírito Santo',
+          'Eu te absolvo de teus pecados em nome do Pai, e do Filho, e do Espírito Santo',
+          'Bem-aventurados os que choram, porque serão consolados',
+        ],
+        correta: 2,
+        explicacao:
+          'O segundo elemento da estrutura do sacramento corresponde à absolvição do ministro, cuja parte essencial são as palavras: "Eu te absolvo de teus pecados em nome do Pai, e do Filho, e do Espírito Santo".',
+      },
+      {
+        pergunta: 'Como o texto define a contrição?',
+        opcoes: [
+          'Um rito litúrgico presidido pelo bispo',
+          'Uma obra penitencial imposta pelo confessor',
+          'Uma oração vocal recitada antes da confissão',
+          'Uma dor da alma e detestação do pecado cometido, com a resolução de não mais pecar no futuro',
+        ],
+        correta: 3,
+        explicacao:
+          'Entre os atos do penitente, ocupa o primeiro lugar a contrição, que é "uma dor da alma e detestação do pecado cometido, com a resolução de não mais pecar no futuro".',
+      },
+      {
+        pergunta:
+          'Qual é a premissa necessária, segundo o texto, para uma celebração correta e frutuosa do sacramento da confissão?',
+        opcoes: [
+          'O exame de consciência',
+          'A presença de duas testemunhas',
+          'O jejum na véspera',
+          'A leitura pública dos pecados',
+        ],
+        correta: 0,
+        explicacao:
+          'O texto afirma que o exame de consciência, feito antes da confissão, é premissa necessária para uma celebração correta e frutuosa do sacramento.',
+      },
+      {
+        pergunta:
+          'Segundo a autoridade da Igreja citada no texto, com que frequência mínima o fiel é obrigado a confessar seus pecados graves?',
+        opcoes: [
+          'A cada domingo',
+          'Uma vez na vida',
+          'Pelo menos uma vez por ano',
+          'Somente em caso de pecado mortal recente',
+        ],
+        correta: 2,
+        explicacao:
+          'O texto cita que "todo fiel, depois de ter chegado à idade da discrição, é obrigado a confessar seus pecados graves, dos quais tem consciência, pelo menos uma vez por ano".',
+      },
+    ],
+  },
+  {
     id: 13,
     numero: 13,
     titulo: 'Matrimônio',

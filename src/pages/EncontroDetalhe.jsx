@@ -12,18 +12,29 @@ const VISUAIS = {
   denominacoesEspirito: DenominacoesEspirito,
 }
 
-// Interpreta destaques em negrito marcados com **texto** dentro do conteúdo,
-// mantendo o texto na mesma linha. Retorna um array de strings e <strong>.
+// Interpreta destaques em negrito marcados com **texto** (cor de destaque) ou
+// __texto__ (preto) dentro do conteúdo, mantendo o texto na mesma linha.
+// Retorna um array de strings e <strong>.
 function renderComNegrito(texto) {
-  return texto.split(/(\*\*[^*]+\*\*)/g).map((parte, i) =>
-    parte.startsWith('**') && parte.endsWith('**') ? (
-      <strong key={i} className="font-semibold text-[var(--color-primary)]">
-        {parte.slice(2, -2)}
-      </strong>
-    ) : (
-      parte
-    )
-  )
+  return texto
+    .split(/(\*\*[^*]+\*\*|__[^_]+__)/g)
+    .map((parte, i) => {
+      if (parte.startsWith('**') && parte.endsWith('**')) {
+        return (
+          <strong key={i} className="font-semibold text-[var(--color-primary)]">
+            {parte.slice(2, -2)}
+          </strong>
+        )
+      }
+      if (parte.startsWith('__') && parte.endsWith('__')) {
+        return (
+          <strong key={i} className="font-semibold text-black">
+            {parte.slice(2, -2)}
+          </strong>
+        )
+      }
+      return parte
+    })
 }
 
 const TABS = [
