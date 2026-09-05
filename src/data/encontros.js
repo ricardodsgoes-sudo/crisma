@@ -1,5 +1,202 @@
 export const encontros = [
   {
+    id: 15,
+    numero: 15,
+    titulo: 'A Dignidade da Pessoa Humana',
+    subtitulo: 'Toda pessoa humana possui uma dignidade que vem de Deus',
+    imagem: '/dignidade-pessoa-humana.webp',
+    data: '2026-09-05',
+    versiculoDestaque:
+      'Deus nos criou à sua imagem e semelhança, dando a cada pessoa uma dignidade única e inviolável.',
+    versiculoRef: 'Gênesis 1,27',
+    leituras: [
+      {
+        ref: 'Gênesis 1,27',
+        titulo: 'Palavra de Deus do encontro',
+      },
+      {
+        ref: 'Gênesis 1,26-31',
+        titulo: 'Leitura proposta para a semana',
+      },
+    ],
+    formacao: [
+      {
+        titulo: 'Meditando a Palavra',
+        conteudo:
+          'Deus nos criou à sua imagem e semelhança, dando a cada pessoa uma dignidade única e inviolável. Não somos fruto do acaso: somos queridos, amados e chamados por Deus desde o início. Reconhecer essa dignidade nos ensina a valorizar nossa própria vida e a respeitar a vida de cada irmão. Hoje, permita-se olhar para si e para o outro com os olhos de Deus: com amor, respeito e misericórdia.',
+      },
+      {
+        titulo: 'O Homem, Imagem de Deus',
+        conteudo:
+          'O ponto de partida é teológico: o homem foi criado à imagem de Deus e só encontra sua verdadeira identidade em Cristo, "imagem do Deus invisível". É em Cristo, o Redentor e Salvador, que a imagem divina, desfigurada pelo pecado, é restaurada em sua beleza original.\n\nDotado de alma espiritual, de inteligência e de vontade livre, o ser humano é uma pessoa, "ordenada, pelo seu próprio ser, para Deus". Ele foi criado para a comunhão com o Criador. Por sua razão, o homem participa da luz da inteligência divina; por sua vontade, é capaz de tender livremente para o bem que lhe é proposto. Essa dignidade radical inclui também a unidade de alma e corpo: o corpo humano participa da dignidade da "imagem de Deus".',
+        imagem: '/homem-imagem-de-deus.webp',
+      },
+      {
+        titulo: 'Nossa Vocação à Bem-Aventurança',
+        conteudo:
+          'As Bem-Aventuranças estão no centro da pregação de Jesus e revelam o fim último para o qual o homem foi criado: a felicidade eterna, a visão de Deus na vida bem-aventurada. Esse desejo de felicidade é de origem divina, colocado por Deus no coração do homem para atraí-lo a si, e só Ele pode saciá-lo.\n\nAs Bem-Aventuranças ensinam o fim último a que Deus nos chama: o Reino, a visão de Deus, a participação na natureza divina, a filiação divina. Elas contrastam os falsos caminhos da felicidade (riqueza, poder, prazer) com a verdadeira bem-aventurança, que passa pela cruz e exige purificação do coração, opção pelas coisas de Deus e confiança na sua graça.',
+        imagem: '/vocacao-bem-aventuranca.webp',
+      },
+      {
+        titulo: 'A Liberdade do Homem',
+        conteudo:
+          'Deus quis o ser humano "entregue ao seu próprio conselho", dotado de liberdade — poder de agir ou de não agir, de fazer isto ou aquilo, praticando por si mesmo ações deliberadas. A liberdade não é indiferença ilimitada entre bem e mal: quanto mais se pratica o bem, mais se torna livre; a liberdade atinge sua perfeição quando ordenada a Deus. A liberdade torna o homem responsável por seus atos, na medida em que são voluntários. A imputabilidade de uma ação pode ser diminuída ou anulada pela ignorância, coação, medo, hábitos ou outros fatores psíquicos e sociais. Há o direito ao exercício da liberdade, especialmente em matéria religiosa e moral, como exigência inseparável da dignidade da pessoa humana, lembrando que essa liberdade é ferida pelo pecado e libertada por Cristo.',
+        imagem: '/liberdade-do-homem.webp',
+      },
+      {
+        titulo: 'A Moralidade dos Atos Humanos',
+        conteudo:
+          'Os atos livres do homem são moralmente qualificáveis: podem ser bons ou maus. A moralidade de um ato depende de três elementos, que devem ser considerados em conjunto:\n\n1. O objeto escolhido — o bem ou o mal efetivamente visado pela ação;\n2. A intenção do agente, isto é, o fim para o qual o ato é praticado;\n3. As circunstâncias, incluindo as consequências, que podem agravar ou atenuar a responsabilidade, mas não mudam a qualidade moral dos atos.\n\nUm ato é moralmente bom quando o objeto, a intenção e as circunstâncias são bons ao mesmo tempo; basta um destes ser mau para que o ato seja mau, assim "o fim não justifica os meios": existem atos que, por seu objeto, são sempre ilícitos, independentemente da intenção ou das circunstâncias.',
+        imagem: '/moralidade-atos-humanos.webp',
+      },
+      {
+        titulo: 'A Moralidade das Paixões',
+        conteudo:
+          'As paixões (ou sentimentos, emoções) são movimentos do apetite sensível — como o amor, o ódio, o desejo, a alegria, a tristeza, o medo, a ira — que constituem a matéria-prima do comportamento moral. Em si mesmas, as paixões não são nem boas nem más: recebem sua qualificação moral na medida em que dependem efetivamente da razão e da vontade. A perfeição moral consiste em ser movido para o bem não apenas pela vontade, mas também pelo apetite sensível, como nas paixões dos santos, imitando Cristo. Paixões desordenadas, ao contrário, podem originar vícios; ordenadas ao bem, podem tornar-se fonte de virtude e de santidade.',
+      },
+      {
+        titulo: 'A Consciência Moral',
+        conteudo:
+          'A consciência moral é definida como "o juízo da razão pelo qual a pessoa humana reconhece a qualidade moral de um ato concreto". É chamada de "santuário do homem, onde ele está só com Deus, cuja voz se faz ouvir em seu íntimo". Ela ordena, no momento oportuno, a fazer o bem e evitar o mal, e julga as escolhas concretas, aprovando-as ou reprovando-as.\n\nTodo homem é obrigado a seguir sua consciência e tem o direito de agir segundo ela. No entanto, a consciência pode formular juízos errôneos, por ignorância invencível ou por causas das quais o sujeito não é responsável ou por negligência culpável na busca da verdade e do bem, situação em que a pessoa se torna responsável pelo erro. Por isso, a consciência deve ser educada e o juízo moral iluminado, à luz da razão, da Palavra de Deus e do ensinamento da Igreja, ao longo de toda a vida.\n\n**"Toda pessoa humana possui uma dignidade que vem de Deus: fomos criados à Sua imagem e semelhança e, em Cristo, somos chamados a viver como filhos amados e a reconhecer essa mesma dignidade em cada irmão."**',
+      },
+    ],
+    reflexao: [
+      'O que significa, para mim, saber que fui criado à imagem e semelhança de Deus?',
+      'Como tenho valorizado e respeitado a minha própria dignidade e a dignidade das outras pessoas?',
+      'O que significa ser verdadeiramente livre?',
+      'Minhas escolhas têm me aproximado ou me afastado de Deus?',
+      'Como tenho lidado com meus sentimentos e emoções?',
+      'Minha consciência está sendo formada pela Palavra de Deus e pelos ensinamentos da Igreja?',
+      'Qual mudança concreta preciso fazer para viver mais plenamente como filho(a) de Deus?',
+    ],
+    compromisso:
+      'Participar da Santa Missa com atenção e fé; ler Gênesis 1,26-31 e refletir sobre a dignidade humana; antes de decidir, perguntar: "Isso me aproxima ou me afasta de Deus?"; praticar um gesto concreto de amor, respeito ou ajuda; trabalhar uma atitude ou sentimento que precisa ser transformado; e rezar diariamente: "Senhor, ilumina minha consciência e ensina-me a escolher sempre o bem."',
+    musica: {
+      titulo: 'Milagre de Amor',
+      letra: `Que bom Te receber no meu coração
+Te tocar, ter-Te em minhas mãos
+Com carinho, Te acolher
+E contigo ser um só
+Ter contigo uma perfeita comunhão
+Corpo e sangue, vinho e pão
+
+Milagre de amor
+Fonte de vida
+Ó, meu Jesus eucaristia
+Eu Te recebo em comunhão
+Pois mesmo sem que eu mereça
+Vens fazer morada no meu coração
+Eu te adoro, meu Jesus
+Doce mistério no meu coração
+Como um Deus tão grande e soberano
+Se faz pequeno, um pedaço de pão
+Só por amor
+
+Que bom Te receber no meu coração
+Te tocar, ter-Te em minhas mãos
+Com carinho, Te acolher
+E contigo ser um só
+Ter contigo uma perfeita comunhão
+Corpo e sangue, vinho e pão
+
+Milagre de amor
+Fonte de vida
+Ó, meu Jesus eucaristia
+Eu Te recebo em comunhão
+Pois mesmo sem que eu mereça
+Vens fazer morada no meu coração
+Eu te adoro, meu Jesus
+Doce mistério no meu coração
+Como um Deus tão grande e soberano
+Se faz pequeno, um pedaço de pão
+
+Ó, meu Jesus eucaristia
+Eu Te recebo em comunhão
+Pois mesmo sem que eu mereça
+Vens fazer morada no meu coração
+Eu te adoro, meu Jesus
+Doce mistério no meu coração
+Como um Deus tão grande e soberano
+Se faz pequeno, um pedaço de pão
+Só por amor
+Oh, oh, oh, oh`,
+    },
+    recursos: [
+      { tipo: 'Música', titulo: 'Milagre de Amor', autor: 'Juliana de Paula' },
+      { tipo: 'Bíblia', titulo: 'Gênesis, capítulo 1' },
+      {
+        tipo: 'Catecismo',
+        titulo: 'Terceira Parte, Primeira Seção, Capítulo I, Artigos 1 a 6',
+      },
+    ],
+    quiz: [
+      {
+        pergunta:
+          'Segundo a formação, qual é o fim último para o qual o homem foi criado, revelado pelas Bem-Aventuranças?',
+        opcoes: [
+          'A riqueza e o poder terreno',
+          'A felicidade eterna, a visão de Deus na vida bem-aventurada',
+          'O sucesso profissional',
+          'A aprovação das outras pessoas',
+        ],
+        correta: 1,
+        explicacao:
+          'As Bem-Aventuranças estão no centro da pregação de Jesus e revelam o fim último para o qual o homem foi criado: a felicidade eterna, a visão de Deus na vida bem-aventurada.',
+      },
+      {
+        pergunta:
+          'De acordo com o texto, quando a liberdade atinge sua perfeição?',
+        opcoes: [
+          'Quando é exercida sem nenhuma regra',
+          'Quando permite indiferença total entre o bem e o mal',
+          'Quando é ordenada a Deus',
+          'Quando ignora as consequências dos próprios atos',
+        ],
+        correta: 2,
+        explicacao:
+          'Quanto mais se pratica o bem, mais se torna livre; a liberdade atinge sua perfeição quando ordenada a Deus.',
+      },
+      {
+        pergunta:
+          'Quais são os três elementos que, juntos, determinam a moralidade de um ato humano?',
+        opcoes: [
+          'A idade, o gênero e a cultura do agente',
+          'O objeto escolhido, a intenção do agente e as circunstâncias',
+          'O lugar, a hora e a companhia',
+          'A lei civil, o costume e a opinião pública',
+        ],
+        correta: 1,
+        explicacao:
+          'A moralidade de um ato depende de três elementos, considerados em conjunto: o objeto escolhido, a intenção do agente e as circunstâncias.',
+      },
+      {
+        pergunta:
+          'Segundo a formação, o que são as paixões (sentimentos, emoções) em si mesmas?',
+        opcoes: [
+          'Sempre más e devem ser eliminadas',
+          'Sempre boas e devem ser seguidas sem discernimento',
+          'Nem boas nem más: recebem qualificação moral conforme dependem da razão e da vontade',
+          'Um sinal infalível de pecado',
+        ],
+        correta: 2,
+        explicacao:
+          'Em si mesmas, as paixões não são nem boas nem más: recebem sua qualificação moral na medida em que dependem efetivamente da razão e da vontade.',
+      },
+      {
+        pergunta: 'Como o texto define a consciência moral?',
+        opcoes: [
+          'O juízo da razão pelo qual a pessoa humana reconhece a qualidade moral de um ato concreto',
+          'Um sentimento de culpa que deve ser ignorado',
+          'Uma regra fixada exclusivamente pela lei civil',
+          'Uma opinião pessoal sem relação com Deus',
+        ],
+        correta: 0,
+        explicacao:
+          'A consciência moral é definida como "o juízo da razão pelo qual a pessoa humana reconhece a qualidade moral de um ato concreto".',
+      },
+    ],
+  },
+  {
     id: 14,
     numero: 14,
     titulo: 'Penitência',

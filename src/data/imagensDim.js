@@ -25,14 +25,18 @@ export const IMAGENS_DIM = {
   "/crisma-capa.webp": { width: 560, height: 700 },
   "/crisma-capa@2x.webp": { width: 900, height: 1125 },
   "/deus-filho.webp": { width: 287, height: 342 },
+  "/dignidade-pessoa-humana.webp": { width: 1137, height: 1383 },
   "/eucaristia.webp": { width: 900, height: 1275 },
+  "/homem-imagem-de-deus.webp": { width: 1122, height: 1402 },
   "/ilustração enconto 4.webp": { width: 591, height: 475 },
   "/jesus-eucaristia.webp": { width: 800, height: 1297 },
   "/jesus.webp": { width: 536, height: 489 },
+  "/liberdade-do-homem.webp": { width: 1392, height: 1130 },
   "/liturgia.webp": { width: 382, height: 572 },
   "/logo sem fundo.png": { width: 182, height: 228 },
   "/maria mae de deus.webp": { width: 826, height: 407 },
   "/matrimonio.webp": { width: 862, height: 1824 },
+  "/moralidade-atos-humanos.webp": { width: 1537, height: 1023 },
   "/nossa senhora.webp": { width: 516, height: 776 },
   "/pai nosso.webp": { width: 474, height: 592 },
   "/penitencia.webp": { width: 972, height: 1619 },
@@ -47,6 +51,7 @@ export const IMAGENS_DIM = {
   "/trindade 2.webp": { width: 491, height: 393 },
   "/trindade.webp": { width: 643, height: 428 },
   "/ultima-ceia.webp": { width: 800, height: 1478 },
+  "/vocacao-bem-aventuranca.webp": { width: 1119, height: 1405 },
 }
 
 // Retorna { width, height } para usar direto na <img>, ou um objeto vazio se a
