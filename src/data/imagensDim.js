@@ -39,6 +39,7 @@ export const IMAGENS_DIM = {
   "/moralidade-atos-humanos.webp": { width: 1537, height: 1023 },
   "/nossa senhora.webp": { width: 516, height: 776 },
   "/pai nosso.webp": { width: 474, height: 592 },
+  "/pecado.webp": { width: 1024, height: 1536 },
   "/penitencia.webp": { width: 972, height: 1619 },
   "/pomba.webp": { width: 383, height: 480 },
   "/pwa-192.png": { width: 192, height: 192 },
@@ -51,6 +52,8 @@ export const IMAGENS_DIM = {
   "/trindade 2.webp": { width: 491, height: 393 },
   "/trindade.webp": { width: 643, height: 428 },
   "/ultima-ceia.webp": { width: 800, height: 1478 },
+  "/virtudes-humanas.webp": { width: 1044, height: 1507 },
+  "/virtudes-teologais.webp": { width: 1030, height: 1527 },
   "/vocacao-bem-aventuranca.webp": { width: 1119, height: 1405 },
 }
 

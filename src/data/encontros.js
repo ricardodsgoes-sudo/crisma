@@ -1,5 +1,230 @@
 export const encontros = [
   {
+    id: 16,
+    numero: 16,
+    titulo: 'Vida Moral',
+    subtitulo: 'A santidade começa nas pequenas escolhas',
+    data: '2026-09-12',
+    versiculoDestaque:
+      'Que a nossa mente escolha alimentar aquilo que vem de Deus: o que é verdadeiro, justo, puro e bom.',
+    versiculoRef: 'Filipenses 4,8',
+    leituras: [
+      {
+        ref: 'Filipenses 4,8',
+        titulo: 'Palavra de Deus do encontro',
+      },
+    ],
+    formacao: [
+      {
+        titulo: 'Meditando a Palavra',
+        conteudo:
+          'Que a nossa mente escolha alimentar aquilo que vem de Deus: o que é verdadeiro, justo, puro e bom. Mesmo diante das dificuldades, podemos decidir onde colocar nossos pensamentos e nosso coração. Quando pensamos nas coisas boas, enxergamos a presença de Deus até nas pequenas situações. Que hoje nossos pensamentos sejam sementes de paz, esperança e fé.',
+      },
+      {
+        titulo: 'As Virtudes',
+        conteudo:
+          'A virtude é uma disposição habitual e firme para fazer o bem. Permite à pessoa não só praticar boas ações, mas dar o melhor de si mesma, orientando todas as suas potências (inteligência, vontade, sentimentos) para o bem.',
+      },
+      {
+        titulo: 'Virtudes Humanas (Adquiridas)',
+        conteudo:
+          'São disposições estáveis do intelecto e da vontade que regulam os atos, ordenam as paixões e guiam a conduta segundo a razão e a fé. Purificadas e elevadas pela graça divina, são adquiridas pela educação, por atos deliberados e pela perseverança no esforço. Agrupam-se em torno das quatro virtudes cardeais, que servem de "eixo/dobradiça" (do latim cardo) a todas as outras virtudes morais:\n\n**Prudência** — dispõe a razão prática a discernir, em cada circunstância, o verdadeiro bem e a escolher os meios corretos para o realizar. É a perfeita capacidade de decidir retamente.\n\n**Justiça** — consiste na constante e firme vontade de dar a Deus e ao próximo o que lhes é devido.\n\n**Fortaleza** — assegura firmeza nas dificuldades e constância na busca do bem, vencendo o medo (inclusive da morte) e resistindo às tentações.\n\n**Temperança** — modera a atração pelos prazeres e assegura o domínio da vontade sobre os instintos.',
+        imagem: '/virtudes-humanas.webp',
+      },
+      {
+        titulo: 'Virtudes Teologais',
+        conteudo:
+          'Fundamentam, animam e caracterizam o agir moral cristão; têm Deus como origem, motivo e objeto direto. São infundidas por Deus na alma para tornar os fiéis capazes de agir como filhos d\'Ele:\n\n**Fé** — virtude pela qual cremos em Deus e em tudo o que Ele revelou e a Igreja propõe.\n\n**Esperança** — pela qual desejamos e aguardamos de Deus a vida eterna e as graças necessárias.\n\n**Caridade** — pela qual amamos a Deus sobre todas as coisas e ao próximo como a nós mesmos por amor de Deus; é "o vínculo da perfeição" (Cl 3,14) e a maior das virtudes.\n\nO Catecismo trata ainda dos dons do Espírito Santo (sabedoria, entendimento, conselho, fortaleza, ciência, piedade e temor de Deus), que tornam o crente dócil às inspirações divinas, e dos frutos do Espírito (caridade, alegria, paz, paciência, etc.), primícias da glória eterna.',
+        imagem: '/virtudes-teologais.webp',
+      },
+      {
+        titulo: 'O Pecado',
+        conteudo:
+          'O pecado não é apenas "fazer algo errado". Ele acontece quando, livremente, escolhemos algo que rompe ou enfraquece nossa relação com Deus, com o próximo e conosco mesmos. "O pecado é uma palavra, um ato ou um desejo contrários à Lei eterna." (Santo Agostinho). Deus não deseja condenar o pecador. Pelo contrário, o Evangelho revela um Deus misericordioso, que sempre oferece o caminho de volta. Mas, para acolher o perdão, precisamos primeiro reconhecer que precisamos dele. Às vezes, o pecado começa com algo aparentemente pequeno: uma mentira, uma inveja, uma palavra que machuca, uma atitude de orgulho ou uma omissão. Quando repetimos determinadas escolhas, elas podem se transformar em hábitos. Esses hábitos podem nos afastar cada vez mais de Deus e criar uma espécie de escravidão interior. Por isso, reconhecer o pecado não significa dizer "eu sou uma pessoa ruim". Significa dizer: "Eu errei, mas não preciso permanecer no erro. Deus me ama e posso voltar para Ele."',
+        imagem: '/pecado.webp',
+      },
+      {
+        titulo: 'Pecado Mortal x Venial',
+        conteudo:
+          '**Pecado mortal** — destrói a caridade no coração do homem pela violação grave da lei de Deus; exige três condições simultâneas: matéria grave, plena consciência e deliberado consentimento. Priva da graça santificante e, se não redimido pelo arrependimento e pelo perdão de Deus, causa a exclusão do Reino de Cristo e a vida eterna no inferno.\n\n**Pecado venial** — não destrói a aliança com Deus, mas a enfraquece; permite a subsistência da caridade, embora a ofenda e fira. Não priva do estado de graça, da amizade com Deus, nem da felicidade eterna, mas expõe a uma progressiva escravização ao mal. A multiplicação do pecado venial, sobretudo pela negligência, dispõe ao pecado mortal.',
+      },
+      {
+        titulo: 'Proliferação e Responsabilidade',
+        conteudo:
+          '**A proliferação do pecado:** O pecado gera propensão a pecar cada vez mais; engendra o vício pela repetição dos mesmos atos. Importante atentar-se para a tradição catequética dos vícios capitais (ou pecados capitais): soberba, avareza, inveja, ira, luxúria, gula e preguiça — assim chamados por gerarem outros pecados e outros vícios.\n\n**Responsabilidade:** A imputabilidade e a responsabilidade de um ato podem ser diminuídas ou mesmo anuladas pela ignorância, inadvertência, violência…\n\n**"A santidade começa nas pequenas escolhas: quando escolhemos o bem, fortalecemos nossas virtudes e nos aproximamos de Deus."**',
+      },
+    ],
+    reflexao: [
+      'O que tenho alimentado dentro do meu coração?',
+      'Qual virtude preciso desenvolver mais?',
+      'Minhas escolhas têm me aproximado ou afastado de Deus?',
+      'Tenho coragem de reconhecer meus erros?',
+      'Que tipo de pessoa estou me tornando através das minhas escolhas?',
+    ],
+    compromisso:
+      'Participar da Santa Missa com atenção e fé; cuidar mais dos meus pensamentos e palavras; praticar uma virtude todos os dias; fazer um exame de consciência; pedir perdão e aprender a perdoar; e escolher uma atitude concreta para me aproximar de Deus.',
+    musica: {
+      titulo: 'Pai Eu Quero Viver em Ti',
+      letra: `Tenho tentado mudar minha direção
+Tenho tentado caminhar na contramão
+Do mundo
+Do mundo!
+
+Percebo em mim uma forte oposição
+Meu espírito quer Deus, mas a carne não
+Está difícil
+Me ajuda
+
+Tenho tentado mudar minha direção
+Tenho tentado caminhar na contramão
+Do mundo
+Do mundo
+
+Percebo em mim uma forte oposição
+Meu espírito quer Deus, mas a carne não
+Está difícil
+Me ajuda!
+
+Às vezes o bem que eu quero não consigo fazer
+O mal que eu não quero eu faço, preciso de Ti
+Não posso permitir que a lei da carne impere em mim
+Quero o mover do espírito fluindo sempre em mim
+Eu não vou desistir, eu não vou desistir
+
+Pai eu quero viver em Ti
+Pai eu quero viver em Ti sempre mais
+Pai eu quero viver em Ti
+O pecado eu já não quero mais
+
+Pai eu quero viver em Ti
+Pai eu quero viver em Ti sempre mais
+Pai eu quero viver em Ti
+O pecado eu já não quero mais
+
+Eu vou crucificar meu eu
+Quero ser luz aonde eu for
+Em Cristo sou mais que vencedor
+
+Eu vou crucificar meu eu
+Quero ser luz aonde eu for
+Em Cristo sou mais que vencedor
+
+Tenho tentado mudar minha direção
+Tenho tentado caminhar na contramão
+Do mundo
+Do mundo
+Percebo em mim uma forte oposição
+Meu espírito quer Deus, mas a carne não
+Está difícil
+Me ajuda!
+
+Às vezes o bem que eu quero não consigo fazer
+O mal que eu não quero eu faço, preciso de Ti
+Não posso permitir que a lei da carne impere em mim
+Quero o mover do espírito fluindo sempre em mim
+Eu não vou desistir, eu não vou desistir!
+
+Pai eu quero viver em Ti
+Pai eu quero viver em Ti sempre mais
+Pai eu quero viver em Ti
+O pecado eu já não quero mais
+
+Eu vou crucificar meu eu
+Quero ser luz aonde eu for
+Em Cristo sou mais que vencedor
+
+Eu vou crucificar meu eu
+Quero ser luz aonde eu for
+Em Cristo sou mais que vencedor
+
+Vem vem vem, Espírito Santo agora vem
+Eu quero ser um homem novo
+Eu quero ser um homem novo
+
+Pai eu quero viver em Ti
+Pai eu quero viver em Ti sempre mais
+Pai eu quero viver em Ti
+O pecado eu já não quero mais
+
+Eu vou crucificar meu eu
+Quero ser luz aonde eu for
+Em Cristo sou mais que vencedor
+
+Eu vou crucificar meu eu
+Quero ser luz aonde eu for
+Em Cristo sou mais que vencedor`,
+    },
+    recursos: [
+      { tipo: 'Música', titulo: 'Pai Eu Quero Viver em Ti', autor: 'Frei Gilson' },
+      { tipo: 'Bíblia', titulo: 'Filipenses, capítulo 4' },
+      {
+        tipo: 'Catecismo',
+        titulo: 'Terceira Parte, Primeira Seção, Capítulo I',
+      },
+    ],
+    quiz: [
+      {
+        pergunta: 'Segundo a formação, o que é a virtude?',
+        opcoes: [
+          'Um sentimento passageiro de bondade',
+          'Uma regra imposta de fora para dentro',
+          'Uma disposição habitual e firme para fazer o bem',
+          'Um talento com o qual apenas algumas pessoas nascem',
+        ],
+        correta: 2,
+        explicacao:
+          'A virtude é uma disposição habitual e firme para fazer o bem. Permite à pessoa não só praticar boas ações, mas dar o melhor de si mesma.',
+      },
+      {
+        pergunta:
+          'Quais são as quatro virtudes cardeais, que servem de "eixo/dobradiça" a todas as outras virtudes morais?',
+        opcoes: [
+          'Prudência, Justiça, Fortaleza e Temperança',
+          'Fé, Esperança, Caridade e Paciência',
+          'Sabedoria, Entendimento, Conselho e Ciência',
+          'Soberba, Avareza, Inveja e Ira',
+        ],
+        correta: 0,
+        explicacao:
+          'As virtudes humanas agrupam-se em torno das quatro virtudes cardeais — Prudência, Justiça, Fortaleza e Temperança —, que servem de "eixo/dobradiça" (do latim cardo) a todas as outras virtudes morais.',
+      },
+      {
+        pergunta:
+          'Qual virtude teologal é chamada de "o vínculo da perfeição" (Cl 3,14) e é a maior das virtudes?',
+        opcoes: ['A Fé', 'A Esperança', 'A Prudência', 'A Caridade'],
+        correta: 3,
+        explicacao:
+          'A Caridade é a virtude pela qual amamos a Deus sobre todas as coisas e ao próximo como a nós mesmos por amor de Deus; é "o vínculo da perfeição" (Cl 3,14) e a maior das virtudes.',
+      },
+      {
+        pergunta:
+          'Quais são as três condições que precisam estar presentes ao mesmo tempo para que um pecado seja mortal?',
+        opcoes: [
+          'Ignorância, inadvertência e violência',
+          'Matéria grave, plena consciência e deliberado consentimento',
+          'Repetição, hábito e negligência',
+          'Mentira, inveja e orgulho',
+        ],
+        correta: 1,
+        explicacao:
+          'O pecado mortal exige três condições simultâneas: matéria grave, plena consciência e deliberado consentimento.',
+      },
+      {
+        pergunta:
+          'Por que a soberba, a avareza, a inveja, a ira, a luxúria, a gula e a preguiça são chamadas de vícios (ou pecados) capitais?',
+        opcoes: [
+          'Porque são os únicos pecados que existem',
+          'Porque são sempre pecados veniais',
+          'Porque geram outros pecados e outros vícios',
+          'Porque só podem ser cometidos por adultos',
+        ],
+        correta: 2,
+        explicacao:
+          'Na tradição catequética, os vícios capitais são assim chamados por gerarem outros pecados e outros vícios.',
+      },
+    ],
+  },
+  {
     id: 15,
     numero: 15,
     titulo: 'A Dignidade da Pessoa Humana',
