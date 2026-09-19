@@ -1,5 +1,129 @@
 export const encontros = [
   {
+    id: 17,
+    numero: 17,
+    titulo: 'A Comunidade Humana',
+    subtitulo: 'Viver com o outro, pelo outro e para o bem de todos',
+    imagem: '/comunidade-humana.webp',
+    data: '2026-09-19',
+    versiculoDestaque:
+      'O ser humano só realiza plenamente sua vocação quando aprende a viver com o outro, pelo outro e para o bem de todos.',
+    versiculoRef: 'Frase do encontro',
+    leituras: [],
+    formacao: [
+      {
+        titulo: 'Oração Inicial',
+        conteudo:
+          '**Reflexão**: primeira comunidade cristã nos ensina que a fé verdadeira se vive em comunhão, e não de forma isolada. Quando partilhamos nossos dons, nosso tempo e nossos bens, tornamo-nos sinais concretos do amor de Deus. Somos diferentes, mas precisamos uns dos outros para construir uma comunidade mais justa e fraterna. Que nossa fé nos leve a cuidar do próximo e a transformar o amor em atitudes concretas.',
+      },
+      {
+        titulo: 'Artigo 1: A Pessoa e a Sociedade',
+        conteudo:
+          '**1. O Caráter Comunitário da Vocação Humana**\n\n**Inseparabilidade do Amor**: A vocação da humanidade é manifestar a imagem de Deus e transformar-se à imagem de Cristo. O amor ao próximo é inseparável do amor a Deus, existindo, assim, uma analogia entre a união das pessoas divinas (a Trindade) e a fraternidade humana.\n\n**Necessidade da Vida Social**: A vida em sociedade não é algo acessório para o ser humano, mas uma exigência inerente à sua própria natureza. É por meio do diálogo, do serviço mútuo e do contato com os outros que o homem desenvolve as suas aptidões e cumpre a sua vocação.\n\n**O Princípio e Fim das Instituições**: A sociedade é uma assembleia orgânica, visível e espiritual, que perdura no tempo. Contudo, a norma fundamental de qualquer estrutura social é que a pessoa humana é e deve ser o princípio, o sujeito e o fim de todas as instituições sociais.\n\n**2. Socialização e o Princípio da Subsidiariedade**\n\n**Socialização**: É a tendência natural dos seres humanos de se associarem para alcançar objetivos que excedem as capacidades individuais (criando associações econômicas, culturais, desportivas, profissionais e políticas).\n\n**Perigos do Coletivismo**: Uma intervenção excessiva do Estado representa uma ameaça direta à liberdade e às iniciativas pessoais.\n\n**O Princípio da Subsidiariedade**: Define que uma sociedade de ordem superior (como o Estado) não deve interferir na vida interna de uma sociedade de ordem inferior privando-a das suas competências. A sua função deve ser de apoio, auxílio e coordenação para o bem comum, respeitando a autonomia dos corpos intermédios. O princípio opõe-se rigorosamente ao coletivismo e inspira-se no próprio modo de governo de Deus, que confia às suas criaturas as funções que estas têm capacidade de exercer.\n\n**3. Conversão Interior e Estruturas Sociais**\n\n**Hierarquia dos Valores**: A convivência humana deve subordinar as dimensões físicas e instintivas às dimensões interiores e espirituais.\n\n**Inversão de Meios e Fins**: Tratar as pessoas como meros meios para atingir fins, ou transformar meios em fins últimos, gera estruturas de pecado e injustiça.\n\n**A Primazia da Conversão do Coração**: Mudanças sociais autênticas exigem a conversão interior do ser humano. A caridade é o maior mandamento social; ela exige a justiça e inspira a doação de si mesmo. Sem a graça divina, a humanidade cai facilmente no desconcerto entre a covardia que cede ao mal e a violência que o agrava.',
+      },
+      {
+        titulo: 'Artigo 2: A Participação na Vida Social',
+        conteudo:
+          '**1. A Autoridade**\n\nToda sociedade precisa de uma autoridade legítima para garantir a unidade e o bem comum. A autoridade deve ser respeitada, mas possui limites morais. Os cidadãos têm liberdade para escolher seus governantes e o regime político. Leis injustas ou contrárias à razão e aos direitos fundamentais não obrigam moralmente.\n\n**2. O Bem Comum**\n\nÉ o conjunto de condições que permite às pessoas e grupos desenvolverem-se plenamente. Envolve três pontos principais:\n\n**Respeito à pessoa**: garantia dos direitos e liberdades fundamentais.\n\n**Bem-estar**: acesso à saúde, educação, trabalho, alimentação, cultura e outros bens essenciais.\n\n**Paz e segurança**: manutenção de uma ordem justa e proteção das pessoas.\n\nO bem comum também deve ser buscado em nível internacional, diante da interdependência entre os povos.\n\n**3. Responsabilidade e Participação**\n\nParticipar da sociedade significa contribuir de forma responsável e generosa, começando pela família, trabalho e deveres cotidianos. A participação na vida pública é importante para o bem da sociedade. Fraudes e formas de fugir das responsabilidades sociais são moralmente condenáveis. Educação e cultura são fundamentais para uma participação social consciente.',
+      },
+      {
+        titulo: 'Artigo 3: A Justiça Social',
+        imagem: '/solidariedade-humana.webp',
+        imagemAntesDoTitulo: true,
+        conteudo:
+          '**1. Respeito pela Pessoa Humana**\n\nA justiça social começa pelo respeito à dignidade de cada pessoa e aos seus direitos fundamentais. Devemos tratar cada pessoa como um "outro eu", superando egoísmo, orgulho e preconceito. O cuidado deve ser especialmente voltado aos mais vulneráveis, estendendo-se também aos inimigos: rejeita-se o mal, mas não a pessoa.\n\n**2. Igualdade, Diferenças e Desigualdades**\n\nTodas as pessoas possuem igual dignidade, independentemente de sexo, raça, cor, condição social, língua ou religião. As diferenças de talentos e capacidades são naturais e devem favorecer a cooperação, partilha e ajuda mútua. Já as desigualdades sociais e econômicas excessivas e injustas são contrárias à justiça e à paz social.\n\n**3. Solidariedade Humana**\n\nA solidariedade é uma expressão da fraternidade e da caridade social. Envolve repartir justamente os bens, garantir remuneração digna e resolver conflitos através do diálogo. Deve existir entre pobres e ricos, trabalhadores e empregadores e entre as nações. A solidariedade não se limita ao dinheiro: inclui também a partilha de valores, conhecimento, educação e outros bens espirituais.',
+      },
+    ],
+    reflexao: [
+      'Como tenho tratado o meu próximo?',
+      'Reconheço o outro como "outro eu"?',
+      'Tenho praticado respeito, escuta e caridade?',
+      'Estou contribuindo para o bem comum?',
+      'Minhas atitudes beneficiam apenas a mim ou também aos outros?',
+      'O que posso fazer para melhorar minha comunidade?',
+      'Tenho exercido minha responsabilidade social?',
+      'Cumpro meus deveres como cidadão, familiar e membro da comunidade?',
+      'Tenho me omitido diante das necessidades dos outros?',
+      'Como lido com as diferenças?',
+      'Respeito os dons, capacidades e limitações de cada pessoa?',
+      'Tenho evitado preconceitos e julgamentos?',
+      'Minha fé se transforma em solidariedade?',
+      'Meu amor a Deus se manifesta no amor ao próximo?',
+      'Quem, perto de mim, precisa de ajuda, acolhimento ou escuta?',
+    ],
+    compromisso:
+      'Participar da Santa Missa com atenção e fé, realizar uma ação concreta de solidariedade e reunir a família e perguntar: "O que podemos fazer para tornar nossa família melhor?". Rezar pelo bem comum, pelos necessitados, pelas famílias e pela sociedade e pedir um coração mais solidário, e identificar um talento pessoal, pensar como ajudar alguém.',
+    recursos: [
+      { tipo: 'Catecismo', titulo: 'Catecismo da Igreja Católica, n. 1877-1948' },
+      {
+        tipo: 'Livro',
+        titulo: 'Síntese da Fé Católica, Tema 18: A Doutrina Social da Igreja, fls. 193-200',
+      },
+    ],
+    quiz: [
+      {
+        pergunta: 'Segundo o encontro, qual é a norma fundamental de qualquer estrutura social?',
+        opcoes: [
+          'Que o Estado seja sempre a autoridade máxima',
+          'Que a pessoa humana seja o princípio, o sujeito e o fim de todas as instituições sociais',
+          'Que a economia oriente todas as decisões da sociedade',
+          'Que as instituições se mantenham inalteradas ao longo do tempo',
+        ],
+        correta: 1,
+        explicacao:
+          'A sociedade é uma assembleia orgânica, visível e espiritual, que perdura no tempo. Contudo, a norma fundamental de qualquer estrutura social é que a pessoa humana é e deve ser o princípio, o sujeito e o fim de todas as instituições sociais.',
+      },
+      {
+        pergunta: 'O que define o Princípio da Subsidiariedade?',
+        opcoes: [
+          'Que o Estado deve assumir todas as funções da sociedade',
+          'Que as associações devem ser extintas em favor do bem comum',
+          'Que uma sociedade de ordem superior não deve interferir na vida interna de uma sociedade de ordem inferior privando-a das suas competências',
+          'Que cada pessoa deve resolver sozinha os seus problemas',
+        ],
+        correta: 2,
+        explicacao:
+          'A função da sociedade de ordem superior deve ser de apoio, auxílio e coordenação para o bem comum, respeitando a autonomia dos corpos intermédios. O princípio opõe-se rigorosamente ao coletivismo e inspira-se no próprio modo de governo de Deus, que confia às suas criaturas as funções que estas têm capacidade de exercer.',
+      },
+      {
+        pergunta: 'De acordo com o encontro, o que as mudanças sociais autênticas exigem?',
+        opcoes: [
+          'A conversão interior do ser humano',
+          'Apenas a troca de governantes',
+          'A ampliação das leis e dos regulamentos',
+          'O crescimento econômico acelerado',
+        ],
+        correta: 0,
+        explicacao:
+          'A Primazia da Conversão do Coração: mudanças sociais autênticas exigem a conversão interior do ser humano. A caridade é o maior mandamento social; ela exige a justiça e inspira a doação de si mesmo.',
+      },
+      {
+        pergunta: 'Quais são os três pontos principais envolvidos no bem comum?',
+        opcoes: [
+          'Trabalho, lazer e consumo',
+          'Respeito à pessoa, bem-estar, e paz e segurança',
+          'Autoridade, obediência e disciplina',
+          'Família, escola e Igreja',
+        ],
+        correta: 1,
+        explicacao:
+          'O bem comum é o conjunto de condições que permite às pessoas e grupos desenvolverem-se plenamente: respeito à pessoa (garantia dos direitos e liberdades fundamentais), bem-estar (acesso à saúde, educação, trabalho, alimentação, cultura e outros bens essenciais) e paz e segurança (manutenção de uma ordem justa e proteção das pessoas).',
+      },
+      {
+        pergunta: 'Segundo o encontro, a solidariedade se limita ao dinheiro?',
+        opcoes: [
+          'Sim, ela consiste essencialmente na doação de bens materiais',
+          'Sim, porque só os recursos financeiros resolvem as desigualdades',
+          'Não, ela inclui também a partilha de valores, conhecimento, educação e outros bens espirituais',
+          'Não, porque ela se refere apenas ao diálogo entre as nações',
+        ],
+        correta: 2,
+        explicacao:
+          'A solidariedade é uma expressão da fraternidade e da caridade social. Envolve repartir justamente os bens, garantir remuneração digna e resolver conflitos através do diálogo — e não se limita ao dinheiro: inclui também a partilha de valores, conhecimento, educação e outros bens espirituais.',
+      },
+    ],
+  },
+  {
     id: 16,
     numero: 16,
     titulo: 'Vida Moral',

@@ -12,23 +12,20 @@ const VISUAIS = {
   denominacoesEspirito: DenominacoesEspirito,
 }
 
-// Interpreta destaques em negrito marcados com **texto** (cor de destaque) ou
-// __texto__ (preto) dentro do conteúdo, mantendo o texto na mesma linha.
+// Interpreta destaques em negrito marcados com **texto** ou __texto__ dentro do
+// conteúdo, mantendo o texto na mesma linha. Os dois marcadores renderizam na
+// cor normal do texto (preto no tema claro, claro no escuro).
 // Retorna um array de strings e <strong>.
 function renderComNegrito(texto) {
   return texto
     .split(/(\*\*[^*]+\*\*|__[^_]+__)/g)
     .map((parte, i) => {
-      if (parte.startsWith('**') && parte.endsWith('**')) {
+      const negrito =
+        (parte.startsWith('**') && parte.endsWith('**')) ||
+        (parte.startsWith('__') && parte.endsWith('__'))
+      if (negrito) {
         return (
-          <strong key={i} className="font-semibold text-[var(--color-primary)]">
-            {parte.slice(2, -2)}
-          </strong>
-        )
-      }
-      if (parte.startsWith('__') && parte.endsWith('__')) {
-        return (
-          <strong key={i} className="font-semibold text-black">
+          <strong key={i} className="font-semibold text-[var(--color-text)]">
             {parte.slice(2, -2)}
           </strong>
         )
@@ -182,28 +179,33 @@ export default function EncontroDetalhe() {
                 </motion.div>
               )}
 
-              {encontro.formacao.map((secao, i) => (
+              {encontro.formacao.map((secao, i) => {
+                // Por padrão a imagem entra entre o título e o texto. Com
+                // `imagemAntesDoTitulo`, ela abre a seção e o título vem abaixo.
+                const imagemSecao = secao.imagem && (
+                  <div className="rounded-2xl overflow-hidden shadow-md mb-6">
+                    <img
+                      src={secao.imagem}
+                      alt={secao.titulo}
+                      {...dimensoesDaImagem(secao.imagem)}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                )
+                return (
                 <motion.article
                   key={secao.titulo}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.05 }}
                 >
+                  {secao.imagemAntesDoTitulo && imagemSecao}
                   <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 text-[var(--color-primary)]">
                     {secao.titulo}
                   </h2>
-                  {secao.imagem && (
-                    <div className="rounded-2xl overflow-hidden shadow-md mb-6">
-                      <img
-                        src={secao.imagem}
-                        alt={secao.titulo}
-                        {...dimensoesDaImagem(secao.imagem)}
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full h-auto object-contain"
-                      />
-                    </div>
-                  )}
+                  {!secao.imagemAntesDoTitulo && imagemSecao}
                   {secao.conteudo?.split('\n\n').map((paragrafo, j) => (
                     <p
                       key={j}
@@ -217,7 +219,8 @@ export default function EncontroDetalhe() {
                     return <Visual />
                   })()}
                 </motion.article>
-              ))}
+                )
+              })}
 
               {encontro.quiz?.length > 0 && (
                 <div className="border-t border-[var(--color-border)] pt-8 mt-12">
