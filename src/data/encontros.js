@@ -1,5 +1,171 @@
 export const encontros = [
   {
+    id: 18,
+    numero: 18,
+    titulo: 'Os Mandamentos',
+    subtitulo: 'Os Dez Mandamentos da Lei de Deus e os Cinco Mandamentos da Igreja',
+    data: '2026-09-26',
+    versiculoDestaque:
+      'Os Dez Mandamentos são um caminho de amor e liberdade: amar a Deus de todo o coração, respeitar a vida e o próximo, e viver a verdade, a justiça e a fidelidade.',
+    versiculoRef: 'Frase do encontro',
+    leituras: [],
+    formacao: [
+      {
+        titulo: 'Oração Inicial',
+        conteudo:
+          '**O sentido do Decálogo**: Quando o jovem rico perguntou a Jesus: “Que farei de bom para conseguir a vida eterna?”, Jesus o remeteu aos mandamentos (CIC 2052). O Decálogo não é uma lista de proibições, mas um caminho de vida que orienta para o verdadeiro humanismo e para a prática da caridade (CIC 2053). Os Dez Mandamentos devem ser compreendidos à luz do duplo mandamento do amor: amar a Deus sobre todas as coisas e ao próximo como a si mesmo, pois o amor é a “plenitude da Lei” (CIC 2054-2055). Eles formam um todo inseparável, pois cada mandamento está ligado aos demais (CIC 2069). Por isso, a Igreja, fiel à Escritura e ao exemplo de Cristo, reconhece a importância fundamental do Decálogo (CIC 2064) e o apresenta à luz dos dois grandes mandamentos e das Bem-aventuranças (CIC 2065).',
+      },
+      {
+        titulo: 'Artigo 1: Os Dez Mandamentos',
+        blocos: [
+          {
+            imagem: '/mandamento-1.webp',
+            conteudo:
+              '**I — “Eu sou o Senhor teu Deus... não terás outros deuses além de mim”**\n\nEste mandamento orienta a fé, a esperança e a caridade, pedindo que adoremos, amemos e sirvamos somente a Deus (CIC 2084-2094). Condena a incredulidade, heresia, apostasia, desespero, superstição, idolatria, magia, sacrilégio, ateísmo e agnosticismo (CIC 2088-2089; 2091-2092; 2094; 2110-2128). O culto às sagradas imagens é legítimo, fundamentado na Encarnação (CIC 2129-2132).',
+          },
+          {
+            imagem: '/mandamento-2.webp',
+            conteudo:
+              '**II — “Não tomarás o nome do Senhor teu Deus em vão”**\n\nExige respeito ao nome santo de Deus, evitando seu uso indevido ou ofensivo (CIC 2142-2146). Condena a blasfêmia, o perjúrio e o uso do nome de Deus para práticas criminosas (CIC 2148-2155). Também pede respeito ao nome recebido no Batismo (CIC 2156-2159).',
+          },
+          {
+            imagem: '/mandamento-3.webp',
+            conteudo:
+              '**III — “Guardar os domingos e os dias de preceito”**\n\nO Domingo é o Dia do Senhor, celebrado em memória da Ressurreição de Cristo (CIC 2174-2176). É dever participar da Eucaristia e evitar atividades que impeçam o culto, o descanso e a alegria próprios desse dia (CIC 2180-2188). O domingo também favorece a convivência familiar e as obras de misericórdia (CIC 2186, 2194-2195).',
+          },
+          {
+            imagem: '/mandamento-4.webp',
+            conteudo:
+              '**IV — “Honra a teu pai e a tua mãe”**\n\nEnsina os deveres dentro da família, começando pela honra, gratidão, obediência e assistência dos filhos aos pais (CIC 2197-2200; 2214-2220). Os pais têm o dever de cuidar e proporcionar educação humana e cristã aos filhos (CIC 2221-2231). O princípio também se aplica às relações sociais e à autoridade (CIC 2234-2246).',
+          },
+          {
+            imagem: '/mandamento-5.webp',
+            conteudo:
+              '**V — “Não matarás”**\n\nDefende a sacralidade da vida humana, desde a concepção até a morte natural (CIC 2258-2263). Trata da legítima defesa, do homicídio, do aborto, da eutanásia e do suicídio (CIC 2263-2283). Exige respeito à saúde e à dignidade humana, além da defesa da paz e da rejeição do ódio, da raiva e do escândalo (CIC 2288-2291; 2302-2317).',
+          },
+          {
+            imagem: '/mandamento-6.webp',
+            conteudo:
+              '**VI — “Não pecar contra a castidade / Não cometerás adultério”**\n\nConvida à castidade, integrando a sexualidade à dignidade da pessoa (CIC 2331-2337). Condena atos que ferem essa virtude e apresenta a importância do amor conjugal, da fidelidade, da fecundidade e da responsabilidade familiar (CIC 2348-2379). O adultério e outras práticas contrárias à dignidade do matrimônio são tratados nos (CIC 2380-2391).',
+          },
+          {
+            imagem: '/mandamento-7.webp',
+            conteudo:
+              '**VII — “Não furtarás”**\n\nExige respeito aos bens alheios, justiça, caridade e responsabilidade no uso dos bens, considerando o bem comum e a destinação universal da criação (CIC 2401-2406). Condena o furto, a fraude, a corrupção, a apropriação indevida, a evasão fiscal e o desperdício (CIC 2408-2413). Também aborda o cuidado com a criação, a justiça social, a solidariedade e o amor preferencial pelos pobres (CIC 2415-2449).',
+          },
+          {
+            imagem: '/mandamento-8.webp',
+            conteudo:
+              '**VIII — “Não levantarás falso testemunho”**\n\nExige respeito à verdade nas relações humanas (CIC 2464). Condena o falso testemunho, a calúnia, a maledicência, o juízo temerário, a mentira e a adulação (CIC 2476-2486), exigindo reparação pelos danos causados (CIC 2487). Também orienta sobre o sigilo, o segredo profissional e o uso responsável dos meios de comunicação (CIC 2493-2499).',
+          },
+          {
+            imagem: '/mandamento-9.webp',
+            conteudo:
+              '**IX — “Não desejarás a mulher do teu próximo”**\n\nConvida à pureza do coração, combatendo a concupiscência e cultivando a modéstia e o respeito pela intimidade da pessoa (CIC 2514-2519; 2531-2533).',
+          },
+          {
+            imagem: '/mandamento-10.webp',
+            conteudo:
+              '**X — “Não cobiçarás os bens do teu próximo”**\n\nCondena a avareza e a inveja, ou seja, o desejo desordenado pelos bens dos outros (CIC 2534-2540). Propõe a pobreza de espírito, o desapego e a confiança na Providência, como caminhos para a liberdade interior (CIC 2544-2547; 2556).',
+          },
+        ],
+      },
+      {
+        titulo: 'Artigo 2: Os Cinco Mandamentos (Preceitos) da Igreja',
+        conteudo:
+          'Os preceitos da Igreja situam-se no âmbito da vida moral enraizada na vida litúrgica e alimentada por ela; têm por objetivo garantir aos fiéis o mínimo indispensável no espírito de oração e no esforço moral, no crescimento no amor de Deus e do próximo (CIC 2041-2042). Embora o Catecismo os enumere pouco antes da secção sobre o Decálogo (nn. 2041-2043), eles complementam diretamente o terceiro mandamento e a vida de fé exigida pelo primeiro. São eles os seguintes:\n\n**1.** Participar da Missa aos domingos e dias de preceito, e abster-se de trabalhos e atividades que impeçam a santificação desses dias (CIC 2042; cf. 2180-2183).\n\n**2.** Confessar os próprios pecados ao menos uma vez por ano.\n\n**3.** Receber o sacramento da Eucaristia ao menos pela Páscoa.\n\n**4.** Observar os dias de jejum e abstinência estabelecidos pela Igreja.\n\n**5.** Prover às necessidades materiais da Igreja, cada um segundo suas possibilidades (CIC 2043).\n\nA esses cinco preceitos soma-se o dever de participar do esforço missionário da evangelização e do apostolado (CIC 2044-2046). **“2046. Vivendo segundo Cristo, os cristãos apressam a vinda do Reino de Deus, do «Reino da justiça, da verdade e da paz». Mas nem por isso descuidam das suas tarefas terrestres. Fiéis ao seu Mestre, cumprem-nas com retidão, paciência e amor.”**',
+      },
+      {
+        titulo: 'Artigo 3: Conclusão',
+        conteudo:
+          'O Decálogo e os preceitos da Igreja não devem ser vividos como um código externo, mas como expressão da Aliança: "Eu sou o Senhor teu Deus... não terás outros deuses diante de mim" revela, antes de tudo, um dom e uma promessa (CIC 2083-2086). Observar os mandamentos é responder com gratidão e amor ao Deus que primeiro amou e libertou o seu povo. Por isso, conduzimo-nos não ao medo da lei, mas à liberdade dos filhos de Deus, que "amando, cumprem a Lei" (cf. CIC 2074-2075). **“Os Dez Mandamentos são um caminho de amor e liberdade: amar a Deus de todo o coração, respeitar a vida e o próximo, e viver a verdade, a justiça e a fidelidade.”**',
+      },
+    ],
+    reflexao: [
+      'Tenho colocado Deus verdadeiramente em primeiro lugar na minha vida?',
+      'Como tenho demonstrado respeito pelo nome de Deus nas minhas palavras e atitudes?',
+      'Tenho valorizado o domingo como dia do Senhor, participando da Santa Missa e reservando tempo para Deus e minha família?',
+      'Como tenho tratado meus pais, familiares e as pessoas que exercem autoridade sobre mim?',
+      'Minhas palavras e atitudes promovem a vida, a paz e o respeito pela dignidade das outras pessoas?',
+      'Tenho buscado viver a castidade, respeitando meu corpo, o corpo do outro e a dignidade do amor?',
+      'Sou justo e honesto com os bens que pertencem a outras pessoas e à comunidade?',
+      'Tenho cuidado para não mentir, julgar, caluniar ou falar mal das pessoas?',
+      'Tenho alimentado desejos, pensamentos ou atitudes que não respeitam a dignidade e os relacionamentos?',
+      'Tenho sido grato pelo que possuo ou tenho vivido comparando-me e desejando aquilo que pertence aos outros?',
+    ],
+    compromisso:
+      'Reservar um momento todos os dias para rezar e colocar Deus em primeiro lugar; participar da Santa Missa no próximo domingo com atenção, fé e coração aberto; demonstrar uma atitude concreta de amor, respeito e gratidão dentro da minha família; evitar durante toda a semana fofocas, mentiras, julgamentos e palavras que possam ferir alguém; e praticar uma atitude de solidariedade, partilhando meu tempo, meus dons ou algum bem com quem precisa.',
+    recursos: [
+      {
+        tipo: 'Catecismo',
+        titulo:
+          'Catecismo da Igreja Católica, nn. 2052-2557 (Os Dez Mandamentos) e nn. 2041-2043 (Os Preceitos da Igreja)',
+      },
+    ],
+    quiz: [
+      {
+        pergunta: 'Segundo o encontro, como o Decálogo deve ser compreendido?',
+        opcoes: [
+          'Como uma lista de proibições a serem cumpridas por medo',
+          'Como um caminho de vida que orienta para o verdadeiro humanismo e para a prática da caridade',
+          'Como regras que valiam apenas para o povo do Antigo Testamento',
+          'Como um código externo, independente da fé',
+        ],
+        correta: 1,
+        explicacao:
+          'O Decálogo não é uma lista de proibições, mas um caminho de vida que orienta para o verdadeiro humanismo e para a prática da caridade (CIC 2053). Deve ser compreendido à luz do duplo mandamento do amor: amar a Deus sobre todas as coisas e ao próximo como a si mesmo.',
+      },
+      {
+        pergunta: 'O que pede o terceiro mandamento, “Guardar os domingos e os dias de preceito”?',
+        opcoes: [
+          'Apenas descansar do trabalho, sem outra obrigação',
+          'Rezar em casa, dispensando a Missa',
+          'Participar da Eucaristia e evitar atividades que impeçam o culto, o descanso e a alegria próprios desse dia',
+          'Jejuar durante todo o domingo',
+        ],
+        correta: 2,
+        explicacao:
+          'O Domingo é o Dia do Senhor, celebrado em memória da Ressurreição de Cristo. É dever participar da Eucaristia e evitar atividades que impeçam o culto, o descanso e a alegria próprios desse dia. O domingo também favorece a convivência familiar e as obras de misericórdia.',
+      },
+      {
+        pergunta: 'Segundo o encontro, o quinto mandamento, “Não matarás”, defende a vida humana:',
+        opcoes: [
+          'Desde a concepção até a morte natural',
+          'Somente a partir do nascimento',
+          'Apenas das pessoas saudáveis',
+          'Somente em tempos de guerra',
+        ],
+        correta: 0,
+        explicacao:
+          'O quinto mandamento defende a sacralidade da vida humana, desde a concepção até a morte natural (CIC 2258-2263). Trata da legítima defesa, do homicídio, do aborto, da eutanásia e do suicídio, e exige respeito à saúde e à dignidade humana.',
+      },
+      {
+        pergunta: 'Qual destes é um dos cinco mandamentos (preceitos) da Igreja?',
+        opcoes: [
+          'Rezar o terço todos os dias',
+          'Confessar os próprios pecados ao menos uma vez por ano',
+          'Fazer uma peregrinação ao menos uma vez na vida',
+          'Participar de um grupo de oração semanal',
+        ],
+        correta: 1,
+        explicacao:
+          'Os cinco preceitos da Igreja são: participar da Missa aos domingos e dias de preceito; confessar os próprios pecados ao menos uma vez por ano; receber a Eucaristia ao menos pela Páscoa; observar os dias de jejum e abstinência; e prover às necessidades materiais da Igreja, cada um segundo suas possibilidades.',
+      },
+      {
+        pergunta: 'Qual é o décimo mandamento e o que ele propõe?',
+        opcoes: [
+          '“Não furtarás” — propõe a devolução dos bens roubados',
+          '“Não levantarás falso testemunho” — propõe o sigilo profissional',
+          '“Honra a teu pai e a tua mãe” — propõe a obediência às autoridades',
+          '“Não cobiçarás os bens do teu próximo” — propõe a pobreza de espírito, o desapego e a confiança na Providência',
+        ],
+        correta: 3,
+        explicacao:
+          'O décimo mandamento condena a avareza e a inveja, ou seja, o desejo desordenado pelos bens dos outros. Propõe a pobreza de espírito, o desapego e a confiança na Providência, como caminhos para a liberdade interior (CIC 2544-2547; 2556).',
+      },
+    ],
+  },
+  {
     id: 17,
     numero: 17,
     titulo: 'A Comunidade Humana',
@@ -2856,9 +3022,12 @@ export const SABADOS_SEM_ENCONTRO = [
   '2026-07-04',
 ]
 
+// O calendário vai até o encontro mais recente cadastrado: os encontros são
+// abertos conforme acontecem, então cada novo objeto em `encontros` já
+// estende a lista (sem número fixo de encontros).
 export function gerarCalendarioEncontros(
   inicio = '2026-05-02',
-  total = 17,
+  total = Math.max(...encontros.map((e) => e.numero)),
   puladas = SABADOS_SEM_ENCONTRO
 ) {
   const lista = []

@@ -21,6 +21,8 @@ O PDF contém: oração inicial, palavra de Deus, texto de formação, reflexão
 3. **Extrair os dados** do PDF e montar o objeto no padrão abaixo.
 
 4. **Inserir no início** do array `encontros` em `src/data/encontros.js` (o mais novo fica primeiro).
+   Não há número fixo de encontros: o calendário vai até o maior `numero` cadastrado,
+   então basta inserir o objeto para o encontro "abrir" em todas as páginas.
 
 5. **Criar 5 perguntas de quiz** baseadas no conteúdo de formação do PDF.
 

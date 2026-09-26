@@ -34,6 +34,18 @@ function renderComNegrito(texto) {
     })
 }
 
+// Quebra o texto em parágrafos nos `\n\n`, aplicando os destaques em negrito.
+function renderParagrafos(texto) {
+  return texto.split('\n\n').map((paragrafo, j) => (
+    <p
+      key={j}
+      className="text-[var(--color-text)] leading-relaxed mb-4 text-[15px] sm:text-base md:text-lg"
+    >
+      {renderComNegrito(paragrafo)}
+    </p>
+  ))
+}
+
 const TABS = [
   { id: 'formacao', label: 'Formação', short: 'Formação' },
   { id: 'palavra', label: 'Palavra de Deus', short: 'Palavra' },
@@ -206,13 +218,23 @@ export default function EncontroDetalhe() {
                     {secao.titulo}
                   </h2>
                   {!secao.imagemAntesDoTitulo && imagemSecao}
-                  {secao.conteudo?.split('\n\n').map((paragrafo, j) => (
-                    <p
-                      key={j}
-                      className="text-[var(--color-text)] leading-relaxed mb-4 text-[15px] sm:text-base md:text-lg"
-                    >
-                      {renderComNegrito(paragrafo)}
-                    </p>
+                  {secao.conteudo && renderParagrafos(secao.conteudo)}
+                  {/* `blocos`: trechos com uma miniatura pequena à direita e o
+                      texto contornando, como as imagens ao lado do texto no PDF. */}
+                  {secao.blocos?.map((bloco, j) => (
+                    <div key={j} className="flow-root">
+                      {bloco.imagem && (
+                        <img
+                          src={bloco.imagem}
+                          alt=""
+                          {...dimensoesDaImagem(bloco.imagem)}
+                          loading="lazy"
+                          decoding="async"
+                          className="float-right ml-4 mb-3 mt-1 w-28 sm:w-36 md:w-40 h-auto rounded-xl shadow-sm"
+                        />
+                      )}
+                      {renderParagrafos(bloco.conteudo)}
+                    </div>
                   ))}
                   {secao.visual && VISUAIS[secao.visual] && (() => {
                     const Visual = VISUAIS[secao.visual]
