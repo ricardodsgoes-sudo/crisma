@@ -75,22 +75,9 @@ npm run preview
 
 ## ☁️ Como publicar (deploy)
 
-O site é **estático** — não precisa de servidor com banco de dados. As opções recomendadas (todas gratuitas):
+O site é hospedado no **Cloudflare Pages** (projeto `crismadeadultos` → https://crismadeadultos.pages.dev).
 
-### Opção 1 — Netlify (mais simples)
-1. Rode `npm run build`
-2. Acesse [netlify.com/drop](https://app.netlify.com/drop)
-3. Arraste a pasta `dist` para o navegador
-4. Pronto — você recebe uma URL pública
-
-### Opção 2 — Netlify com Git
-1. Suba o projeto para um repositório no GitHub
-2. Conecte o repositório no Netlify
-3. Build command: `npm run build`
-4. Publish directory: `dist`
-
-### Opção 3 — GitHub Pages
-O projeto já está configurado com `base: './'` no `vite.config.js`, então funciona em GitHub Pages. Use uma action ou o pacote `gh-pages`.
+O deploy é automático: cada `git push` na branch `main` dispara o build (`npm run build` → pasta `dist`) e publica o site.
 
 ---
 

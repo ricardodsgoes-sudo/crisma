@@ -17,9 +17,6 @@ dist-ssr
 .env.local
 .env.*.local
 
-# Netlify
-.netlify
-
 # Claude Code local config
 .claude/
 

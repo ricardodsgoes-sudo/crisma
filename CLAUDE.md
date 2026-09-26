@@ -109,7 +109,7 @@ houver necessidade de infraestrutura (backend, tempo real, armazenamento,
 funções), pensar primeiro em soluções Cloudflare (Workers, Durable Objects,
 Pages, KV, D1, R2).
 
-- **Frontend:** Cloudflare Pages, projeto `crismadeadultos` → `crismadeadultos.pages.dev` (build do git, `npm run build` → `dist/`). Também há um deploy espelho no Netlify.
+- **Frontend:** Cloudflare Pages, projeto `crismadeadultos` → `crismadeadultos.pages.dev` (build do git, `npm run build` → `dist/`).
 - **Backend de presença:** Worker `crisma-presenca` em `worker/` (Durable Object com WebSocket Hibernation) que conta pessoas online em tempo real. URL: `https://crisma-presenca.goesdev.workers.dev` (o subdomínio da conta é `goesdev`; a URL do frontend fica em `src/components/OnlineCounter.jsx`). Deploy: `cd worker && npx wrangler deploy`. Plano gratuito.
 
 ## Estrutura do projeto
