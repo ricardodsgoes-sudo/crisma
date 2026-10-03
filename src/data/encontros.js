@@ -1,5 +1,138 @@
 export const encontros = [
   {
+    id: 19,
+    numero: 19,
+    titulo: 'A Santa Missa',
+    subtitulo: 'A Missa parte por parte: estrutura e sentido teológico da celebração eucarística',
+    imagem: '/missa-hostia.webp',
+    data: '2026-10-03',
+    versiculoDestaque: 'A Missa é o centro e o ápice da vida cristã.',
+    versiculoRef: 'Sacrosanctum Concilium, n. 10',
+    leituras: [
+      { ref: '1Cor 11, 23-26', titulo: 'A instituição da Eucaristia' },
+      { ref: 'Lc 24, 13-35', titulo: 'Os discípulos de Emaús' },
+    ],
+    formacao: [
+      {
+        titulo: 'Introdução',
+        conteudo:
+          'A Missa é o centro e o ápice/cume da vida cristã. O Concílio Vaticano II a define como “fonte e ápice de toda a vida da Igreja” (Sacrosanctum Concilium, n. 10) e como memorial da Páscoa de Cristo: sua paixão, morte e ressurreição tornam-se presentes sob o sinal sacramental do pão e do vinho.\n\nA celebração se organiza em quatro grandes partes: os Ritos Iniciais, a Liturgia da Palavra, a Liturgia Eucarística e os Ritos Finais. As duas partes centrais formam, nas palavras da IGMR (n. 28), “um só ato de culto”: a mesa da Palavra e a mesa do Corpo de Cristo, das quais os fiéis recebem instrução e alimento.',
+      },
+      {
+        titulo: 'Ritos Iniciais',
+        imagem: '/missa-ritos-iniciais.webp',
+        imagemAntesDoTitulo: true,
+        imagemPequena: true,
+        conteudo:
+          'Têm a finalidade de fazer da assembleia, reunida de pessoas diversas, uma comunidade orante, e de prepará-la para ouvir a Palavra e celebrar a Eucaristia (IGMR, n. 46).\n\n**Canto de entrada e procissão** – expressa a unidade dos fiéis e a introdução no mistério; o beijo do altar e a incensação são sinais de veneração a Cristo.\n\n**Sinal da Cruz e saudação** – recordam a Trindade e a presença de Cristo na assembleia.\n\n**Ato penitencial** – momento de reconciliação; segue-se o Kyrie.\n\n**Hino de louvor (Glória)** – glorifica o Pai e o Cordeiro; omitido no Advento e na Quaresma.\n\n**Oração do dia (coleta)** – reúne as intenções de todos e encerra os Ritos Iniciais.',
+      },
+      {
+        titulo: 'Liturgia da Palavra',
+        conteudo:
+          'Nesta parte, “Deus fala ao seu povo, revela-lhe o mistério da redenção e salvação e oferece-lhe o alimento espiritual” (IGMR, n. 55). Cristo está presente na Palavra (SC, n. 7).\n\n**Primeira leitura** – do Antigo Testamento (ou Atos no tempo pascal).\n\n**Salmo responsorial** – resposta orante, em forma poética e cantada.\n\n**Segunda leitura** – das cartas apostólicas ou Apocalipse.\n\n**Aclamação ao Evangelho** – acolhe Cristo que vai falar (em pé).\n\n**Evangelho** – ponto alto da liturgia; incensação, sinal da cruz e beijo do livro.\n\n**Homilia** – explicação e atualização da Palavra; parte da liturgia.\n\n**Profissão de fé (Credo)** – síntese da fé da Igreja.\n\n**Oração dos fiéis** – intercede pela Igreja, autoridades, necessitados, comunidade local etc. (IGMR, n. 69).',
+      },
+      {
+        titulo: 'Liturgia Eucarística',
+        conteudo:
+          'Pela Liturgia Eucarística se torna presente o sacrifício da cruz. É a realização do mandato de Jesus: “fazei isto em memória de mim” (IGMR, n. 72).\n\n**4.1 Preparação dos dons** – O altar é preparado e os fiéis podem levar pão, vinho e ofertas. O sacerdote apresenta os dons com orações, mistura um pouco de água ao vinho e lava as mãos (lavabo). Convida a assembleia e conclui com a oração sobre as oferendas (IGMR, n. 73).\n\n**4.2 Oração Eucarística** – Núcleo da celebração (IGMR, n. 78): prefácio, Santo, epiclese, narrativa da instituição (transubstanciação), intercessões e doxologia final.\n\n**4.3 Rito da Comunhão** – Pai-Nosso, rito da paz, fração do pão (Agnus Dei), comunhão e oração depois da comunhão (IGMR, n. 81-82).',
+      },
+      {
+        titulo: 'Ritos Finais',
+        imagem: '/missa-ritos-finais.webp',
+        conteudo:
+          'São breves e têm caráter de envio. Incluem avisos, saudação e bênção do sacerdote (simples ou solene) e a despedida: “Ide em paz, e o Senhor vos acompanhe”. A fórmula latina Ite, missa est indica que a assembleia é enviada em missão.\n\nO encontro com Cristo na Palavra e no sacramento deve traduzir-se em testemunho e caridade no cotidiano.',
+      },
+      {
+        titulo: 'Conclusão',
+        conteudo:
+          'A estrutura da Missa revela uma pedagogia coerente: reúne uma comunidade (Ritos Iniciais), que ouve Deus (Liturgia da Palavra), responde com ação de graças e participa do sacrifício de Cristo (Liturgia Eucarística), e é enviada ao mundo em missão (Ritos Finais). **“A Missa nos une a Cristo e nos envia ao mundo.”**\n\nCada gesto, palavra e silêncio contribui para a “participação plena, consciente e ativa” que o Vaticano II deseja (SC, n. 14). A compreensão da Missa parte por parte permite que o fiel passe de um mero cumpridor de preceitos à vivência interior do mistério celebrado. **Celebrar a Missa é viver o mistério de Cristo!**',
+      },
+    ],
+    reflexao: [
+      'Chego à Missa com tempo para me preparar e me recolher, ou costumo chegar correndo e distraído?',
+      'Participo dos cantos, das respostas e dos gestos da celebração com atenção e de coração, ou apenas assisto?',
+      'Escuto a Palavra proclamada e a homilia como Deus falando a mim, procurando levar algo para a minha vida?',
+      'O que significa, para mim, que na Eucaristia se torne presente o sacrifício de Cristo na cruz?',
+      'Como me preparo para receber a Comunhão e como vivo o agradecimento depois de comungar?',
+      'Quando ouço “Ide em paz, e o Senhor vos acompanhe”, saio da Missa disposto a ser testemunho e caridade no meu dia a dia?',
+    ],
+    compromisso:
+      'Chegar com antecedência à Missa de domingo, participando de cada parte com atenção, silêncio e fé; prestar atenção na Palavra e na homilia, anotando uma frase para viver durante a semana; e, ao ouvir “Ide em paz”, assumir uma atitude concreta de testemunho e caridade com alguém.',
+    recursos: [
+      {
+        tipo: 'Documento',
+        titulo:
+          'Concílio Ecumênico Vaticano II. Constituição Sacrosanctum Concilium sobre a Sagrada Liturgia. 1963.',
+      },
+      {
+        tipo: 'Documento',
+        titulo:
+          'Congregação para o Culto Divino e a Disciplina dos Sacramentos. Instrução Geral do Missal Romano. 3. ed. típica, 2002.',
+      },
+      {
+        tipo: 'Catecismo',
+        titulo: 'Catecismo da Igreja Católica. Parte II, seção 2, cap. 1 (nn. 1322–1419)',
+      },
+      { tipo: 'Bíblia', titulo: 'Lucas 24, 13-35 e 1 Coríntios 11, 23-26' },
+    ],
+    quiz: [
+      {
+        pergunta: 'Quais são as quatro grandes partes em que a Missa se organiza?',
+        opcoes: [
+          'Ritos Iniciais, Liturgia da Palavra, Liturgia Eucarística e Ritos Finais',
+          'Ritos Iniciais, Homilia, Oração Eucarística e Bênção',
+          'Introdução, Evangelho, Comunhão e Conclusão',
+          'Glória, Credo, Pai-Nosso e Despedida',
+        ],
+        correta: 0,
+        explicacao:
+          'A celebração se organiza em quatro grandes partes: os Ritos Iniciais, a Liturgia da Palavra, a Liturgia Eucarística e os Ritos Finais.',
+      },
+      {
+        pergunta: 'Como a IGMR (n. 28) descreve a Liturgia da Palavra e a Liturgia Eucarística juntas?',
+        opcoes: [
+          'Como duas celebrações independentes',
+          'Como uma preparação para os Ritos Finais',
+          'Como momentos opcionais da Missa',
+          'Como “um só ato de culto”: a mesa da Palavra e a mesa do Corpo de Cristo',
+        ],
+        correta: 3,
+        explicacao:
+          'As duas partes centrais formam “um só ato de culto”: a mesa da Palavra e a mesa do Corpo de Cristo, das quais os fiéis recebem instrução e alimento.',
+      },
+      {
+        pergunta: 'Em quais tempos litúrgicos o hino de louvor (Glória) é omitido?',
+        opcoes: ['No Natal e na Páscoa', 'No Advento e na Quaresma', 'Apenas na Quaresma', 'No Tempo Comum'],
+        correta: 1,
+        explicacao: 'O Glória glorifica o Pai e o Cordeiro e é omitido no Advento e na Quaresma.',
+      },
+      {
+        pergunta: 'Qual destes elementos faz parte da Liturgia da Palavra?',
+        opcoes: [
+          'Lavabo e oração sobre as oferendas',
+          'Prefácio e Santo',
+          'Salmo responsorial, Evangelho, homilia, Credo e oração dos fiéis',
+          'Fração do pão e Agnus Dei',
+        ],
+        correta: 2,
+        explicacao:
+          'A Liturgia da Palavra inclui a primeira leitura, o salmo responsorial, a segunda leitura, a aclamação ao Evangelho, o Evangelho, a homilia, a profissão de fé (Credo) e a oração dos fiéis.',
+      },
+      {
+        pergunta: 'O que indica a fórmula latina “Ite, missa est” nos Ritos Finais?',
+        opcoes: [
+          'Que a Missa terminou e todos devem guardar silêncio',
+          'Que a assembleia é enviada em missão',
+          'Que o sacerdote vai abençoar os objetos religiosos',
+          'Que a Comunhão será distribuída',
+        ],
+        correta: 1,
+        explicacao:
+          'Os Ritos Finais têm caráter de envio. A fórmula latina Ite, missa est indica que a assembleia é enviada em missão: o encontro com Cristo deve traduzir-se em testemunho e caridade no cotidiano.',
+      },
+    ],
+  },
+  {
     id: 18,
     numero: 18,
     titulo: 'Os Mandamentos',

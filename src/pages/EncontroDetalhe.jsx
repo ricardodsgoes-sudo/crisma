@@ -195,7 +195,7 @@ export default function EncontroDetalhe() {
                 // Por padrão a imagem entra entre o título e o texto. Com
                 // `imagemAntesDoTitulo`, ela abre a seção e o título vem abaixo.
                 const imagemSecao = secao.imagem && (
-                  <div className="rounded-2xl overflow-hidden shadow-md mb-6">
+                  <div className={`rounded-2xl overflow-hidden shadow-md mb-6${secao.imagemPequena ? ' max-w-[200px] mx-auto' : ''}`}>
                     <img
                       src={secao.imagem}
                       alt={secao.titulo}
