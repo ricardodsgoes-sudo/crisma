@@ -1,13 +1,13 @@
-# Crisma de Adultos 2026 — Site dos Encontros
+# Crisma de Adultos — Acervo dos Encontros
 
-Site interativo para os encontros semanais da Crisma de Adultos da **Paróquia Maria Mãe de Deus**, com formação, leituras bíblicas, reflexões, compromissos da semana e quiz interativo.
+Acervo interativo da Crisma de Adultos da **Paróquia Maria Mãe de Deus**, com formação, leituras bíblicas, reflexões, compromissos da semana e quiz interativo, disponível para consulta e para novas turmas.
 
 ---
 
 ## ✨ Funcionalidades
 
-- 🏠 **Página inicial** — apresentação, contagem regressiva ao vivo até o próximo sábado, das 17h às 18h
-- 📅 **Lista de encontros** — todos os 17 sábados com status (hoje / disponível / realizado / em breve)
+- 🏠 **Página inicial** — apresentação, mensagem de encerramento do ciclo e acesso permanente à formação
+- 📖 **Lista de encontros** — todos os encontros publicados em ordem de formação, sem datas ou status de calendário
 - 📖 **Página do encontro** — formação completa em abas:
   - **Formação** — texto catequético dividido em tópicos
   - **Palavra de Deus** — leituras bíblicas propostas
@@ -93,7 +93,7 @@ crisma/
 │   │   ├── Header.jsx        # Cabeçalho fixo com navegação
 │   │   ├── Footer.jsx        # Rodapé com brasão
 │   │   ├── Logo.jsx          # Imagens e ícone do Espírito Santo
-│   │   ├── Countdown.jsx     # Contagem regressiva animada
+│   │   ├── MensagemEncerramento.jsx # Encerramento e acolhida a novas turmas
 │   │   └── PageTransition.jsx # Animação de troca de páginas
 │   ├── data/
 │   │   └── encontros.js      # Conteúdo dos encontros e quizzes

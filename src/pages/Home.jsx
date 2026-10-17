@@ -2,27 +2,17 @@ import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import PageTransition from '../components/PageTransition'
-import Countdown from '../components/Countdown'
-import AvisoRecesso from '../components/AvisoRecesso'
+import MensagemEncerramento from '../components/MensagemEncerramento'
 import { InstallAppCallout } from '../components/InstallAppButton'
 import { CrismaCapa, DoveIcon } from '../components/Logo'
-import { getCalendarioComStatus, getEncontroAtual } from '../data/encontros'
-import { getHoje, SIMULANDO } from '../data/dataSimulada'
+import { getEncontrosOrdenados } from '../data/encontros'
 
 export default function Home() {
-  const hoje = getHoje()
-  const todosCarrossel = getCalendarioComStatus(hoje)
-  const encontroAtual = getEncontroAtual(hoje)
+  const todosCarrossel = getEncontrosOrdenados()
+  const encontroDestaque = todosCarrossel[todosCarrossel.length - 1]
 
   return (
     <PageTransition>
-      <AvisoRecesso />
-      {SIMULANDO && (
-        <div className="bg-amber-400 text-amber-900 text-[11px] sm:text-xs font-semibold text-center py-2 px-3 sm:px-4 tracking-wide">
-          <span className="sm:hidden">Modo simulação · {hoje.toLocaleDateString('pt-BR')}</span>
-          <span className="hidden sm:inline">⚠ MODO SIMULAÇÃO — data: {hoje.toLocaleDateString('pt-BR')} · edite <code>src/data/dataSimulada.js</code> para mudar</span>
-        </div>
-      )}
       <section className="relative bg-gradient-to-b from-[var(--color-surface-warm)] to-[var(--color-surface)] overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 md:px-8 py-8 sm:py-12 md:py-20">
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
@@ -42,31 +32,31 @@ export default function Home() {
                 Crisma de Adultos
               </h1>
               <p
-                className="text-xl sm:text-2xl md:text-3xl font-bold tracking-[0.3em] text-[var(--color-gold-dark)] mb-5 sm:mb-6"
+                className="text-lg sm:text-xl md:text-2xl text-[var(--color-gold-dark)] mb-5 sm:mb-6"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
-                2026
+                Uma caminhada de fé para toda a vida
               </p>
 
               <p className="font-quote italic text-base sm:text-lg md:text-xl text-[var(--color-text-muted)] leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto md:mx-0">
-                "{encontroAtual.versiculoDestaque}"
+                "{encontroDestaque.versiculoDestaque}"
                 <span className="block text-sm not-italic mt-1 text-[var(--color-text-muted)]">
-                  — {encontroAtual.versiculoRef}
+                  — {encontroDestaque.versiculoRef}
                 </span>
               </p>
 
-              <div className="flex flex-col min-[390px]:flex-row gap-3 justify-center md:justify-start">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                 <Link
-                  to={`/encontros/${encontroAtual.numero}`}
-                  className="crisma-primary-action w-full min-[390px]:w-auto px-6 sm:px-7 py-3.5 rounded-full font-medium transition-all text-center shadow-lg hover:shadow-xl"
+                  to={`/encontros/${todosCarrossel[0].numero}`}
+                  className="crisma-primary-action w-full sm:w-auto px-6 sm:px-7 py-3.5 rounded-full font-medium transition-all text-center shadow-lg hover:shadow-xl"
                 >
-                  Encontro {encontroAtual.numero} →
+                  Começar formação →
                 </Link>
                 <Link
                   to="/encontros"
-                  className="w-full min-[390px]:w-auto px-6 sm:px-7 py-3.5 border-2 border-[var(--color-primary)] text-[var(--color-primary)] rounded-full font-medium hover:bg-[var(--color-primary)] hover:text-white transition-all text-center"
+                  className="w-full sm:w-auto px-6 sm:px-7 py-3.5 border-2 border-[var(--color-primary)] text-[var(--color-primary)] rounded-full font-medium hover:bg-[var(--color-primary)] hover:text-white transition-all text-center"
                 >
-                  Ver todos
+                  Ver encontros
                 </Link>
               </div>
             </motion.div>
@@ -106,7 +96,7 @@ export default function Home() {
           <DoveIcon className="w-full h-full" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 md:px-8">
-          <Countdown />
+          <MensagemEncerramento />
         </div>
       </section>
 
@@ -118,9 +108,9 @@ export default function Home() {
           className="text-center mb-8 sm:mb-12"
         >
           <span className="text-sm uppercase tracking-[0.3em] text-[var(--color-gold-dark)] font-medium">
-            Em destaque
+            Para aprofundar sua fé
           </span>
-          <h2 className="text-3xl md:text-4xl mt-2">Encontro atual</h2>
+          <h2 className="text-3xl md:text-4xl mt-2">Formação em destaque</h2>
           <div className="w-16 h-px bg-[var(--color-gold)] mx-auto mt-4" />
         </motion.div>
 
@@ -136,7 +126,7 @@ export default function Home() {
             </div>
             <div className="relative">
               <p className="text-xs uppercase tracking-[0.3em] text-[var(--color-gold-light)] font-semibold mb-3">
-                Encontro {encontroAtual.numero}
+                Encontro {encontroDestaque.numero}
               </p>
               <h3
                 className="text-3xl sm:text-4xl md:text-5xl text-[var(--color-gold-light)] mb-2"
@@ -146,15 +136,15 @@ export default function Home() {
                   textShadow: '0 2px 10px rgba(0,0,0,0.18)',
                 }}
               >
-                {encontroAtual.titulo}
+                {encontroDestaque.titulo}
               </h3>
               <p className="font-quote italic text-xl sm:text-2xl text-white/95 mb-6">
-                {encontroAtual.subtitulo}
+                {encontroDestaque.subtitulo}
               </p>
               <blockquote className="font-quote italic text-base sm:text-lg text-white border-l-2 border-[var(--color-gold-light)] pl-4 mt-6" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.15)' }}>
-                "{encontroAtual.versiculoDestaque}"
+                "{encontroDestaque.versiculoDestaque}"
                 <footer className="text-sm not-italic mt-2 text-[var(--color-gold-light)]">
-                  — {encontroAtual.versiculoRef}
+                  — {encontroDestaque.versiculoRef}
                 </footer>
               </blockquote>
             </div>
@@ -163,7 +153,7 @@ export default function Home() {
           <div className="p-6 sm:p-8 md:p-12 flex flex-col justify-center">
             <h4 className="text-2xl mb-4">O que você vai ver</h4>
             <ul className="space-y-3 text-[var(--color-text-muted)]">
-              {encontroAtual.formacao.map((f) => (
+              {encontroDestaque.formacao.map((f) => (
                 <li key={f.titulo} className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 bg-[var(--color-gold)] rounded-full mt-2.5 flex-shrink-0" />
                   <span>{f.titulo}</span>
@@ -173,13 +163,13 @@ export default function Home() {
 
             <div className="flex flex-col lg:flex-row gap-3 mt-8">
               <Link
-                to={`/encontros/${encontroAtual.numero}`}
+                to={`/encontros/${encontroDestaque.numero}`}
                 className="crisma-primary-action w-full lg:w-auto px-6 py-3.5 rounded-full font-medium transition-colors text-center shadow-md hover:shadow-lg whitespace-nowrap"
               >
                 Iniciar formação →
               </Link>
               <Link
-                to={`/encontros/${encontroAtual.numero}/quiz`}
+                to={`/encontros/${encontroDestaque.numero}/quiz`}
                 className="w-full lg:w-auto px-6 py-3.5 border-2 border-[var(--color-primary)] text-[var(--color-primary)] rounded-full font-medium hover:bg-[var(--color-primary)] hover:text-white transition-colors text-center whitespace-nowrap"
               >
                 Fazer o quiz
@@ -189,38 +179,27 @@ export default function Home() {
         </motion.div>
       </section>
 
-      <CarrosselProximos cards={todosCarrossel} encontroAtualNumero={encontroAtual.numero} />
+      <CarrosselEncontros cards={todosCarrossel} />
 
       <InstallAppCallout />
     </PageTransition>
   )
 }
 
-function CarrosselProximos({ cards, encontroAtualNumero }) {
+function CarrosselEncontros({ cards }) {
   const trilhaRef = useRef(null)
   const [podePrev, setPodePrev] = useState(false)
   const [podeNext, setPodeNext] = useState(true)
   const CARD_W = 270
 
-  // Rola até o encontro atual no primeiro render — APENAS o carrossel
-  // horizontalmente. NÃO usar scrollIntoView, que rola a página inteira
-  // verticalmente até o carrossel.
+  // O acervo começa pelo primeiro encontro para acolher novas turmas.
   const inicializado = useRef(false)
   function refTrilha(el) {
     trilhaRef.current = el
     if (el && !inicializado.current) {
       inicializado.current = true
-      const idx = cards.findIndex((c) => c.numero === encontroAtualNumero)
       requestAnimationFrame(() => {
-        const alvo = el.querySelector(`[data-card-numero="${encontroAtualNumero}"]`)
-        if (alvo) {
-          // Centraliza o alvo dentro do carrossel sem mexer no scroll da página
-          const alvoLeft = alvo.offsetLeft
-          const alvoWidth = alvo.offsetWidth
-          el.scrollLeft = Math.max(0, alvoLeft - (el.clientWidth - alvoWidth) / 2)
-        } else {
-          el.scrollLeft = Math.max(0, idx) * CARD_W
-        }
+        el.scrollLeft = 0
         atualizarBotoes(el)
       })
     }
@@ -244,9 +223,9 @@ function CarrosselProximos({ cards, encontroAtualNumero }) {
       <div className="max-w-6xl mx-auto px-4 md:px-8">
         <div className="flex items-end justify-between gap-4 mb-6 sm:mb-8">
           <div>
-            <h3 className="text-2xl md:text-3xl mb-1">Calendário de encontros</h3>
+            <h3 className="text-2xl md:text-3xl mb-1">Explore os encontros</h3>
             <p className="text-[var(--color-text-muted)] text-sm">
-              Todo sábado, 17h às 18h · arraste para navegar
+              Formação para todas as turmas · arraste para navegar
             </p>
           </div>
           <div className="flex gap-2 flex-shrink-0">
@@ -278,13 +257,9 @@ function CarrosselProximos({ cards, encontroAtualNumero }) {
       >
         <div className="flex-shrink-0 w-[9vw] sm:w-[max(0px,calc((100vw-72rem)/2))]" />
 
-        {cards.map((p, i) => {
-          const isAtual = p.status === 'atual'
-          const temConteudo = !!p.conteudoDisponivel
-
-          const card = (
+        {cards.map((encontro, i) => (
+          <Link key={encontro.numero} to={`/encontros/${encontro.numero}`} className="contents">
             <motion.div
-              key={p.numero}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -293,18 +268,12 @@ function CarrosselProximos({ cards, encontroAtualNumero }) {
                 scrollSnapAlign: 'center',
               }}
               className="w-[68vw] min-[420px]:w-[260px] sm:w-64 flex-shrink-0"
-              data-card-numero={p.numero}
+              data-card-numero={encontro.numero}
             >
-              <CardProximo p={p} isAtual={isAtual} temConteudo={temConteudo} />
+              <CardEncontro encontro={encontro} />
             </motion.div>
-          )
-
-          return temConteudo ? (
-            <Link key={p.numero} to={`/encontros/${p.numero}`} className="contents">
-              {card}
-            </Link>
-          ) : card
-        })}
+          </Link>
+        ))}
 
         <div className="flex-shrink-0 w-[9vw] sm:w-4" />
       </div>
@@ -312,78 +281,37 @@ function CarrosselProximos({ cards, encontroAtualNumero }) {
   )
 }
 
-function CardProximo({ p, isAtual, temConteudo }) {
-  // Cards já realizados ficam em vermelho (mesma cor da página Encontros),
-  // mantendo consistência visual entre as duas listagens.
-  const bg = p.passado ? 'red-paper-bg' : 'bg-white'
-
-  const borda = isAtual
-    ? 'border-[var(--color-primary)] ring-2 ring-[var(--color-primary)]/20 shadow-lg'
-    : p.passado
-    ? 'border-[var(--color-primary)]'
-    : 'border-[var(--color-border)]'
-
+function CardEncontro({ encontro }) {
   return (
-    <div
-      className={`h-full ${bg} rounded-2xl border p-5 sm:p-6 flex flex-col transition-all select-none ${borda} ${
-        temConteudo && !p.passado ? 'hover:shadow-lg hover:-translate-y-1' : ''
-      } ${temConteudo && p.passado ? 'hover:shadow-md' : ''}`}
-    >
-      <div className="flex items-start justify-between mb-3">
-        <p className={`text-xs uppercase tracking-[0.2em] font-medium ${
-          p.passado ? 'text-[var(--color-gold-light)]' : 'text-[var(--color-gold-dark)]'
-        }`}>
-          Encontro {String(p.numero).padStart(2, '0')}
-        </p>
-        <MiniStatusBadge status={p.status} />
-      </div>
-
-      <p
-        className={`text-xl leading-snug mb-2 flex-1 ${p.passado ? 'text-[var(--color-gold-light)]' : 'text-[var(--color-text)]'}`}
-        style={{
-          fontFamily: "'Playfair Display', serif",
-          fontWeight: p.passado ? 600 : 600,
-          textShadow: p.passado ? '0 1px 6px rgba(0,0,0,0.16)' : 'none',
-        }}
-      >
-        {p.conteudoDisponivel?.titulo || 'Em breve'}
+    <div className="h-full red-paper-bg rounded-2xl border border-[var(--color-primary)] p-5 sm:p-6 flex flex-col transition-all select-none hover:shadow-md">
+      <p className="text-xs uppercase tracking-[0.2em] font-medium text-[var(--color-gold-light)] mb-3">
+        Encontro {String(encontro.numero).padStart(2, '0')}
       </p>
 
-      {p.conteudoDisponivel?.subtitulo && (
+      <p
+        className="text-xl leading-snug mb-2 flex-1 text-[var(--color-gold-light)]"
+        style={{
+          fontFamily: "'Playfair Display', serif",
+          fontWeight: 600,
+          textShadow: '0 1px 6px rgba(0,0,0,0.16)',
+        }}
+      >
+        {encontro.titulo}
+      </p>
+
+      {encontro.subtitulo && (
         <p
-          className={`text-xs italic mb-3 ${p.passado ? 'text-white/90' : 'text-[var(--color-text-muted)]'}`}
+          className="text-xs italic mb-3 text-white/90"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
-          {p.conteudoDisponivel.subtitulo}
+          {encontro.subtitulo}
         </p>
       )}
 
-      <p className={`text-xs capitalize mt-auto pt-3 border-t ${
-        p.passado ? 'text-white/70 border-white/20' : 'text-[var(--color-text-muted)] border-[var(--color-border)]'
-      }`}>
-        {p.dataObj.toLocaleDateString('pt-BR', {
-          weekday: 'long',
-          day: '2-digit',
-          month: 'short',
-        })}
+      <p className="text-xs mt-auto pt-3 border-t text-white/90 border-white/20">
+        Acessar formação →
       </p>
     </div>
-  )
-}
-
-function MiniStatusBadge({ status }) {
-  const config = {
-    atual: { label: 'Atual', cls: 'bg-[var(--color-primary)] text-white' },
-    disponivel: { label: 'Ok', cls: 'bg-[var(--color-gold-light)] text-[var(--color-gold-dark)]' },
-    realizado: { label: '✓', cls: 'bg-white/20 text-white border border-white/30' },
-    futuro: { label: 'Breve', cls: 'bg-[var(--color-surface-warm)] text-[var(--color-text-muted)] border border-[var(--color-border)]' },
-  }
-  const item = config[status] || config.futuro
-
-  return (
-    <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold uppercase tracking-wide whitespace-nowrap ${item.cls}`}>
-      {item.label}
-    </span>
   )
 }
 

@@ -173,7 +173,7 @@ export default function InstallAppButton({ className = '' }) {
                 <>
                   <li><strong>1.</strong> Abra o menu do navegador.</li>
                   <li><strong>2.</strong> Toque em “Instalar app” ou “Adicionar à tela inicial”.</li>
-                  <li><strong>3.</strong> Confirme para criar o ícone do Crisma 2026.</li>
+                  <li><strong>3.</strong> Confirme para criar o ícone do Crisma de Adultos.</li>
                 </>
               )}
             </ol>

@@ -3070,6 +3070,11 @@ export function getEncontroById(id) {
   return encontros.find((e) => e.numero === Number(id))
 }
 
+// O acervo segue a ordem da formação, independentemente da data de acesso.
+export function getEncontrosOrdenados() {
+  return [...encontros].sort((a, b) => a.numero - b.numero)
+}
+
 export function getEncontroAtual(referencia = new Date()) {
   const hoje = new Date(referencia)
   hoje.setHours(0, 0, 0, 0)

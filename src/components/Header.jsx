@@ -20,7 +20,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-8 py-2 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4">
         <div className="relative w-full md:w-auto flex flex-col items-center md:items-start justify-center md:justify-start">
           <div className="header-note mb-1">
-            <span>Leve sua Bíblia</span>
+            <span>Tenha sua Bíblia por perto</span>
           </div>
           <Link
             to="/"
@@ -38,7 +38,7 @@ export default function Header() {
                 className="text-lg text-[var(--color-primary)] truncate"
                 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700 }}
               >
-                Crisma de Adultos 2026
+                Crisma de Adultos
               </span>
             </div>
           </Link>

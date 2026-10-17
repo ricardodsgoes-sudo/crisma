@@ -23,10 +23,10 @@ export default defineConfig({
         'robots.txt',
       ],
       manifest: {
-        name: 'Crisma de Adultos 2026 — Paróquia Maria Mãe de Deus',
-        short_name: 'Crisma 2026',
+        name: 'Crisma de Adultos — Paróquia Maria Mãe de Deus',
+        short_name: 'Crisma',
         description:
-          'Site interativo dos encontros semanais de Crisma de Adultos na Paróquia Maria Mãe de Deus.',
+          'Materiais de formação da Crisma de Adultos da Paróquia Maria Mãe de Deus, para aprender no seu ritmo e com sua turma.',
         theme_color: '#C41230',
         background_color: '#C41230',
         display: 'standalone',
